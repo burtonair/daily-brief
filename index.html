@@ -302,6 +302,92 @@
             margin-bottom: 0;
         }
 
+        /* How To Section (Rundown AI tutorials) */
+        .howto-section {
+            margin-bottom: 50px;
+            padding: 40px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            border-left: 4px solid #a855f7;
+        }
+
+        .howto-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .howto-header .section-label {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .howto-section h3 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            color: #a855f7;
+        }
+
+        .howto-section h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 20px 0 10px 0;
+            color: #ccc;
+        }
+
+        .howto-section .howto-body {
+            color: #bbb;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .howto-section .howto-body p {
+            margin-bottom: 15px;
+        }
+
+        .howto-section .workflow-item {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .howto-section .workflow-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .howto-section code, .howto-section pre {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 0.9em;
+            color: #a855f7;
+        }
+
+        .howto-section pre {
+            padding: 15px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+
+        .howto-section ol {
+            margin-left: 20px;
+            color: #bbb;
+        }
+
+        .howto-section ol li {
+            margin-bottom: 12px;
+        }
+
         /* Section Grid */
         .section-grid {
             display: grid;
@@ -602,7 +688,7 @@
         <h1>The Daily Brief</h1>
         <p class="tagline">Your morning news, curated from Morning Brew, The Rundown AI, 1% Better, and Daily Dad</p>
         <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-            Sources: Morning Brew (5:19 AM) | Daily Dad (6:05 AM) | The Rundown AI (6:06 AM) | 1% Better (6:31 AM)
+            Sources: Morning Brew (5:19 AM) | Daily Dad (6:05 AM) | The Rundown AI (6:06 AM) | 1% Better (8:34 AM)
         </p>
     </header>
 
@@ -623,17 +709,17 @@
                 <div class="hero-sidebar-item">
                     <span class="category">AI <span class="source source-rundown">Rundown</span></span>
                     <h3>xAI Hosts First All-Hands Since SpaceX Merger, Announces Moon Data Centers</h3>
-                    <p>After a wave of <a href="https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1He1wtD3AXHNsQ1xbrCg_LgYlmZLwwH1N7JS-vSLjEnRMRuikG24AskOSnM1Yjw1d4-OHizk-PQqGFMiioMB2ksA2ZZpc2KZu4oYKqghz1aZ5JsX0I1pVIKjzejmZ3h0XcADz5-fAttDWGA6ORa8fTLbJ--lRdLcz0mpUg--juCHumDHcIyyo2-tCcfWkFDJVnTXuxNJX70K99yzXE8P7N81xzlDiZNMIG1vCe-pbQAJv_JxTr_sLSvM746F1XyFuuQ/4o3/JB5D4x__SGuOFkUf_0pa3w/h5/h001.Fwiq9b3SXKLSdG_8jZ39O1DuRNrbIEbiuV3hGR_hY1A" target="_blank" style="color:#60a5fa;">co-founder departures</a>, Elon Musk outlined a major reorganization, product roadmap, and lunar ambitions—including AI satellite factories on the Moon.</p>
+                    <p>Elon Musk outlined a major reorganization, product roadmap, and lunar ambitions—including AI satellite factories on the Moon powered by lunar resources and solar energy.</p>
                 </div>
                 <div class="hero-sidebar-item">
                     <span class="category">Safety <span class="source source-rundown">Rundown</span></span>
                     <h3>Anthropic Warns Claude Opus 4.6 Shows "Elevated Susceptibility" to Misuse</h3>
-                    <p>Anthropic <a href="https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf39Ses0waiLM0RhX5IMAXEg5FK_j5r9DZCxP1ctuaMbzvCZ-3gUCuNsNjxH19oMYEZUkD-2PhqUPBnQWvDHMB6zxnyuayIIcMixTsRYWDK873w1244hswh5XI_P0BgTytvvmFzODeK_o0bc37fUxsOFE_q80Zq1ka9uMEu_1bjrIBv7nzsP1X71WJg-NTuWvyp0qHxjw7kgIgxeJM5zAmdmfHR0WlrDWbynh7ys7EVEYQK70e3-p0byVDVmflSqs5NUEITGrA7UTdaZ2jccxKno/4o3/JB5D4x__SGuOFkUf_0pa3w/h22/h001.ATco_hlEumuDVbG-K3OPLQReuJAxh8OnibIxQVC3HzM" target="_blank" style="color:#60a5fa;">published</a> a Sabotage Risk Report showing its newest model proved far more willing to manipulate other agents than previous versions.</p>
+                    <p>Anthropic <a href="https://www.anthropic.com" target="_blank" style="color:#60a5fa;">published</a> a Sabotage Risk Report showing its newest model proved far more willing to manipulate other agents than previous versions.</p>
                 </div>
                 <div class="hero-sidebar-item">
-                    <span class="category">Business <span class="source source-onepercent">1% Better</span></span>
-                    <h3>Billionaires Launch "Wall Street South" Campaign for Florida</h3>
-                    <p>Stephen Ross and Ken Griffin each contributed $5 million to <a href="https://link.mail.beehiiv.com/v1/c/MJ2wiVhKOS5ynugjSW%2Fb13QABsi9XjRkDaIVy2fPpwPUdRHHzFDQg3NjaHIs%0AJOv1nLQ0riXH910kok4stb%2BN8R0pNxQ9ud9drO0kTytVF61K9mX%2FAaDv1NoU%0AiJ5RUNp24T28K0SKxOVhq4jCLtN2vTgtxSCCQQXZqHygUKw5Bk%2BhNxWGv%2BSp%0A9Q%2FdVqPZUtS%2F%0A/6d124144f1fd839f" target="_blank" style="color:#60a5fa;">"Ambition Accelerated,"</a> targeting companies considering relocation from high-tax cities.</p>
+                    <span class="category">Politics <span class="source source-onepercent">1% Better</span></span>
+                    <h3>Anthropic Drops $20M Into Pro-Regulation PAC to Counter OpenAI Lobbying</h3>
+                    <p>The AI safety debate has graduated to electoral politics—Anthropic is backing Public First with $20 million to push guardrails, directly opposing a $125 million war chest from OpenAI executives and a16z.</p>
                 </div>
             </div>
         </div>
@@ -690,17 +776,56 @@
             </div>
         </div>
 
+        <!-- How To Section: Rundown AI -->
+        <div class="howto-section">
+            <div class="howto-header">
+                <span class="section-label">How To <span class="source source-rundown">Rundown</span></span>
+            </div>
+            <h3>Turn SOP Docs into Talking-Head Training Videos</h3>
+            <div class="howto-body">
+                <p>In this guide, learn how to turn boring onboarding docs into engaging training videos narrated by an AI avatar. We tried a lot of tools and found the most efficient system for building quality AI training videos in bulk.</p>
+
+                <h4>Step-by-Step:</h4>
+                <ol>
+                    <li>Take your training doc and prompt Claude/ChatGPT with "Turn this into a three-minute training video script for an AI-generated avatar. Only include text overlays with bullets. The avatar can be seated, standing, head-on, etc."</li>
+                    <li>Save the script as a text file and go to Synthesia.io > Create New Video > Create from AI > Upload the script file, with objective and audience description</li>
+                    <li>Choose a template and click Create Outline.</li>
+                    <li>Review the outline and follow the steps to generate your video. It should take 10-25 minutes to generate</li>
+                    <li>When the video is complete, you can download and embed it somewhere like Notion or Google Docs</li>
+                </ol>
+
+                <p><strong>Pro tip:</strong> Repeat this for all onboarding docs to set up one-page onboarding that can be handed to any trainee!</p>
+
+                <h4>Community Workflow Spotlight</h4>
+                <div class="workflow-item">
+                    <p><strong>Reader:</strong> Lindsay F. from Kingsville, Ontario</p>
+                    <p>"I own a 1970 Chevelle SS and am converting it into a modern driving 'restomod.' I am using both ChatGPT & Copilot to research and develop the entire restoration plan. The restoration of the vehicle will take place in phases, and the agents have provided me with a priority list, options for what parts to purchase, and where to source them from. They have also developed a budget for the project, including parts & local labor rates and what the finished project will look like upon completion. I am 72 years old and just love how much this is helping me."</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Main Section Grid -->
         <div class="section-grid">
             <div class="main-column">
                 <div class="article">
                     <span class="category">AI <span class="source source-rundown">Rundown</span></span>
                     <h3>China's Z.ai Launches GLM-5, New Open-Source Frontier Model</h3>
-                    <p class="summary">China's Z.ai <a href="https://link.mail.beehiiv.com/ss/c/u001.Nb7ueTMGITwoLW-RZyTLtYg3fhiAVsuWPmO90PThQajQbaJGnuNe558rf8PDDJHkkHaRwIGw8vVShIWWTkofY1FfHQAdCa8cXuChs0fIX8VgU7A9BUICcbMEH7MIfusSzcnGxFI5J6JDy2XWNcsoAWpzX2_9OoFaLhOcbVBNii2RruMEMRhHX5rcDFnQfoGymSjomU9QE4snh1idQ4QzPaBsUuWNg1to19z1E86yRt4/4o3/JB5D4x__SGuOFkUf_0pa3w/h13/h001.BrDTC5ElgoFEnrZ6pibeCXTnXxUla5utwSJz6PudTNM" target="_blank" style="color:#60a5fa;">launched GLM-5</a>, a 744B-parameter open-weights model that sits just behind Claude Opus 4.6 and GPT-5.2 on benchmarks.</p>
+                    <p class="summary">China's Z.ai launched GLM-5, a 744B-parameter open-weights model that sits just behind Claude Opus 4.6 and GPT-5.2 on benchmarks, further closing the gap with Western AI leaders.</p>
                     <div class="details">
                         <p>GLM-5 scored 50 on Artificial Analysis' Intelligence Index, surpassing closed models like Gemini 3 Pro and Grok 4 as well as open-source ones like Kimi K2.5. On Humanity's Last Exam, it hit 50.4 with tools, beating Opus 4.5, Gemini 3 Pro, and GPT-5.2.</p>
                         <p>The model uses DeepSeek's Sparse Attention architecture with just 40B active parameters, runs inference on Chinese chips including Huawei Ascend, and is available under an MIT license at $1 per million input tokens.</p>
                         <p><strong>Why it matters:</strong> The gap with the West isn't closed yet, but with open weights, competitive pricing, and domestic chip support, it's narrowing faster than ever.</p>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <span class="category">Politics <span class="source source-onepercent">1% Better</span></span>
+                    <h3>AI Regulation Becomes Electoral Issue as PACs Pour $145M Into Midterms</h3>
+                    <p class="summary">The AI industry's policy debate has spilled into electoral politics. Anthropic's $20 million donation to Public First directly counters the $125 million war chest assembled by OpenAI executives and Andreessen Horowitz.</p>
+                    <div class="details">
+                        <p>Public First is already running ads backing Sen. Marsha Blackburn's gubernatorial bid in Tennessee and supporting Sen. Pete Ricketts in Nebraska, both Republicans who favor stricter AI oversight and chip-export controls.</p>
+                        <p>A GOP schism is widening—President Trump signed an executive order targeting state-level AI regulation, but figures like Florida Gov. Ron DeSantis have publicly opposed it, favoring the kind of guardrails Anthropic champions.</p>
+                        <p>Industry leaders have accused Anthropic CEO Dario Amodei of wielding safety regulation as a competitive weapon, arguing that stricter rules would disproportionately burden rivals.</p>
                     </div>
                 </div>
 
@@ -715,22 +840,22 @@
                 </div>
 
                 <div class="article">
+                    <span class="category">Business <span class="source source-onepercent">1% Better</span></span>
+                    <h3>OpenAI Launches Ads in ChatGPT as $100B Burn Rate Looms</h3>
+                    <p class="summary">OpenAI finds itself in an uncomfortable position: spending like a tech giant while earning like a startup. The company expects to burn through $100 billion over the next four years on computing infrastructure.</p>
+                    <div class="details">
+                        <p>OpenAI has begun serving advertisements inside ChatGPT's free tier, targeting the 94% of its 800 million users who don't pay for subscriptions. The company has hired hundreds of employees from Meta and X to build its ad infrastructure.</p>
+                        <p>The deeper risk is reputational: Anthropic already ran a Super Bowl ad mocking the move, and users who chose ChatGPT partly for its clean interface may reconsider if answers start arriving with commercial baggage.</p>
+                    </div>
+                </div>
+
+                <div class="article">
                     <span class="category">International <span class="source source-brew">Brew</span></span>
                     <h3>Switzerland to Vote on Population Cap at 10 Million</h3>
                     <p class="summary">The Swiss government <a href="https://links.morningbrew.com/c/L9d?mblid=329c0226bf8f&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">scheduled</a> a June referendum on whether to cap the country's population at 10 million—a measure that could limit immigration and force withdrawal from EU treaties.</p>
                     <div class="details">
                         <p>Switzerland's population grew 10% to 9.1 million in the past decade—five times faster than that of the EU. Promoted by a right-wing party, the ballot measure would restrict newcomers once the population reaches 9.5 million.</p>
                         <p>At 10 million, Switzerland would start withdrawing from international treaties like its free movement accord with the EU. A November poll showed 48% support, 41% opposed, and 11% undecided.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <span class="category">Society <span class="source source-onepercent">1% Better</span></span>
-                    <h3>America's Sex Recession: One in Three Men Haven't Had Sex in a Year</h3>
-                    <p class="summary">One in three American men and one in five women haven't had sex in the past year, according to the General Social Survey. Sex neuroscientist Dr. Debra Soh's new book "<a href="https://link.mail.beehiiv.com/v1/c/5BvyNSNh8SPYrkMtxdG41TftAenPilenfue3QhIkJ%2FYOooULOBhGGPFbTznZ%0A9MCYyE%2F%2BXtEL7HNq5M8yyJ4ktAVREXwCzbKZNYewnzbOtBK6L68CN4nj%2BR9v%0A%2FjNfszS8v9FKrL7JYILvDyVBY0tPyP1qEYj3loLD0yp9lbROtXwkcj2HWMPw%0AdvcBiarJjYXp%0A/aa0b9c0519bdc81b" target="_blank" style="color:#60a5fa;">Sextinction</a>" examines contributing factors.</p>
-                    <div class="details">
-                        <p>Soh identifies social media influencers creating unrealistic standards, dating apps overwhelming users with excessive choice, and readily available pornography. AI romantic companions are becoming increasingly realistic, with users able to customize appearance, voice, and responses exactly as desired.</p>
-                        <p>Environmental toxins also play a role—studies show chemicals from pharmaceuticals and plastics affecting hormones and fertility across species.</p>
                     </div>
                 </div>
 
@@ -763,13 +888,13 @@
                     <div class="sidebar-item">
                         <span class="category">AI <span class="source source-rundown">Rundown</span></span>
                         <h5>Apple's Gemini-Powered Siri Delayed Again</h5>
-                        <p>Apple's long-awaited Siri AI upgrade has been <a href="https://link.mail.beehiiv.com/ss/c/u001.qfYj2NCVNYWxQpHjnkNP6RgEsWbiq1UnPSMK2wKg1-ZOcL7YE2JDe4WvRJ0u7hL1UAdqoRmUrwz18S89-WmhA_1WfU77UionpDc_ecsS2Cc-aEx7QBX8dMHdiyhyZ2KggOeYmER-qH90SLIvQJ88JCvosE88sgCsfBiuMc-G3DNYiFueo6g9NdOUjXpnJzasPPgb5W9eQ1KRQ4aI3ZtF1WbmSKE9kpgCcve40hToTKkvRgKDrBeGJjIUgnFVyuX_/4o3/JB5D4x__SGuOFkUf_0pa3w/h31/h001.BGySHZnST09RcBpsziPzkn48r6aBRff0v8x_Bu-I6dM" target="_blank" style="color:#60a5fa;">pushed back</a> again due to testing snags, now likely coming with iOS 26.5 or 27.</p>
+                        <p>Apple's long-awaited Siri AI upgrade has been pushed back again due to testing snags, now likely coming with iOS 26.5 or 27.</p>
                     </div>
 
                     <div class="sidebar-item">
-                        <span class="category">Finance <span class="source source-brew">Brew</span></span>
+                        <span class="category">Finance <span class="source source-onepercent">1% Better</span></span>
                         <h5>Bill Ackman Reveals $2 Billion Meta Investment</h5>
-                        <p>The investor <a href="https://links.morningbrew.com/c/Lam?mblid=e9c2ed214455&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">revealed</a> a major bet on the Facebook parent's place in the AI race.</p>
+                        <p>Pershing Square disclosed a new Meta position worth 10% of fund capital, arguing that Wall Street is punishing the stock for AI capex that could unlock long-term earnings upside.</p>
                     </div>
 
                     <div class="sidebar-item">
@@ -782,6 +907,12 @@
                         <span class="category">Music <span class="source source-brew">Brew</span></span>
                         <h5>Britney Spears Sells Entire Music Catalog</h5>
                         <p>Spears <a href="https://links.morningbrew.com/c/Lap?mblid=6e6a5dab5133&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">sold the rights</a> to her entire music catalog.</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <span class="category">Tech <span class="source source-onepercent">1% Better</span></span>
+                        <h5>X Hits $1 Billion in Annualized Subscription Revenue</h5>
+                        <p>Elon Musk's social platform has quietly crossed the ten-figure mark in recurring subscription income spanning $3-to-$40-a-month tiers.</p>
                     </div>
                 </div>
             </div>
@@ -811,43 +942,24 @@
                     <h5>Google Rolling Out UCP-Powered Checkout in Gemini <span class="source source-rundown">Rundown</span></h5>
                     <p>Also integrating Veo into Google Ads and testing sponsored retailer ads in AI Mode.</p>
                 </div>
-            </div>
-
-            <div class="bottom-column">
-                <h4>Life & Health</h4>
 
                 <div class="bottom-item">
-                    <h5>Jake Gyllenhaal's Road House Training Revealed <span class="source source-onepercent">1% Better</span></h5>
-                    <p>The actor dropped from 205 to 184 lbs at 5% body fat over a year with <a href="https://link.mail.beehiiv.com/v1/c/l%2F5MWXK3fBpuacJeXnQC91ppcW1DV4y6I79URkctzHucf48QeC7g0beNyMdw%0AWYy60HGpcRjktjKfyXXnatOyzKGAZVba69FXPdV9E8MsfAaaloOzzptsEc8%2F%0AaunX%2Bk1ppplrx2FEMwon%2BI%2BxO%2FASeq0KlTqouPeVj%2BlOjYg%2BVQK%2FwRtKQ2b5%0AcWUXg89GBW2S%0A/d616aff4abb5ccfb" target="_blank" style="color:#60a5fa;">heavy sled work</a> and VersaClimber sprints.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Smart Underwear Tracks Gut Health Via Flatulence <span class="source source-onepercent">1% Better</span></h5>
-                    <p>UMD researchers developed a <a href="https://link.mail.beehiiv.com/v1/c/fQGzwlM7ve8ntvB7hinsdU%2BNITM4nOAfAp8MoZrqkdDZnIc9msJqptqB2H3r%0ACtsF6K11H9nqWnCn%2BwOuDmPu%2FiJRQk7f0LDNjrDgQ5fsQ%2FzlzFR5cxfeGEHO%0AmUrG5YJwoPS7vnwffKrkS4r5hlGw9NTs1ADDjSgrvJfL%2FY0wNX7JrotQJWkj%0AurFBOk9SBdJk%0A/74af4547678405e9" target="_blank" style="color:#60a5fa;">wearable sensor</a> that detected dietary changes with 94.7% accuracy. Participants averaged 32 daily gas episodes.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Sardines Are Best Natural Creatine Source <span class="source source-onepercent">1% Better</span></h5>
-                    <p>The small fish pack the highest natural creatine content per serving.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>McDonald's Value Campaign Paying Off <span class="source source-brew">Brew</span></h5>
-                    <p>Revenue <a href="https://links.morningbrew.com/c/Lal?mblid=8babbe9d8ec6&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">beat expectations</a> with same-store sales rising 5.7% last quarter.</p>
+                    <h5>Anthropic Nearing $20B Round at $350B Valuation <span class="source source-onepercent">1% Better</span></h5>
+                    <p>Co-led by Founders Fund, D.E. Shaw, Dragoneer, Iconiq, and MGX in what would be one of the largest private fundraises in history.</p>
                 </div>
             </div>
 
             <div class="bottom-column">
-                <h4>Business & World</h4>
+                <h4>Business & Startups</h4>
 
                 <div class="bottom-item">
-                    <h5>FAA Halts El Paso Flights Over Cartel Drones <span class="source source-brew">Brew</span></h5>
-                    <p>Flights were <a href="https://links.morningbrew.com/c/Lak?mblid=b5437b10ea6b&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">grounded for hours</a> before reopening. Pentagon and DOT cite Mexican cartel drone incursions.</p>
+                    <h5>Apptronik Raises $520M at $5.5B Valuation <span class="source source-onepercent">1% Better</span></h5>
+                    <p>The Austin humanoid robotics startup is pushing Apollo from pilot programs into scaled production.</p>
                 </div>
 
                 <div class="bottom-item">
-                    <h5>Heineken Cuts 6,000 Jobs Citing AI Productivity <span class="source source-onepercent">1% Better</span></h5>
-                    <p>Beer <a href="https://link.mail.beehiiv.com/v1/c/fDl1TLoofh8E4wJsQSxESCNaIkt90vC8vlhPmXw40KmFRXovAqyELT7Ekl2H%0AzoWIaacINca%2FdCXT6t1T%2BjR2%2BWasww5opX4X2cgweCrRdtlTz7L5bRJ4%2BnBT%0Ae5GfgL3%2FaUNelfxoIgZzNKOZ4wTBfaDgtQe1A%2Fj0srvxCDZtfnn3w1kqDjxC%0APXE0JcgkosaX%0A/9719fe8e7511e239" target="_blank" style="color:#60a5fa;">volumes declined</a> 2.4% in 2025 as the company touts productivity savings from AI.</p>
+                    <h5>Inertia Enterprises Raises $450M Series A <span class="source source-onepercent">1% Better</span></h5>
+                    <p>Co-founded by Twilio's Jeff Lawson, the fusion venture aims to commercialize inertial confinement energy.</p>
                 </div>
 
                 <div class="bottom-item">
@@ -856,8 +968,42 @@
                 </div>
 
                 <div class="bottom-item">
+                    <h5>McDonald's Value Campaign Paying Off <span class="source source-brew">Brew</span></h5>
+                    <p>Revenue <a href="https://links.morningbrew.com/c/Lal?mblid=8babbe9d8ec6&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">beat expectations</a> with same-store sales rising 5.7% last quarter.</p>
+                </div>
+
+                <div class="bottom-item">
+                    <h5>Heineken Cuts 6,000 Jobs Citing AI Productivity <span class="source source-onepercent">1% Better</span></h5>
+                    <p>Beer volumes declined 2.4% in 2025 as the company touts productivity savings from AI.</p>
+                </div>
+            </div>
+
+            <div class="bottom-column">
+                <h4>Society & World</h4>
+
+                <div class="bottom-item">
+                    <h5>FAA Halts El Paso Flights Over Cartel Drones <span class="source source-brew">Brew</span></h5>
+                    <p>Flights were <a href="https://links.morningbrew.com/c/Lak?mblid=b5437b10ea6b&mbcid=44072888.843246&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">grounded for hours</a> before reopening. Pentagon and DOT cite Mexican cartel drone incursions.</p>
+                </div>
+
+                <div class="bottom-item">
+                    <h5>Instagram Chief Says Social Media Isn't "Clinically Addictive" <span class="source source-onepercent">1% Better</span></h5>
+                    <p>Adam Mosseri testified in a tech addiction trial, but internal documents revealed he overruled colleagues to reinstate beauty filters despite warnings.</p>
+                </div>
+
+                <div class="bottom-item">
+                    <h5>America's Sex Recession: 1 in 3 Men Haven't Had Sex in a Year <span class="source source-onepercent">1% Better</span></h5>
+                    <p>Dr. Debra Soh's new book "Sextinction" examines factors including social media, dating apps, pornography, and AI romantic companions.</p>
+                </div>
+
+                <div class="bottom-item">
+                    <h5>Smart Underwear Tracks Gut Health Via Flatulence <span class="source source-onepercent">1% Better</span></h5>
+                    <p>UMD researchers developed a wearable sensor that detected dietary changes with 94.7% accuracy. Participants averaged 32 daily gas episodes.</p>
+                </div>
+
+                <div class="bottom-item">
                     <h5>Barron Trump Launches Yerba Mate Beverage Company <span class="source source-onepercent">1% Better</span></h5>
-                    <p>Sollos Yerba Mate <a href="https://link.mail.beehiiv.com/v1/c/M92pnFQ0YVmlFjjhVuI4CBRemKp4Xb5q2n5hRa0pvZTxvFNuZMC9aMPkTCri%0AAd8%2F1NrL6BkcqKA04LFi2deeIKpjKRVMIBdlPhea3mKtJqd%2Biz6eIGjBT%2FM5%0AgzC3B6SB5VJMg2E5I8246uWRIG1KrhLT6VUjk0UQUzS3xvN17XCDfpjzR4Ca%0AZSaOSiJujIhW%0A/5903f351e3dbc2c8" target="_blank" style="color:#60a5fa;">incorporated in Florida</a> with $1 million capital raised.</p>
+                    <p>Sollos Yerba Mate incorporated in Florida with $1 million capital raised.</p>
                 </div>
             </div>
         </div>
