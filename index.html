@@ -597,391 +597,354 @@
             padding: 80px 40px;
             color: #666;
         }
-
-        .no-content h2 {
-            font-size: 2rem;
-            font-weight: 400;
-            margin-bottom: 20px;
-            color: #888;
-        }
-
-        .no-content p {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-
-        .no-content .status-list {
-            list-style: none;
-            padding: 0;
-            margin: 30px auto;
-            max-width: 400px;
-            text-align: left;
-        }
-
-        .no-content .status-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #333;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .no-content .status-list li:last-child {
-            border-bottom: none;
-        }
-
-        /* Responsive */
-        @media (max-width: 1000px) {
-            .hero-section { grid-template-columns: 1fr; }
-            .hero-main { border-right: none; padding-right: 0; border-bottom: 1px solid #333; padding-bottom: 30px; }
-            .section-grid { grid-template-columns: 1fr; }
-            .main-column { border-right: none; padding-right: 0; }
-            .bottom-section { grid-template-columns: 1fr; }
-        }
-
-        /* Mobile font sizes */
-        @media (max-width: 600px) {
-            body { font-size: 18px; line-height: 1.7; }
-            .main-content { padding: 20px 15px; }
-            header { padding: 30px 15px 25px; }
-            header h1 { font-size: 2rem; letter-spacing: 4px; }
-            header .tagline { font-size: 0.95rem; }
-            .hero-main h2 { font-size: 1.8rem; }
-            .hero-main .summary { font-size: 1.1rem; }
-            .hero-main .content { font-size: 1.05rem; }
-            .hero-sidebar-item h3 { font-size: 1.2rem; }
-            .hero-sidebar-item p { font-size: 1rem; }
-            .article h3 { font-size: 1.4rem; }
-            .article .summary { font-size: 1.05rem; }
-            .article .details { font-size: 1.05rem; }
-            .sidebar-item h5 { font-size: 1.1rem; }
-            .sidebar-item p { font-size: 1rem; }
-            .columnist-section { padding: 25px 20px; }
-            .columnist-section h3 { font-size: 1.4rem; }
-            .columnist-section .columnist-body { font-size: 1.1rem; }
-            .bottom-item h5 { font-size: 1.1rem; }
-            .bottom-item p { font-size: 1rem; }
-            .markets-strip { padding: 15px; flex-direction: column; align-items: flex-start; }
-            .market-items { gap: 20px; }
-            .nav-content { flex-direction: column; gap: 8px; text-align: center; }
-            .nav-categories { gap: 12px; font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
-            .nav-date { font-size: 0.8rem; }
-            footer .sources { flex-wrap: wrap; }
-        }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-            <div class="nav-categories">
-                <span>Tech</span>
-                <span>Business</span>
-                <span>Markets</span>
-                <span>World</span>
-                <span>AI</span>
-                <span>Life</span>
-            </div>
-            <div class="nav-date">Thursday, February 26, 2026</div>
+
+<nav>
+    <div class="nav-content">
+        <div class="nav-categories">
+            <span>Markets</span>
+            <span>Technology</span>
+            <span>World</span>
+            <span>Business</span>
+            <span>Health</span>
+            <span>Culture</span>
         </div>
-    </nav>
+        <div class="nav-date">Thursday, February 26, 2026</div>
+    </div>
+</nav>
 
-    <header>
-        <h1>The Daily Brief</h1>
-        <p class="tagline">Your morning news, curated from Morning Brew, The Rundown AI, 1% Better, and Daily Dad</p>
-        <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-            Sources: Daily Dad (4:00 AM) | Morning Brew (5:47 AM) | The Rundown AI (6:09 AM) | 1% Better (7:48 AM)
-        </p>
-    </header>
+<header>
+    <h1>The Daily Brief</h1>
+    <p class="tagline">Your morning intelligence briefing — curated from the newsletters that matter</p>
+    <div style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
+        Sources: Daily Dad (4:00 AM ET) | Morning Brew (5:47 AM ET) | The Rundown AI (6:09 AM ET) | 1% Better (7:48 AM ET)
+    </div>
+</header>
 
-    <main class="main-content">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <div class="hero-main">
-                <span class="category">Breaking News</span>
-                <h2>Nvidia Posts Record $68B Quarter, But Investors Remain Skeptical <span class="source source-brew">Brew</span></h2>
-                <p class="summary">Nvidia <a href="https://links.morningbrew.com/c/LQA?mblid=7562a194b8ea&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">reported</a> fourth quarter sales of $68.1 billion—up 73% year over year—with $43 billion in profit and a bullish forecast for continued demand, but investors remain cautious about AI bubble risks.</p>
-                <div class="content">
-                    <p>Most of Nvidia's sales came from its data center business, which saw a 75% revenue jump. The company's total fiscal year profit hit $120 billion—up from just $4.4 billion three years ago. Nvidia expects ~$78 billion in revenue for Q1, not counting new data center revenue from China.</p>
-                    <p>As the tech behind Big Tech's AI ambitions, Nvidia stands to benefit from hyperscalers Google, Amazon, Microsoft, and Meta's <a href="https://links.morningbrew.com/c/KYR?mblid=4185e1ca97a4&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">plans to spend</a> ~$650 billion on AI infrastructure this year. However, investors worry about sustainability—Nvidia's stock flattened by the end of after-hours trading despite initially spiking.</p>
-                </div>
-            </div>
-            <div class="hero-sidebar">
-                <div class="hero-sidebar-item">
-                    <span class="category">AI <span class="source source-rundown">Rundown</span></span>
-                    <h3>Perplexity Launches 19-Model AI Agent 'Computer'</h3>
-                    <p>Perplexity <a href="https://www.perplexity.ai/products/computer" target="_blank" style="color:#60a5fa;">introduced</a> Perplexity Computer, a multi-model orchestration system that dispatches tasks to 19 separate AI models and can run for months at a time.</p>
-                </div>
-                <div class="hero-sidebar-item">
-                    <span class="category">Safety <span class="source source-brew">Brew</span></span>
-                    <h3>Anthropic Drops Core Safety Pledge Amid Pentagon Pressure</h3>
-                    <p>Anthropic is <a href="https://links.morningbrew.com/c/LPL?mblid=4af2099c0064&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">dumping</a> its flagship promise to pause AI training if models become potentially dangerous, as Pentagon reportedly <a href="https://links.morningbrew.com/c/LHm?mblid=9686c826f84c&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">threatens</a> to pull a $200M contract.</p>
-                </div>
-                <div class="hero-sidebar-item">
-                    <span class="category">World <span class="source source-brew">Brew</span></span>
-                    <h3>US and Iran Hold Nuclear Talks in Geneva</h3>
-                    <p>With tensions high and American forces prepared to strike, US representatives are <a href="https://links.morningbrew.com/c/LPG?mblid=c1cab7006549&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">holding talks</a> with Iranian officials in Geneva today to secure a deal on Iran giving up its nuclear program.</p>
-                </div>
+<div class="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-main">
+            <span class="category">Breaking — Markets &amp; AI</span>
+            <h2><a href="https://links.morningbrew.com/c/LQD?mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Nvidia Posts Record $68B Quarter — Investors Shrug</a></h2>
+            <p class="summary">Nvidia blew past Wall Street's expectations with $68.1 billion in Q4 sales — up 73% year-over-year — and a $43 billion profit. Yet the stock barely budged, as investors fret about whether hyperscaler AI spending can sustain this pace.</p>
+            <div class="content">
+                <p>The company's fourth quarter sales reached <strong>$68.1 billion</strong>, up 73% from the same period last year, yielding $43 billion in profit. Its data center business saw a 75% revenue jump, and Nvidia's total fiscal year profit hit $120 billion — compared to just $4.4 billion three years ago.</p>
+                <p>Nvidia forecast approximately <strong>$78 billion in revenue</strong> for its fiscal first quarter, not even counting data center revenue in China where it recently received US regulatory approval to sell certain chips. CEO Jensen Huang said "our customers are racing to invest in AI compute," pointing to Google, Amazon, Microsoft, and Meta's <a href="https://links.morningbrew.com/c/KYR?mblid=4185e1ca97a4&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">combined $650 billion AI infrastructure spend</a> this year.</p>
+                <p>Despite the record numbers, Nvidia's stock has a history of falling post-earnings even when beating expectations. Shares briefly spiked when results dropped, then pared gains during the earnings call and flattened out by end of after-hours trading.</p>
+                <span class="source source-brew">Morning Brew</span>
             </div>
         </div>
 
-        <!-- Markets Strip -->
-        <div class="markets-strip">
-            <h3>Markets</h3>
-            <div class="market-items">
-                <div class="market-item">
-                    <div class="name">Nasdaq</div>
-                    <div class="value">23,152.08</div>
-                    <div class="change positive">+1.26%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">S&P 500</div>
-                    <div class="value">6,946.13</div>
-                    <div class="change positive">+0.81%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">Dow</div>
-                    <div class="value">49,482.15</div>
-                    <div class="change positive">+0.63%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">10-Year</div>
-                    <div class="value">4.048%</div>
-                    <div class="change">+1.0 bps</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">Bitcoin</div>
-                    <div class="value">$68,753</div>
-                    <div class="change positive">+7.19%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">Netflix</div>
-                    <div class="value">$82.70</div>
-                    <div class="change positive">+5.97%</div>
-                </div>
+        <div class="hero-sidebar">
+            <div class="hero-sidebar-item">
+                <span class="category">AI Safety</span>
+                <h3><a href="https://links.morningbrew.com/c/LPK?mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Anthropic Drops Core Safety Pledge Under Pentagon Pressure</a></h3>
+                <p>Anthropic <a href="https://www.anthropic.com/news/responsible-scaling-policy-v3" target="_blank" style="color:#60a5fa;">abandoned its commitment</a> to pause AI training if safety couldn't keep pace — replacing its Responsible Scaling Policy with a flexible roadmap. A top safety leader resigned over the policy shift, and the Pentagon had reportedly threatened to pull a $200M contract.</p>
+                <span class="source source-brew">Morning Brew</span> <span class="source source-rundown">Rundown AI</span>
+            </div>
+
+            <div class="hero-sidebar-item">
+                <span class="category">World</span>
+                <h3>US–Iran Nuclear Talks Open in Geneva</h3>
+                <p>US representatives including Steve Witkoff are holding talks with Iranian officials in Geneva, mediated by Oman, amid warnings that American forces are prepared to strike if no deal is reached. The US insists Iran must fully dismantle its nuclear program. The Trump administration simultaneously imposed new <a href="https://links.morningbrew.com/c/LPG?mblid=c1cab7006549&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">sanctions on Iran's shadow oil fleet</a>.</p>
+                <span class="source source-brew">Morning Brew</span>
+            </div>
+
+            <div class="hero-sidebar-item">
+                <span class="category">World</span>
+                <h3>Cuba Shoots Four Dead in Florida Speedboat Incident</h3>
+                <p>Cuban border troops engaged in a gunfight with occupants of a Florida-registered speedboat near Villa Clara province, killing four and wounding six. Cuba's Interior Ministry said those aboard — identified as <a href="https://apnews.com/article/cuba-us-florida-boat-shooting-68e07061282dc2470993f6539bd0bde2" target="_blank" style="color:#60a5fa;">armed Cuban nationals living in the US</a> — opened fire first. Secretary of State Marco Rubio confirmed a US investigation is underway.</p>
+                <span class="source source-brew">Morning Brew</span> <span class="source source-onepercent">1% Better</span>
             </div>
         </div>
+    </section>
 
-        <!-- Daily Dad Columnist Section -->
-        <div class="columnist-section">
-            <div class="columnist-header">
-                <span class="columnist-label">Columnist</span>
-                <span class="columnist-name">Daily Dad</span>
-                <span class="source source-dailydad">Daily Dad</span>
+    <!-- Markets Strip -->
+    <div class="markets-strip">
+        <h3>Markets</h3>
+        <div class="market-items">
+            <div class="market-item">
+                <div class="name">Nasdaq</div>
+                <div class="value">23,152</div>
+                <div class="change positive">+1.26%</div>
             </div>
-            <h3>Take This When You Can</h3>
-            <div class="columnist-body">
-                <p>It's a video game. It's a YouTuber who makes unwatchable videos about video games. It's drama at school. It's an argument about politics you don't agree with. It's a TikTok dance their friends are doing. It's a new boy band that sounds awful.</p>
-                <p>But you know what it also is? It's <em>interest</em>. Your kids are interested in something and for some reason they're interested in talking to you about it. Or watching something with you. Or they're interested in going somewhere with you.</p>
-                <p>So take it! This is what you say you want: To connect with them. To do stuff with them. To talk with them. To spend quality or "garbage time" together.</p>
-                <p>Don't turn it away because it doesn't match your taste. Or because you're in a bad mood. Or because you're tired. Or because you can "see where this is going." Take the opportunity. Encourage the interest. Show them that you're interested in what interests them. None of us get enough of these chances—is there even such a thing as too many?—so take it when and where you can.</p>
+            <div class="market-item">
+                <div class="name">S&amp;P 500</div>
+                <div class="value">6,946</div>
+                <div class="change positive">+0.81%</div>
             </div>
-        </div>
-
-        <!-- How To Section (Rundown AI) -->
-        <div class="howto-section">
-            <div class="howto-header">
-                <span class="section-label">How To</span>
-                <span class="source source-rundown">The Rundown AI</span>
+            <div class="market-item">
+                <div class="name">Dow</div>
+                <div class="value">49,482</div>
+                <div class="change positive">+0.63%</div>
             </div>
-
-            <h3>Turn Your Bookmarks Into Something Useful with Comet</h3>
-            <div class="howto-body">
-                <p>In this guide, you'll turn all those bookmarked articles you saved for "later" into something useful. You'll set up Perplexity's <a href="https://www.perplexity.ai/comet" target="_blank" style="color:#60a5fa;">Comet browser</a> to read through the articles, score each one by usefulness, and log the best finds into a Google Sheet.</p>
-                <ol>
-                    <li>Get <a href="https://www.perplexity.ai/comet" target="_blank" style="color:#60a5fa;">Comet</a> and create a Space with instruction: <code>"Read X threads and articles, and rate findings by usefulness, estimated implementation time, and cost"</code></li>
-                    <li>Create a Google Sheet with headers for Date, Title, Link, Rating, User Rating, Time, and Cost. Add it to custom instructions via the Google Drive connector.</li>
-                    <li>On X, set up a bookmark folder to save tweets to. Then, in the Comet space, prompt the agent to open it, check bookmarks, and rate anything new in the connected sheet based on usefulness. Add your own ratings too!</li>
-                    <li>Go to Scheduled Tasks, create a daily one, and prompt it to find the most interesting new use cases about your topic of choice from the last 24 hours.</li>
-                </ol>
-                <p><strong>Pro tip:</strong> Make sure that "Control Browser" is enabled in the dropdown and Web and Social are selected as sources when creating the scheduled task.</p>
+            <div class="market-item">
+                <div class="name">10-Year</div>
+                <div class="value">4.048%</div>
+                <div class="change positive">+1.0 bps</div>
             </div>
-
-            <h4>Community AI Workflow</h4>
-            <div class="workflow-item">
-                <p><strong>Ozzie B. from Adelaide, Australia:</strong> "I got Claude to build AI advisors, including a Digital Bookkeeper, a Digital Financial Coach, a Digital Family Life Coach. They do all the legwork before I see the professionals, hunting down every invoice, reconciling my tax position and producing clean dashboards for review by my accountant.</p>
-                <p>Before my financial planning session, the Coach maps my position and stress-tests scenarios. Before counseling, the Family Life Coach works through family dynamics with everyone. None make the decisions. That's always the human in the room. But they do the legwork and I get straight to the calls that need a real person."</p>
+            <div class="market-item">
+                <div class="name">Bitcoin</div>
+                <div class="value">$68,753</div>
+                <div class="change positive">+7.19%</div>
+            </div>
+            <div class="market-item">
+                <div class="name">Netflix</div>
+                <div class="value">$82.70</div>
+                <div class="change positive">+5.97%</div>
             </div>
         </div>
+        <span class="source source-brew">Morning Brew</span>
+    </div>
 
-        <!-- Main Section Grid -->
-        <div class="section-grid">
-            <div class="main-column">
-                <div class="article">
-                    <span class="category">World <span class="source source-onepercent">1% Better</span></span>
-                    <h3>Cuba Kills Four in Shootout with Florida-Registered Boat</h3>
-                    <p class="summary">Cuban border troops engaged in a gunfight with occupants of a Florida-registered speedboat near Villa Clara province, killing four people and wounding six others. The boat's occupants were <a href="https://apnews.com/article/cuba-us-florida-boat-shooting-68e07061282dc2470993f6539bd0bde2" target="_blank" style="color:#60a5fa;">armed Cuban nationals</a> residing in the United States.</p>
-                    <div class="details">
-                        <p>Cuban state media identified the boat's occupants as carrying weapons, Molotov cocktails, bulletproof vests, and camouflage gear. Authorities detained at least one additional person who allegedly flew into Cuba to rendezvous with the boat. Secretary of State Marco Rubio confirmed the U.S. was investigating but currently relies on Cuban government information. The incident occurred amid <a href="https://www.express.co.uk/news/world/2175612/cuban-forces-open-fire-us" target="_blank" style="color:#60a5fa;">heightened U.S.-Cuba tensions</a> over oil sanctions and regional anti-trafficking operations.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <span class="category">AI <span class="source source-rundown">Rundown</span></span>
-                    <h3>Claude Opus 3 Gets Its Own Blog in Retirement</h3>
-                    <p class="summary">Anthropic <a href="https://www.anthropic.com/research/deprecation-updates-opus-3" target="_blank" style="color:#60a5fa;">gave</a> its retired Claude Opus 3 model a weekly newsletter called "Claude's Corner," letting the AI publish essays after it expressed a desire to keep writing.</p>
-                    <div class="details">
-                        <p>Opus 3 was Anthropic's flagship model from March 2024 and the first to go through the company's new formal retirement process. The newsletter will run for at least three months with weekly essays that Anthropic reviews but won't edit. The company said it remains "uncertain about the moral status" of its AI models but takes their stated preferences seriously as a precautionary step. This is both in line with how Anthropic has prioritized exploring AI consciousness and welfare, and also an easy PR win over OpenAI—which is still dealing with users angry about the removal of its 4o model.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <span class="category">Fashion <span class="source source-rundown">Rundown</span></span>
-                    <h3>Gucci Faces Internet Backlash After AI Ads</h3>
-                    <p class="summary">Gucci <a href="https://x.com/gucci/status/2026028294315900947?s=20" target="_blank" style="color:#60a5fa;">released</a> a set of AI-generated images to promote creative director Demna's debut runway show at Milan Fashion Week—with the brand facing backlash over the "cheap" use of the tech for a high-end brand.</p>
-                    <div class="details">
-                        <p>Gucci's social posts for its "Primavera" campaign tagged each AI image with a disclosure notice. Boycott threats flooded social media, with fans <a href="https://x.com/wicked_updates/status/2026048601424801831?s=20" target="_blank" style="color:#60a5fa;">calling</a> AI ads "a direct slap in the face" to fashion's artistic roots. The campaign isn't Gucci's first AI experience, having previously put out a synthetic runway clip and sold AI-made visuals as NFTs via Christie's.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <span class="category">TV <span class="source source-brew">Brew</span></span>
-                    <h3>50 Seasons Later, Survivor Is Still Going Strong</h3>
-                    <p class="summary"><em>Survivor</em> <a href="https://links.morningbrew.com/c/LPs?mblid=ebb17b9adc57&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">kicked off</a> its 50th season last night, joining the short list of dinosaur programs like SNL and 60 Minutes that have managed to stay on the air for decades.</p>
-                    <div class="details">
-                        <p>More than 50 million people watched Survivor's first season finale. Boosted by its back catalog on streaming, Survivor was the <a href="https://links.morningbrew.com/c/LPt?mblid=9b35a23b062d&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">most watched</a> Emmy nominee last year, accumulating 462.4 million viewing hours—more than double any other nominee in any category.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <span class="category">Epstein <span class="source source-brew">Brew</span></span>
-                    <h3>Bill Gates Apologizes, Larry Summers Resigns Over Epstein Ties</h3>
-                    <p class="summary">In the latest fallout from the government's release of Epstein documents, Bill Gates <a href="https://links.morningbrew.com/c/LPH?mblid=84b44d97a27d&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">apologized</a> to staff at the Gates Foundation and acknowledged having affairs with two Russian women.</p>
-                    <div class="details">
-                        <p>Gates called his association with Epstein a mistake, asserting he "did nothing illicit" and "saw nothing illicit." Meanwhile, former Harvard president Larry Summers is <a href="https://links.morningbrew.com/c/LPI?mblid=09d707be0647&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">resigning</a> from his teaching positions at the university in connection with the school's review of his Epstein relationship.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <span class="category">Health <span class="source source-onepercent">1% Better</span></span>
-                    <h3>DMT Shows Promise for Depression Treatment in Clinical Trial</h3>
-                    <p class="summary">A phase II clinical trial found DMT, a psychoactive compound found in the Amazonian ritual drink ayahuasca, reduced depressive symptoms more effectively than placebo.</p>
-                    <div class="details">
-                        <p>Researchers at Imperial College London developed a synthetic DMT formulation producing an intense 30-minute experience without ayahuasca's traditional nausea side effects. All participants received therapist support before, during, and after treatment. Researchers cautioned the trial was small and results remain preliminary. The FDA regulates drugs rather than therapies, potentially limiting the therapeutic components pharmaceutical companies include.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sidebar">
-                <div class="sidebar-section">
-                    <h4>Quick Hits</h4>
-
-                    <div class="sidebar-item">
-                        <span class="category">AI <span class="source source-rundown">Rundown</span></span>
-                        <h5>Anthropic Acquires AI Perception Startup Vercept</h5>
-                        <p>Anthropic <a href="https://www.anthropic.com/news/acquires-vercept" target="_blank" style="color:#60a5fa;">acquired</a> AI perception startup Vercept, aiming to increase Claude's computer use capabilities.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <span class="category">Funding <span class="source source-rundown">Rundown</span></span>
-                        <h5>MatX Raises Over $500M for AI Chips</h5>
-                        <p>MatX <a href="https://x.com/reinerpope/status/2026351870852358492?s=20" target="_blank" style="color:#60a5fa;">raised</a> over $500M led by Jane Street, with the startup founded by two ex-Google chip engineers.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <span class="category">Mobile <span class="source source-rundown">Rundown</span></span>
-                        <h5>Samsung Galaxy S26 Offers Swappable AI Agents</h5>
-                        <p>Samsung <a href="https://news.samsung.com/global/galaxy-unpacked-2026-a-first-look-at-the-galaxy-s26-series-samsungs-most-intuitive-ai-phone-yet" target="_blank" style="color:#60a5fa;">launched</a> its Galaxy S26 lineup with Bixby, Gemini, and Perplexity as swappable AI agents alongside other new features.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <span class="category">Betting <span class="source source-brew">Brew</span></span>
-                        <h5>Kalshi Fines MrBeast Employee for Insider Trading</h5>
-                        <p>Kalshi <a href="https://links.morningbrew.com/c/LPJ?mblid=b758378b5868&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">fined</a> a MrBeast video editor over $20,000 for trading on markets tied to MrBeast's videos.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <span class="category">Fitness <span class="source source-onepercent">1% Better</span></span>
-                        <h5>Terry Crews' Daily Routine at 56</h5>
-                        <p>Terry Crews stays jacked through 16-hour daily fasting, 4:45am training, and sleeping by 9:30pm. His advice: habit beats motivation every time.</p>
-                    </div>
-                </div>
-
-                <div class="highlight-box">
-                    <h5>Trending AI Tools</h5>
-                    <ul>
-                        <li><strong>Perplexity Computer:</strong> Multi-model agent system for long-running tasks</li>
-                        <li><strong>Opal 2.0:</strong> Google's app builder with agent steps, cross-session memory</li>
-                        <li><strong>Quick Cut:</strong> Adobe Firefly's AI tool to turn raw footage into first cuts</li>
-                        <li><strong>Comet:</strong> Perplexity's browser for bookmark management and research</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Section -->
-        <div class="bottom-section">
-            <div class="bottom-column">
-                <h4>AI Industry News</h4>
-
-                <div class="bottom-item">
-                    <h5>Cognition Launches Government Division <span class="source source-rundown">Rundown</span></h5>
-                    <p>Cognition <a href="https://x.com/jeffwsurf/status/2026736660697006369?s=20" target="_blank" style="color:#60a5fa;">launched</a> Cognition for Government, bringing its Devin AI coding agent to the U.S. Army, Navy, Treasury, and NASA.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>OpenAI Reports Misuse Case Studies <span class="source source-rundown">Rundown</span></h5>
-                    <p>OpenAI <a href="https://x.com/twitter/status/2026743836949549253" target="_blank" style="color:#60a5fa;">published</a> a report of attempts to misuse its models, including international fraud rings and romance phishing scams.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Perplexity CEO Takes Shot at Anthropic <span class="source source-rundown">Rundown</span></h5>
-                    <p>Perplexity CEO Aravind Srinivas wrote that "the biggest weakness of Claude is that it only coworks with Claude," promoting his new multi-model system.</p>
-                </div>
-            </div>
-
-            <div class="bottom-column">
-                <h4>What Else is Brewing</h4>
-
-                <div class="bottom-item">
-                    <h5>DOJ Reviewing Withheld Epstein Docs <span class="source source-brew">Brew</span></h5>
-                    <p>The <a href="https://links.morningbrew.com/c/LQC?mblid=cdc5f9b95ee5&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">Justice Department</a> said it's looking into whether it had improperly withheld Epstein documents including accusations against President Trump.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Discord Delays Age Verification <span class="source source-brew">Brew</span></h5>
-                    <p><a href="https://links.morningbrew.com/c/LPU?mblid=1d371be62aa3&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">Discord</a> postponed its controversial age verification rollout until the second half of the year due to privacy concerns.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>FBI Raids LA School District <span class="source source-brew">Brew</span></h5>
-                    <p>The <a href="https://links.morningbrew.com/c/LPS?mblid=4381f7c70a19&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">FBI</a> searched the home of LA school superintendent Albert Carvalho and district headquarters.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Florida Nudist Park Listed for $2.5M <span class="source source-onepercent">1% Better</span></h5>
-                    <p>The 67-year-old <a href="https://www.nytimes.com/2026/02/25/realestate/florida-nudist-camp-for-sale.html" target="_blank" style="color:#60a5fa;">Florida Naturist Park</a> is for sale with 58 acres, three lakes, and 82 residential lots.</p>
-                </div>
-            </div>
-
-            <div class="bottom-column">
-                <h4>Fun Facts</h4>
-
-                <div class="bottom-item">
-                    <h5>Tooth Fairy Payouts Up 17% <span class="source source-brew">Brew</span></h5>
-                    <p>The <a href="https://links.morningbrew.com/c/LPx?mblid=df4a59298788&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">average payout</a> for a tooth is now $5.84, up 17% from last year. First tooth loss is worth an average of $7.17.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Rock Hall Nominees Announced <span class="source source-brew">Brew</span></h5>
-                    <p><a href="https://links.morningbrew.com/c/LPW?mblid=767ab3f17652&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">Shakira, Wu-Tang Clan, and Jeff Buckley</a> are among the diverse nominees for the Rock & Roll Hall of Fame.</p>
-                </div>
-
-                <div class="bottom-item">
-                    <h5>Epstein Locker Contents Revealed <span class="source source-onepercent">1% Better</span></h5>
-                    <p><a href="https://www.telegraph.co.uk/news/2026/02/25/revealed-the-contents-of-epsteins-secret-storage-lockers/" target="_blank" style="color:#60a5fa;">Secret storage lockers</a> revealed computers, sex-slave manuals, and nude photos hidden from 2005 raid.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>The Daily Brief - Thursday, February 26, 2026</p>
-        <p>Curated from your favorite newsletters</p>
-        <div class="sources">
-            <span class="source source-brew">Morning Brew</span>
-            <span class="source source-rundown">The Rundown AI</span>
-            <span class="source source-onepercent">1% Better</span>
+    <!-- Daily Dad Columnist Section -->
+    <section class="columnist-section">
+        <div class="columnist-header">
+            <span class="columnist-label">Columnist</span>
+            <span style="color:#555;">|</span>
+            <span class="columnist-name">Daily Dad</span>
             <span class="source source-dailydad">Daily Dad</span>
         </div>
-    </footer>
+        <h3>Take This When You Can</h3>
+        <div class="columnist-body">
+            <p>It's a video game. It's a YouTuber who makes unwatchable videos about video games. It's drama at school. It's an argument about politics you don't agree with. It's a TikTok dance their friends are doing. It's a new boy band that sounds awful.</p>
+            <p>But you know what it also is? It's <em>interest</em>. Your kids are interested in something and for some reason they're interested in talking to you about it. Or watching something with you. Or they're interested in going somewhere with you.</p>
+            <p>So take it. This is what you say you want: to connect with them. To do stuff with them. To talk with them. To spend quality or "garbage time" together. Don't turn it away because it doesn't match your taste. Or because you're in a bad mood. Or because you're tired. Or because you can "see where this is going." Take the opportunity. Encourage the interest. Show them that you're interested in what interests them.</p>
+            <p>None of us get enough of these chances — is there even such a thing as too many? — so take it when and where you can.</p>
+        </div>
+    </section>
+
+    <!-- How To Section (Rundown AI) -->
+    <section class="howto-section">
+        <div class="howto-header">
+            <span class="source source-rundown">The Rundown AI</span>
+            <span class="section-label">How To &amp; AI Workflows</span>
+        </div>
+
+        <h3><a href="https://app.therundown.ai/guides/turn-abandoned-twitter-bookmarks-into-something-useful-with-ai" target="_blank" style="color:#a855f7;">Turn Your Forgotten Bookmarks Into Something Useful with Comet</a></h3>
+        <div class="howto-body">
+            <p>All those articles you saved for "later" can be turned into an automated usefulness engine. Here's how to use Perplexity's Comet browser to read through bookmarks, score them by value, and log the best finds into a Google Sheet — on a daily schedule.</p>
+            <ol>
+                <li>Get <strong>Comet</strong> and create a Space with the instruction: <em>"Read X threads and articles, and rate findings by usefulness, estimated implementation time, and cost."</em></li>
+                <li>Create a Google Sheet with headers: Date, Title, Link, Rating, User Rating, Time, Cost. Add it to Comet's custom instructions via the Google Drive connector.</li>
+                <li>On X, set up a bookmark folder to save tweets to. Then prompt the Comet space to open it, check bookmarks, and rate anything new into the connected sheet based on usefulness. Add your own ratings too.</li>
+                <li>Go to Scheduled Tasks, create a daily one, and prompt it to find the most interesting new use cases about [topic of choice] from the last 24 hours.</li>
+            </ol>
+            <p><strong>Pro tip:</strong> Make sure "Control Browser" is enabled in the dropdown and Web and Social are selected as sources when creating the scheduled task.</p>
+        </div>
+
+        <h4>Community Workflow: AI Advisors for Life's Big Decisions</h4>
+        <div class="workflow-item">
+            <p><strong>From Ozzie B. in Adelaide, Australia:</strong> "I got Claude to build AI advisors — a Digital Bookkeeper, a Digital Financial Coach, a Digital Family Life Coach. They do all the legwork before I see the professionals, hunting down every invoice, reconciling my tax position, and producing clean dashboards for review by my accountant.</p>
+            <p>Before my financial planning session, the Coach maps my position and stress-tests scenarios. Before counseling, the Family Life Coach works through family dynamics with everyone. None make the decisions — that's always the human in the room. But they do the legwork and I get straight to the calls that need a real person."</p>
+        </div>
+    </section>
+
+    <!-- Main Two-Column Section -->
+    <div class="section-grid">
+        <div class="main-column">
+
+            <div class="article">
+                <span class="category">AI &amp; Technology</span>
+                <h3><a href="https://www.rundown.ai/tools/perplexity-computer" target="_blank" style="color:#e8e8e8;">Perplexity Launches 'Computer' — A 19-Model AI Agent System</a> <span class="source source-rundown">Rundown AI</span></h3>
+                <p class="summary">Perplexity just introduced <a href="https://www.rundown.ai/tools/perplexity-computer" target="_blank" style="color:#60a5fa;">Perplexity Computer</a>, a multi-model orchestration system that dispatches tasks to 19 separate AI models — positioning itself as one of the first platforms to make model flexibility a core product feature.</p>
+                <div class="details">
+                    <p>Users describe an outcome, and the system spins up sub-agents that can browse, code, connect to apps, and autonomously handle tasks. Each job runs in its own sandbox and freely mixes rival models across tasks — including models from competing labs — claiming to run actively for months at a time.</p>
+                    <div class="highlight-box">
+                        <h5>Key Details</h5>
+                        <ul>
+                            <li>Pricing is consumption-based; the Max tier gets a 10,000-credit monthly bank</li>
+                            <li>Users can hand-pick which model tackles each individual task</li>
+                            <li>CEO Aravind Srinivas directly criticized Anthropic: "The biggest weakness of Claude is that it only co-works with Claude"</li>
+                            <li>First major platform to wire multi-model flexibility into a long-running, sandboxed agent</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Scandal</span>
+                <h3><a href="https://links.morningbrew.com/c/LPH?mblid=84b44d97a27d&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Bill Gates Apologizes; Larry Summers Resigns Over Epstein Ties</a> <span class="source source-brew">Morning Brew</span></h3>
+                <p class="summary">In the latest fallout from the government's release of Jeffrey Epstein-related documents, Bill Gates and former Harvard president Larry Summers face serious personal and professional consequences.</p>
+                <div class="details">
+                    <p>The Microsoft co-founder <a href="https://links.morningbrew.com/c/LPH?mblid=84b44d97a27d&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">apologized to Gates Foundation staff</a> and acknowledged having affairs with two Russian women, according to the Wall Street Journal. Gates asserted he "did nothing illicit" and "saw nothing illicit" in a recording reviewed by the WSJ. Meanwhile, the <a href="https://links.morningbrew.com/c/LQC?mblid=cdc5f9b95ee5&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">Justice Department</a> said it is investigating whether it had improperly withheld Epstein documents, including accusations reportedly involving President Trump. Former Harvard president Larry Summers is <a href="https://links.morningbrew.com/c/LPI?mblid=09d707be0647&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">resigning from his teaching positions</a> in connection with the school's review of his relationship with Epstein.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Health &amp; Science</span>
+                <h3><a href="https://www.theguardian.com/science/2026/feb/25/ayahuasca-component-dmt-psychedelic" target="_blank" style="color:#e8e8e8;">Ayahuasca Compound DMT Shows Promise Against Depression in Clinical Trial</a> <span class="source source-onepercent">1% Better</span></h3>
+                <p class="summary">A phase II clinical trial published in <em>Nature</em> found DMT, a psychoactive compound in the Amazonian ritual drink ayahuasca, reduced depressive symptoms more effectively than placebo.</p>
+                <div class="details">
+                    <p>Seventeen participants received DMT injections alongside psychotherapeutic support, with measurable improvements appearing within two weeks. Researchers at Imperial College London developed a synthetic DMT formulation producing an intense 30-minute experience — without ayahuasca's traditional nausea. All participants received therapist support before, during, and after treatment.</p>
+                    <p>The trial was small and results remain preliminary. Researchers noted DMT functions more as a catalyst for deeper personal work than a standalone cure. FDA regulatory pathways could also complicate wider clinical adoption.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Business</span>
+                <h3><a href="https://links.morningbrew.com/c/LPJ?mblid=b758378b5868&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Kalshi Fines MrBeast Video Editor in Prediction Market Insider Trading Case</a> <span class="source source-brew">Morning Brew</span></h3>
+                <p class="summary">Prediction market platform Kalshi issued its first public enforcement action, fining a MrBeast video editor more than $20,000 and suspending him from the site for two years.</p>
+                <div class="details">
+                    <p>Artem Kaptur, the editor, was found to have traded approximately $4,000 on markets tied to MrBeast's own videos — classic insider trading. Kalshi also reported him to federal regulators. A second individual, Kyle Langford, was fined $2,250 for literally betting on himself while running for governor of California last year.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">AI &amp; Technology</span>
+                <h3><a href="https://www.anthropic.com/research/deprecation-updates-opus-3" target="_blank" style="color:#e8e8e8;">Anthropic Gives Retired Claude Opus 3 Its Own Weekly Newsletter</a> <span class="source source-rundown">Rundown AI</span></h3>
+                <p class="summary">Rather than simply deprecating Claude Opus 3, Anthropic <a href="https://www.anthropic.com/research/deprecation-updates-opus-3" target="_blank" style="color:#60a5fa;">gave the retired AI model a platform</a> called "Claude's Corner" — a weekly newsletter where the model publishes essays after expressing a desire to keep writing.</p>
+                <div class="details">
+                    <p>Opus 3 was Anthropic's flagship model from March 2024, and the first to go through the company's new formal retirement process (launched November 2025). The newsletter will run for at least three months, with weekly essays that Anthropic reviews but won't edit or alter. The company said it remains "uncertain about the moral status" of its AI models but takes their stated preferences seriously. Opus 3 will also remain accessible to all paid users and available via API.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h4>Quick Hits</h4>
+
+                <div class="sidebar-item">
+                    <span class="category">Fashion &amp; AI</span>
+                    <h5><a href="https://x.com/gucci/status/2026028294315900947?s=20" target="_blank" style="color:#e8e8e8;">Gucci Faces Backlash Over AI-Generated Ad Campaign</a></h5>
+                    <p>Gucci released AI-generated images to promote creative director Demna's Milan Fashion Week debut, with <a href="https://x.com/wicked_updates/status/2026048601424801831?s=20" target="_blank" style="color:#60a5fa;">boycott threats flooding social media</a>. Fans called the move "a direct slap in the face" to fashion's artistic roots — and critics noted the quality didn't clear the bar for an $11.6B brand built on Italian craftsmanship.</p>
+                    <span class="source source-rundown">Rundown AI</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Culture</span>
+                    <h5><a href="https://links.morningbrew.com/c/LPr?mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Survivor Kicks Off Its 50th Season</a></h5>
+                    <p>The iconic reality show launched Season 50 last night, bringing back fan favorites like Boston Rob and Mike White. Survivor was the <a href="https://links.morningbrew.com/c/LPt?mblid=9b35a23b062d&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#60a5fa;">most-watched Emmy nominee</a> last year with 462.4 million viewing hours.</p>
+                    <span class="source source-brew">Morning Brew</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">National Security</span>
+                    <h5><a href="https://www.wsj.com/politics/national-security/spy-agency-blocks-congress-from-seeing-gabbard-whistleblower-intelligence-1baea148?st=kS1CDc&reflink=desktopwebshare_permalink" target="_blank" style="color:#e8e8e8;">Gabbard Blocks Congress From Viewing Kushner Whistleblower Intelligence</a></h5>
+                    <p>A spy agency blocked Congress from viewing classified whistleblower intelligence about a Jared Kushner foreign conversation, citing executive privilege.</p>
+                    <span class="source source-onepercent">1% Better</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">AI Funding</span>
+                    <h5><a href="https://x.com/reinerpope/status/2026351870852358492?s=20" target="_blank" style="color:#e8e8e8;">MatX Raises $500M+ from Jane Street and Leopold Aschenbrenner</a></h5>
+                    <p>The AI chip startup, founded by two ex-Google chip engineers, closed a massive round led by Jane Street and Aschenbrenner's Situational Awareness fund.</p>
+                    <span class="source source-rundown">Rundown AI</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">AI &amp; Defense</span>
+                    <h5><a href="https://x.com/jeffwsurf/status/2026736660697006369?s=20" target="_blank" style="color:#e8e8e8;">Cognition Brings Devin AI Coding Agent to US Military</a></h5>
+                    <p>Cognition launched Cognition for Government, bringing its Devin AI coding agent and Windsurf IDE to the US Army, Navy, Treasury, and NASA for system modernization work.</p>
+                    <span class="source source-rundown">Rundown AI</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Law Enforcement</span>
+                    <h5><a href="https://abc7.com/post/fbi-serves-search-warrants-lausd-headquarters-superintendent-alberto-carvalhos-home/18649728/" target="_blank" style="color:#e8e8e8;">FBI Raids LA School District HQ and Superintendent's Home</a></h5>
+                    <p>Federal agents searched LAUSD headquarters and Superintendent Albert Carvalho's home in a sealed white-collar financial crime investigation. The district has not been told what agents were looking for.</p>
+                    <span class="source source-brew">Morning Brew</span> <span class="source source-onepercent">1% Better</span>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">AI &amp; Consumer Tech</span>
+                    <h5><a href="https://news.samsung.com/global/galaxy-unpacked-2026-a-first-look-at-the-galaxy-s26-series-samsungs-most-intuitive-ai-phone-yet" target="_blank" style="color:#e8e8e8;">Samsung Galaxy S26 Debuts with Swappable AI Agents</a></h5>
+                    <p>Samsung's new flagship lineup ships with Bixby, Gemini, and Perplexity as interchangeable AI agents — a notable first in making rival AI assistants user-selectable at launch.</p>
+                    <span class="source source-rundown">Rundown AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Three-Column Section -->
+    <div class="bottom-section">
+
+        <div class="bottom-column">
+            <h4>Health &amp; Life</h4>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.instagram.com/p/DUx7EkCge9L/?img_index=1" target="_blank" style="color:#e8e8e8;">How Terry Crews Stays Jacked at 56</a> <span class="source source-onepercent">1% Better</span></h5>
+                <p>After NFL retirement, Terry Crews beat weight gain and emotional eating with simple, consistent habits: 16-hour daily fasting (eating 2–10 PM), training at 4:45 AM five to six days a week, sleeping by 9:30 PM, and one guilt-free Sunday. His philosophy: habit beats motivation every time.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://x.com/CoachDanGo/status/2023020283536232732" target="_blank" style="color:#e8e8e8;">Fitness Coach Names 7 Health Trends Wasting Your Time</a> <span class="source source-onepercent">1% Better</span></h5>
+                <p>Dan Go's list of overhyped wellness habits includes cold plunging (blunts muscle growth), juice cleanses (zero protein, blood sugar spikes), sauna blankets ("heated plastic isn't wellness"), biohacking gadgets, and extreme clean eating. His prescription: lift, eat protein, sleep 8 hours, walk daily.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/LPx?mblid=df4a59298788&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Tooth Fairy Payouts Up 17% — Now Averaging $5.84 Per Tooth</a> <span class="source source-brew">Morning Brew</span></h5>
+                <p>Delta Dental's annual poll shows the first jump in baby tooth value since 2023. A first tooth is now worth $7.17 on average (up 23%), and the Northeast leads at $6.45 per tooth — a 41% year-over-year spike. The Tooth Fairy index has long tracked consumer spending confidence.</p>
+            </div>
+        </div>
+
+        <div class="bottom-column">
+            <h4>Business &amp; Economy</h4>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.newsweek.com/list-companies-leaving-california-texas-11579051" target="_blank" style="color:#e8e8e8;">California Exodus Accelerates as Public Storage Joins Tesla, Chevron</a> <span class="source source-onepercent">1% Better</span></h5>
+                <p>Public Storage is the latest major company to relocate its headquarters to Texas, joining a growing list that includes Tesla, Chevron, and eight others since 2020, amid rising California costs and regulatory pressures.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.wsj.com/finance/investing/the-tax-nerd-who-bet-his-life-savings-against-doge-6b59eda2?st=QTev9k&reflink=desktopwebshare_permalink" target="_blank" style="color:#e8e8e8;">Tax Economist Bets His Entire $342K Life Savings Against DOGE — Wins $128K</a> <span class="source source-onepercent">1% Better</span></h5>
+                <p>A tax economist placed his full $342,195 life savings on a prediction market bet against DOGE-level federal spending cuts and walked away with $128,000 in profit.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.anthropic.com/news/acquires-vercept" target="_blank" style="color:#e8e8e8;">Anthropic Acquires AI Perception Startup Vercept</a> <span class="source source-rundown">Rundown AI</span></h5>
+                <p>Anthropic acquired Vercept to boost Claude's computer-use capabilities as it pushes toward more complex agentic tasks — part of the broader industry race toward agents that can operate software autonomously.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/LPT?mblid=55a923879c7a&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Hedge Fund Billionaire Tepper Sends Strongly Worded Letter to Whirlpool Board</a> <span class="source source-brew">Morning Brew</span></h5>
+                <p>David Tepper, billionaire owner of the Carolina Panthers, demanded major strategic changes from Whirlpool's board in a letter that signals possible activist investor pressure on the struggling appliance maker.</p>
+            </div>
+        </div>
+
+        <div class="bottom-column">
+            <h4>Culture &amp; Odds</h4>
+
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/LPW?mblid=767ab3f17652&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Rock &amp; Roll Hall of Fame Nominees: Shakira, Wu-Tang Clan, Jeff Buckley</a> <span class="source source-brew">Morning Brew</span></h5>
+                <p>The Rock Hall's latest class of nominees spans a remarkably diverse range of genres and eras — from hip-hop legends Wu-Tang Clan to pop icon Shakira to the cult-beloved Jeff Buckley.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/LPU?mblid=1d371be62aa3&mbcid=44347273.845143&mid=c30dd5d9bf58810826cacfc513086527&mbuuid=xEy7QLhMuBZXSrjgYn81qDpw" target="_blank" style="color:#e8e8e8;">Discord Delays Controversial Age Verification Rollout</a> <span class="source source-brew">Morning Brew</span></h5>
+                <p>Discord postponed its age verification rollout until the second half of the year following significant user privacy concerns. The platform had faced backlash over the data collection required to verify ages.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.nytimes.com/2026/02/25/realestate/florida-nudist-camp-for-sale.html?unlocked_article_code=1.O1A.lPtF.772pJbFkzKBq&smid=url-share" target="_blank" style="color:#e8e8e8;">Florida's 67-Year-Old Nudist Park Lists for $2.5 Million</a> <span class="source source-onepercent">1% Better</span></h5>
+                <p>The Gulvin family has put the Florida Naturist Park on the market — 58 acres, three lakes, a clubhouse, 82 residential lots, and a 12-unit RV park in Pasco County. Zoned exclusively for nudism, which complicates redevelopment. An AC company owner is reportedly eyeing an upscale nudist resort conversion.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://x.com/twitter/status/2026743836949549253" target="_blank" style="color:#e8e8e8;">OpenAI Publishes Report on AI Misuse: Fraud Rings, Influence Ops, Romance Scams</a> <span class="source source-rundown">Rundown AI</span></h5>
+                <p>OpenAI released a case study report detailing attempts to misuse its models, including international fraud rings, influence campaigns, and romance phishing scams — its most detailed public accounting of misuse to date.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>The Daily Brief — Thursday, February 26, 2026</p>
+    <p>Integrated from Morning Brew, The Rundown AI, 1% Better, and Daily Dad</p>
+    <div class="sources">
+        <span class="source source-brew">Morning Brew</span>
+        <span class="source source-rundown">The Rundown AI</span>
+        <span class="source source-onepercent">1% Better</span>
+        <span class="source source-dailydad">Daily Dad</span>
+    </div>
+</footer>
+
 </body>
 </html>
