@@ -597,6 +597,45 @@
             padding: 80px 40px;
             color: #666;
         }
+
+        /* Responsive */
+        @media (max-width: 1000px) {
+            .hero-section { grid-template-columns: 1fr; }
+            .hero-main { border-right: none; padding-right: 0; border-bottom: 1px solid #333; padding-bottom: 30px; }
+            .section-grid { grid-template-columns: 1fr; }
+            .main-column { border-right: none; padding-right: 0; }
+            .bottom-section { grid-template-columns: 1fr; }
+        }
+
+        /* Mobile font sizes */
+        @media (max-width: 600px) {
+            body { font-size: 18px; line-height: 1.7; }
+            .main-content { padding: 20px 15px; }
+            header { padding: 30px 15px 25px; }
+            header h1 { font-size: 2rem; letter-spacing: 4px; }
+            header .tagline { font-size: 0.95rem; }
+            .hero-main h2 { font-size: 1.8rem; }
+            .hero-main .summary { font-size: 1.1rem; }
+            .hero-main .content { font-size: 1.05rem; }
+            .hero-sidebar-item h3 { font-size: 1.2rem; }
+            .hero-sidebar-item p { font-size: 1rem; }
+            .article h3 { font-size: 1.4rem; }
+            .article .summary { font-size: 1.05rem; }
+            .article .details { font-size: 1.05rem; }
+            .sidebar-item h5 { font-size: 1.1rem; }
+            .sidebar-item p { font-size: 1rem; }
+            .columnist-section { padding: 25px 20px; }
+            .columnist-section h3 { font-size: 1.4rem; }
+            .columnist-section .columnist-body { font-size: 1.1rem; }
+            .bottom-item h5 { font-size: 1.1rem; }
+            .bottom-item p { font-size: 1rem; }
+            .markets-strip { padding: 15px; flex-direction: column; align-items: flex-start; }
+            .market-items { gap: 20px; }
+            .nav-content { flex-direction: column; gap: 8px; text-align: center; }
+            .nav-categories { gap: 12px; font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
+            .nav-date { font-size: 0.8rem; }
+            footer .sources { flex-wrap: wrap; }
+        }
     </style>
 </head>
 <body>
