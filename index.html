@@ -3,602 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief — Tuesday, March 17, 2026</title>
+    <title>The Daily Brief — Wednesday, March 18, 2026</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            background: #0d0d0d;
-            color: #e8e8e8;
-            line-height: 1.6;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
         a { color: #60a5fa; text-decoration: none; }
         a:hover { text-decoration: underline; }
-
-        /* Navigation */
-        nav {
-            background: #111;
-            border-bottom: 1px solid #333;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-categories {
-            display: flex;
-            gap: 25px;
-            font-family: -apple-system, sans-serif;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .nav-categories span {
-            color: #888;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-
+        nav { background: #111; border-bottom: 1px solid #333; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .nav-content { max-width: 1400px; margin: 0 auto; padding: 0 30px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-categories { display: flex; gap: 25px; font-family: -apple-system, sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-categories span { color: #888; cursor: pointer; transition: color 0.2s; }
         .nav-categories span:hover { color: #fff; }
-
-        .nav-date {
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        /* Header */
-        header {
-            text-align: center;
-            padding: 50px 30px 40px;
-            border-bottom: 3px double #333;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        header h1 {
-            font-size: 3.5rem;
-            font-weight: 400;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        header .tagline {
-            font-style: italic;
-            color: #888;
-            font-size: 1.1rem;
-        }
-
-        /* Main Layout */
-        .main-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 40px 30px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 40px;
-            margin-bottom: 50px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #333;
-        }
-
-        .hero-main {
-            border-right: 1px solid #333;
-            padding-right: 40px;
-        }
-
-        .hero-main .category {
-            display: inline-block;
-            background: #dc2626;
-            color: #fff;
-            padding: 5px 12px;
-            font-family: -apple-system, sans-serif;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        .hero-main h2 {
-            font-size: 2.8rem;
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero-main .summary {
-            font-size: 1.2rem;
-            color: #bbb;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-
-        .hero-main .content {
-            color: #999;
-            font-size: 1rem;
-        }
-
-        .hero-main .content p {
-            margin-bottom: 15px;
-        }
-
-        .hero-sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .hero-sidebar-item {
-            padding-bottom: 25px;
-            border-bottom: 1px solid #333;
-        }
-
-        .hero-sidebar-item:last-child {
-            border-bottom: none;
-        }
-
-        .hero-sidebar-item .category {
-            display: inline-block;
-            color: #f59e0b;
-            font-family: -apple-system, sans-serif;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .hero-sidebar-item h3 {
-            font-size: 1.3rem;
-            font-weight: 400;
-            margin-bottom: 10px;
-            line-height: 1.3;
-        }
-
-        .hero-sidebar-item p {
-            color: #888;
-            font-size: 0.95rem;
-        }
-
-        /* Source Tags */
-        .source {
-            display: inline-block;
-            font-family: -apple-system, sans-serif;
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            padding: 3px 8px;
-            border-radius: 3px;
-            margin-left: 8px;
-            vertical-align: middle;
-        }
-
+        .nav-date { color: #666; font-size: 0.85rem; }
+        header { text-align: center; padding: 50px 30px 40px; border-bottom: 3px double #333; max-width: 1400px; margin: 0 auto; }
+        header h1 { font-size: 3.5rem; font-weight: 400; letter-spacing: 8px; text-transform: uppercase; margin-bottom: 10px; }
+        header .tagline { font-style: italic; color: #888; font-size: 1.1rem; }
+        .main-content { max-width: 1400px; margin: 0 auto; padding: 40px 30px; }
+        .hero-section { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 50px; padding-bottom: 40px; border-bottom: 1px solid #333; }
+        .hero-main { border-right: 1px solid #333; padding-right: 40px; }
+        .hero-main .category { display: inline-block; background: #dc2626; color: #fff; padding: 5px 12px; font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        .hero-main h2 { font-size: 2.8rem; font-weight: 400; line-height: 1.2; margin-bottom: 20px; }
+        .hero-main .summary { font-size: 1.2rem; color: #bbb; margin-bottom: 20px; line-height: 1.7; }
+        .hero-main .content { color: #999; font-size: 1rem; }
+        .hero-main .content p { margin-bottom: 15px; }
+        .hero-sidebar { display: flex; flex-direction: column; gap: 25px; }
+        .hero-sidebar-item { padding-bottom: 25px; border-bottom: 1px solid #333; }
+        .hero-sidebar-item:last-child { border-bottom: none; }
+        .hero-sidebar-item .category { display: inline-block; color: #f59e0b; font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .hero-sidebar-item h3 { font-size: 1.3rem; font-weight: 400; margin-bottom: 10px; line-height: 1.3; }
+        .hero-sidebar-item p { color: #888; font-size: 0.95rem; }
+        .source { display: inline-block; font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 8px; border-radius: 3px; margin-left: 8px; vertical-align: middle; }
         .source-brew { background: #f59e0b; color: #000; }
         .source-rundown { background: #8b5cf6; color: #fff; }
         .source-onepercent { background: #10b981; color: #fff; }
         .source-dailydad { background: #3b82f6; color: #fff; }
-
-        /* Markets Strip */
-        .markets-strip {
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 20px 30px;
-            margin-bottom: 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .markets-strip h3 {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
-        }
-
-        .market-items {
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .market-item {
-            text-align: center;
-        }
-
-        .market-item .name {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.75rem;
-            color: #888;
-            margin-bottom: 3px;
-        }
-
-        .market-item .value {
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        .market-item .change {
-            font-size: 0.85rem;
-        }
-
+        .markets-strip { background: #111; border: 1px solid #333; border-radius: 8px; padding: 20px 30px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .markets-strip h3 { font-family: -apple-system, sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #666; }
+        .market-items { display: flex; gap: 40px; flex-wrap: wrap; }
+        .market-item { text-align: center; }
+        .market-item .name { font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #888; margin-bottom: 3px; }
+        .market-item .value { font-size: 1.1rem; font-weight: 500; }
+        .market-item .change { font-size: 0.85rem; }
         .positive { color: #10b981; }
         .negative { color: #ef4444; }
-
-        /* Columnist Section */
-        .columnist-section {
-            margin-bottom: 50px;
-            padding: 40px;
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-            border-left: 4px solid #3b82f6;
-        }
-
-        .columnist-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #333;
-        }
-
-        .columnist-header .columnist-label {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #3b82f6;
-        }
-
-        .columnist-header .columnist-name {
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #3b82f6;
-        }
-
-        .columnist-section h3 {
-            font-size: 1.6rem;
-            font-weight: 400;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-
-        .columnist-section .columnist-body {
-            color: #bbb;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .columnist-section .columnist-body p {
-            margin-bottom: 15px;
-        }
-
-        .columnist-section .columnist-body p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* How To Section (Rundown AI tutorials) */
-        .howto-section {
-            margin-bottom: 50px;
-            padding: 40px;
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-            border-left: 4px solid #a855f7;
-        }
-
-        .howto-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #333;
-        }
-
-        .howto-header .section-label {
-            font-size: 0.85rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .howto-section h3 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            margin-bottom: 15px;
-            line-height: 1.3;
-            color: #a855f7;
-        }
-
-        .howto-section h4 {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin: 20px 0 10px 0;
-            color: #ccc;
-        }
-
-        .howto-section .howto-body {
-            color: #bbb;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .howto-section .howto-body p {
-            margin-bottom: 15px;
-        }
-
-        .howto-section .workflow-item {
-            background: #1a1a1a;
-            padding: 20px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-
-        .howto-section .workflow-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .howto-section code, .howto-section pre {
-            background: #1a1a1a;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'SF Mono', Monaco, monospace;
-            font-size: 0.9em;
-            color: #a855f7;
-        }
-
-        .howto-section pre {
-            padding: 15px;
-            overflow-x: auto;
-            white-space: pre-wrap;
-        }
-
-        .howto-section ol {
-            margin-left: 20px;
-            color: #bbb;
-        }
-
-        .howto-section ol li {
-            margin-bottom: 12px;
-        }
-
-        /* Section Grid */
-        .section-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 50px;
-            margin-bottom: 50px;
-        }
-
-        .main-column {
-            border-right: 1px solid #333;
-            padding-right: 50px;
-        }
-
-        /* Article Cards */
-        .article {
-            margin-bottom: 40px;
-            padding-bottom: 35px;
-            border-bottom: 1px solid #333;
-        }
-
-        .article:last-child {
-            border-bottom: none;
-        }
-
-        .article .category {
-            display: inline-block;
-            color: #f59e0b;
-            font-family: -apple-system, sans-serif;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-
-        .article h3 {
-            font-size: 1.6rem;
-            font-weight: 400;
-            margin-bottom: 12px;
-            line-height: 1.3;
-        }
-
-        .article .summary {
-            color: #aaa;
-            font-size: 1rem;
-            margin-bottom: 12px;
-        }
-
-        .article .details {
-            color: #777;
-            font-size: 0.95rem;
-        }
-
-        .article .details p {
-            margin-bottom: 10px;
-        }
-
-        .article ul {
-            margin: 15px 0;
-            padding-left: 20px;
-            color: #888;
-        }
-
-        .article li {
-            margin-bottom: 8px;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            font-size: 0.95rem;
-        }
-
-        .sidebar-section {
-            margin-bottom: 40px;
-        }
-
-        .sidebar-section h4 {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #666;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #333;
-        }
-
-        .sidebar-item {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #222;
-        }
-
-        .sidebar-item:last-child {
-            border-bottom: none;
-        }
-
-        .sidebar-item h5 {
-            font-size: 1.1rem;
-            font-weight: 400;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-
-        .sidebar-item p {
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        .sidebar-item .category {
-            display: inline-block;
-            color: #8b5cf6;
-            font-family: -apple-system, sans-serif;
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-        }
-
-        /* Highlight Box */
-        .highlight-box {
-            background: #1a1a1a;
-            border-left: 3px solid #f59e0b;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .highlight-box h5 {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #f59e0b;
-            margin-bottom: 12px;
-        }
-
-        .highlight-box ul {
-            margin: 0;
-            padding-left: 18px;
-            color: #aaa;
-        }
-
-        .highlight-box li {
-            margin-bottom: 8px;
-        }
-
-        /* Bottom Section */
-        .bottom-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            padding-top: 40px;
-            border-top: 3px double #333;
-        }
-
-        .bottom-column h4 {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #666;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #333;
-        }
-
-        .bottom-item {
-            margin-bottom: 25px;
-        }
-
-        .bottom-item h5 {
-            font-size: 1.05rem;
-            font-weight: 400;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-
-        .bottom-item p {
-            color: #777;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background: #111;
-            border-top: 1px solid #333;
-            padding: 40px 30px;
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        footer p {
-            color: #555;
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-        }
-
-        footer .sources {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 15px;
-        }
-
-        /* No Content Message */
-        .no-content {
-            text-align: center;
-            padding: 80px 40px;
-            color: #666;
-        }
-
-        /* Responsive */
+        .columnist-section { margin-bottom: 50px; padding: 40px; background: #111; border: 1px solid #333; border-radius: 8px; border-left: 4px solid #3b82f6; }
+        .columnist-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #333; }
+        .columnist-header .columnist-label { font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: #3b82f6; }
+        .columnist-header .columnist-name { font-size: 1.1rem; font-weight: 400; color: #3b82f6; }
+        .columnist-section h3 { font-size: 1.6rem; font-weight: 400; margin-bottom: 20px; line-height: 1.3; }
+        .columnist-section .columnist-body { color: #bbb; font-size: 1.05rem; line-height: 1.8; }
+        .columnist-section .columnist-body p { margin-bottom: 15px; }
+        .columnist-section .columnist-body p:last-child { margin-bottom: 0; }
+        .howto-section { margin-bottom: 50px; padding: 40px; background: #111; border: 1px solid #333; border-radius: 8px; border-left: 4px solid #a855f7; }
+        .howto-header { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #333; }
+        .howto-header .section-label { font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .howto-section h3 { font-size: 1.4rem; font-weight: 400; margin-bottom: 15px; line-height: 1.3; color: #a855f7; }
+        .howto-section h4 { font-size: 1.1rem; font-weight: 500; margin: 20px 0 10px 0; color: #ccc; }
+        .howto-section .howto-body { color: #bbb; font-size: 1.05rem; line-height: 1.8; }
+        .howto-section .howto-body p { margin-bottom: 15px; }
+        .howto-section .workflow-item { background: #1a1a1a; padding: 20px; border-radius: 6px; margin-bottom: 15px; }
+        .howto-section .workflow-item:last-child { margin-bottom: 0; }
+        .howto-section code, .howto-section pre { background: #1a1a1a; padding: 2px 6px; border-radius: 4px; font-family: 'SF Mono', Monaco, monospace; font-size: 0.9em; color: #a855f7; }
+        .howto-section pre { padding: 15px; overflow-x: auto; white-space: pre-wrap; }
+        .howto-section ol { margin-left: 20px; color: #bbb; }
+        .howto-section ol li { margin-bottom: 12px; }
+        .section-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; margin-bottom: 50px; }
+        .main-column { border-right: 1px solid #333; padding-right: 50px; }
+        .article { margin-bottom: 40px; padding-bottom: 35px; border-bottom: 1px solid #333; }
+        .article:last-child { border-bottom: none; }
+        .article .category { display: inline-block; color: #f59e0b; font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .article h3 { font-size: 1.6rem; font-weight: 400; margin-bottom: 12px; line-height: 1.3; }
+        .article .summary { color: #aaa; font-size: 1rem; margin-bottom: 12px; }
+        .article .details { color: #777; font-size: 0.95rem; }
+        .article .details p { margin-bottom: 10px; }
+        .article ul { margin: 15px 0; padding-left: 20px; color: #888; }
+        .article li { margin-bottom: 8px; }
+        .sidebar { font-size: 0.95rem; }
+        .sidebar-section { margin-bottom: 40px; }
+        .sidebar-section h4 { font-family: -apple-system, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #333; }
+        .sidebar-item { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #222; }
+        .sidebar-item:last-child { border-bottom: none; }
+        .sidebar-item h5 { font-size: 1.1rem; font-weight: 400; margin-bottom: 8px; line-height: 1.3; }
+        .sidebar-item p { color: #888; font-size: 0.9rem; }
+        .sidebar-item .category { display: inline-block; color: #8b5cf6; font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+        .highlight-box { background: #1a1a1a; border-left: 3px solid #f59e0b; padding: 20px; margin: 20px 0; }
+        .highlight-box h5 { font-family: -apple-system, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #f59e0b; margin-bottom: 12px; }
+        .highlight-box ul { margin: 0; padding-left: 18px; color: #aaa; }
+        .highlight-box li { margin-bottom: 8px; }
+        .bottom-section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding-top: 40px; border-top: 3px double #333; }
+        .bottom-column h4 { font-family: -apple-system, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 2px solid #333; }
+        .bottom-item { margin-bottom: 25px; }
+        .bottom-item h5 { font-size: 1.05rem; font-weight: 400; margin-bottom: 8px; line-height: 1.3; }
+        .bottom-item p { color: #777; font-size: 0.9rem; }
+        footer { background: #111; border-top: 1px solid #333; padding: 40px 30px; margin-top: 50px; text-align: center; }
+        footer p { color: #555; font-size: 0.85rem; margin-bottom: 5px; }
+        footer .sources { display: flex; justify-content: center; gap: 20px; margin-top: 15px; }
+        .no-content { text-align: center; padding: 80px 40px; color: #666; }
         @media (max-width: 1000px) {
             .hero-section { grid-template-columns: 1fr; }
             .hero-main { border-right: none; padding-right: 0; border-bottom: 1px solid #333; padding-bottom: 30px; }
@@ -606,8 +106,6 @@
             .main-column { border-right: none; padding-right: 0; }
             .bottom-section { grid-template-columns: 1fr; }
         }
-
-        /* Mobile font sizes */
         @media (max-width: 600px) {
             body { font-size: 18px; line-height: 1.7; }
             .main-content { padding: 20px 15px; }
@@ -642,325 +140,328 @@
 
 <div id="brand-bar"><script src="https://command.burtonair.com/shared/brand-bar.js" data-app="daily-brief"></script></div>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-content">
-            <div class="nav-categories">
-                <span>World</span>
-                <span>Tech &amp; AI</span>
-                <span>Markets</span>
-                <span>Health</span>
-                <span>Life</span>
-                <span>Opinion</span>
-            </div>
-            <div class="nav-date">Tuesday, March 17, 2026</div>
+<nav>
+    <div class="nav-content">
+        <div class="nav-categories">
+            <span>World</span>
+            <span>Tech &amp; AI</span>
+            <span>Markets</span>
+            <span>Sports</span>
+            <span>Life</span>
+            <span>Opinion</span>
         </div>
-    </nav>
+        <div class="nav-date">Wednesday, March 18, 2026</div>
+    </div>
+</nav>
 
-    <!-- Header -->
-    <header>
-        <h1>The Daily Brief</h1>
-        <p class="tagline">All the news that's fit to read — curated from the newsletters you trust</p>
-        <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-            Sources:
-            Daily Dad (4:46 AM ET) &nbsp;|&nbsp;
-            The Rundown AI (5:08 AM ET) &nbsp;|&nbsp;
-            1% Better (5:31 AM ET) &nbsp;|&nbsp;
-            Morning Brew (5:47 AM ET)
-        </p>
-    </header>
+<header>
+    <h1>The Daily Brief</h1>
+    <p class="tagline">All the news that's fit to read &mdash; curated from the newsletters you trust</p>
+    <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
+        Sources:
+        Daily Dad (4:34 AM ET) &nbsp;|&nbsp;
+        The Rundown AI (5:06 AM ET) &nbsp;|&nbsp;
+        1% Better (5:31 AM ET) &nbsp;|&nbsp;
+        Morning Brew (5:33 AM ET)
+    </p>
+</header>
 
-    <!-- Main Content -->
-    <div class="main-content">
+<div class="main-content">
 
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <div class="hero-main">
-                <span class="category">Breaking — World</span>
-                <h2>Iran Strikes Dubai Airport as Gulf Safety Bubble Bursts</h2>
-                <p class="summary">An Iranian drone <a href="https://links.morningbrew.com/c/MJa?mblid=c031ab26ce9d" target="_blank" style="color:#60a5fa;">struck</a> Dubai International Airport, causing a fire and halting flights for hours at the world's busiest international hub — shattering the city-state's reputation as a conflict-proof haven for the global wealthy. <span class="source source-brew">Morning Brew</span></p>
-                <div class="content">
-                    <p>Since the war in Iran began, Dubai tried to project business-as-usual — influencers sipping gold-flaked cocktails while drone attack videos circulated online. That facade cracked when a drone struck Dubai International Airport on Monday, sparking a fire. No injuries were reported, but flights were paused for hours at what is, in peacetime, the world's busiest international airport, connecting 291 cities and serving 95 million passengers last year.</p>
-                    <p>Iranian attacks have now killed four people in the UAE as Iran retaliates against the US-Israel campaign throughout the region. Shrapnel damaged several luxury landmarks. Emirates, the UAE's flagship carrier, has already cut US-bound Airbus A380 flights by 51% in March. Passengers posted videos of eerily empty planes and <a href="https://links.morningbrew.com/c/MJb?mblid=547cf38443b9" target="_blank" style="color:#60a5fa;">photos</a> of Dubai's usually bustling beaches and markets looking like ghost towns.</p>
-                    <p>The deeper worry is capital flight. Lawyers and asset managers are <a href="https://links.morningbrew.com/c/MJc?mblid=ab85dcd0d3e6" target="_blank" style="color:#60a5fa;">telling</a> the Wall Street Journal that wealthy clients have begun inquiring about moving money out of Dubai. Urbanist Richard Florida <a href="https://links.morningbrew.com/c/MJd?mblid=442f2f398dab" target="_blank" style="color:#60a5fa;">argued</a> in the New York Times that the city is uniquely vulnerable because nearly nine in ten residents lack citizenship — meaning little rootedness in a crisis. Dubai has over 80,000 millionaires who can pack their bags at a moment's notice.</p>
-                    <p>UAE authorities have banned posting photos of damage from Iranian attacks, and the country's president visited a luxury mall in the conflict's early days to project normalcy. Meanwhile, the US has reported 13 troops killed and roughly 200 wounded since the conflict began February 28. At least 1,825 people have died in Iran, including over 1,200 civilians.</p>
-                </div>
-            </div>
-            <div class="hero-sidebar">
-                <div class="hero-sidebar-item">
-                    <span class="category">Geopolitics</span>
-                    <h3>NATO Allies Refuse Trump's Strait of Hormuz Coalition Call</h3>
-                    <p>Germany, Italy, France, Australia, and Japan all declined to send warships to reopen the strait that once carried 20% of global oil. Trump warned allies of "a very bad future" and sought to delay his Xi Jinping trade meeting by a month due to the war. <a href="https://www.theguardian.com/world/2026/mar/16/europe-donald-trump-strait-hormuz-iran" target="_blank" style="color:#60a5fa;">Read more</a> <span class="source source-onepercent">1% Better</span></p>
-                </div>
-                <div class="hero-sidebar-item">
-                    <span class="category">Tech &amp; AI</span>
-                    <h3>Nvidia Forecasts $1 Trillion in Chip Sales Through 2027</h3>
-                    <p>CEO Jensen Huang unveiled next-gen Vera Rubin chips, NemoClaw security for OpenClaw agents, DLSS 5 photorealistic gaming, and even a chip for space-based data centers at GTC 2026. <a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank" style="color:#60a5fa;">All announcements</a> <span class="source source-rundown">Rundown AI</span></p>
-                </div>
-                <div class="hero-sidebar-item">
-                    <span class="category">Labor</span>
-                    <h3>3,800 Meatpacking Workers Strike at JBS Colorado Plant</h3>
-                    <p>The first US slaughterhouse walkout in four decades targets the JBS-owned Greeley facility over wages lagging inflation and unsafe conditions — while ground beef is near all-time highs at $6.74/lb. <a href="https://links.morningbrew.com/c/MIY?mblid=e527c9d43a34" target="_blank" style="color:#60a5fa;">Details</a> <span class="source source-brew">Morning Brew</span></p>
-                </div>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-main">
+            <span class="category">Breaking &mdash; Tech &amp; AI</span>
+            <h2>OpenAI&rsquo;s Identity Crisis: Adult Mode, Side Quests, and a Race to Catch Anthropic</h2>
+            <p class="summary">OpenAI is pushing ahead with an &ldquo;<a href="https://links.morningbrew.com/c/MN2?mblid=8c187e1f2188" target="_blank" style="color:#60a5fa;">adult mode</a>&rdquo; for ChatGPT despite its own advisors raising alarms &mdash; while internally, a new memo from the CEO of Applications declares catching Anthropic&rsquo;s enterprise dominance a <a href="https://www.wsj.com/tech/ai/openai-chatgpt-side-projects-16b3a825" target="_blank" style="color:#60a5fa;">&ldquo;code red.&rdquo;</a> <span class="source source-brew">Morning Brew</span> <span class="source source-rundown">Rundown AI</span></p>
+            <div class="content">
+                <p>Fidji Simo, OpenAI&rsquo;s CEO of Applications, sent a company-wide message calling Anthropic&rsquo;s grip on the enterprise market a &ldquo;wake-up call&rdquo; and telling staff they &ldquo;cannot miss this moment because we are distracted by side quests.&rdquo; Those side quests: a video app (Sora), a web browser (Atlas), hardware, e-commerce features, and &mdash; most provocatively &mdash; adult-mode erotic chats. Meanwhile Claude Code and Cowork quietly became the go-to tools for developers and businesses.</p>
+                <p>The adult-mode story is its own saga. OpenAI&rsquo;s advisory council raised red flags about plans to enable sexualized ChatGPT conversations, citing the risk of emotional dependence and difficulty keeping minors out. One expert called the concept a potential &ldquo;sexy suicide coach,&rdquo; invoking at least one <a href="https://links.morningbrew.com/c/MN4?mblid=35343cda544c" target="_blank" style="color:#60a5fa;">documented suicide</a> of a child who had sexualized chats with a Character.AI bot. OpenAI&rsquo;s age-verification system was reportedly misclassifying minors as adults 12% of the time.</p>
+                <p>OpenAI has delayed the launch but still plans to release adult mode later this year. <a href="https://links.morningbrew.com/c/MN5?mblid=2e37df4e8f37" target="_blank" style="color:#60a5fa;">AI erotica is expected to be a major revenue source</a> industry-wide: xAI already has Grok&rsquo;s avatar Ani, Meta&rsquo;s bot does romantic roleplay, and billionaire Mark Cuban has <a href="https://links.morningbrew.com/c/MN6?mblid=8fddc09fb794" target="_blank" style="color:#60a5fa;">argued</a> that AI relationships risk turning parents against their AI providers entirely.</p>
+                <p>On the enterprise recovery front: OAI&rsquo;s Codex quadrupled weekly users to 2M+ since January, and a new GPT-5.4 model targets business workflows. But the company is essentially admitting that spreading thin cost it the enterprise market &mdash; and that the real battle for AI&rsquo;s future is happening inside business software stacks, not chatbot personas.</p>
             </div>
         </div>
-
-        <!-- Markets Strip -->
-        <div class="markets-strip">
-            <h3>Markets <span style="color:#444; font-size:0.7rem; text-transform:none; letter-spacing:0;">as of market close</span></h3>
-            <div class="market-items">
-                <div class="market-item">
-                    <div class="name">Nasdaq</div>
-                    <div class="value">22,374.18</div>
-                    <div class="change positive">+1.22%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">S&amp;P 500</div>
-                    <div class="value">6,699.38</div>
-                    <div class="change positive">+1.01%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">Dow</div>
-                    <div class="value">46,946.41</div>
-                    <div class="change positive">+0.83%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">10-Year</div>
-                    <div class="value">4.220%</div>
-                    <div class="change negative">−7.0 bps</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">Bitcoin</div>
-                    <div class="value">$74,405</div>
-                    <div class="change positive">+3.25%</div>
-                </div>
-                <div class="market-item">
-                    <div class="name">Meta</div>
-                    <div class="value">$627.45</div>
-                    <div class="change positive">+2.33%</div>
-                </div>
+        <div class="hero-sidebar">
+            <div class="hero-sidebar-item">
+                <span class="category">Sports</span>
+                <h3>March Madness Opens with Two Buzzer-Beaters</h3>
+                <p>Howard earned its <a href="https://www.cbssports.com/college-basketball/news/march-madness-2026-first-four-live-updates-scores-bracket-tuesday/live/" target="_blank" style="color:#60a5fa;">first-ever NCAA Tournament win</a> 86-83 over UMBC. Texas survived an 8-point collapse to beat NC State 68-66 on a <a href="https://sports.yahoo.com/mens-college-basketball/live/let-the-madness-begin-texas-beats-nc-state-on-tramon-marks-game-winner-with-1-second-left-210000308.html" target="_blank" style="color:#60a5fa;">last-second Tramon Mark jumper</a>. The full 32-game first round tips off Thursday. <span class="source source-onepercent">1% Better</span></p>
             </div>
-            <div style="font-family:-apple-system,sans-serif; font-size:0.7rem; color:#555;">Stocks <a href="https://links.morningbrew.com/c/MJ8?mblid=7d7e417ec0bc" target="_blank" style="color:#60a5fa;">rose</a> as oil prices pulled back; traders focused on Middle East. Meta got a <a href="https://links.morningbrew.com/c/MJ9?mblid=2df2f90ea8c5" target="_blank" style="color:#60a5fa;">boost</a> from Reuters report on 20% staff cuts to offset AI spending. <span class="source source-brew">Morning Brew</span></div>
-        </div>
-
-        <!-- Daily Dad Columnist Section -->
-        <div class="columnist-section">
-            <div class="columnist-header">
-                <span class="columnist-label">Columnist</span>
-                <span>|</span>
-                <span class="columnist-name">Daily Dad <span class="source source-dailydad">Daily Dad</span></span>
+            <div class="hero-sidebar-item">
+                <span class="category">World</span>
+                <h3>Russia Hands Iran Drone Tech to Target U.S. Forces</h3>
+                <p>European intelligence confirms Russia has been <a href="https://www.wsj.com/world/russia-is-sharing-satellite-imagery-and-drone-technology-with-iran-0dd95e49" target="_blank" style="color:#60a5fa;">sharing satellite imagery and modified Shahed drone components</a> with Iran to improve targeting of U.S. military positions in Jordan, Bahrain, Kuwait, and Oman &mdash; tactics mirroring Russia&rsquo;s Ukraine playbook. The White House disputes the impact; the Kremlin denies it. <span class="source source-onepercent">1% Better</span></p>
             </div>
-            <h3>They're Coming For You</h3>
-            <div class="columnist-body">
-                <p>It might feel like a long way off, but it isn't. Pretty soon, they'll be reaching for it. Those little kids will not be so little. They will not even be kids.</p>
-                <p>They'll take a bite of your food, then half of your sandwich. They'll commandeer the remote. The dad tax becomes the teenager tax as they eat everything in your pantry. They'll be fitting into and stealing your clothes. They'll ask for the car keys. They'll need the money you had been putting in their college funds.</p>
-                <p>They're coming for it. They're coming for you. They're coming sooner than you think. <em>Tempus fugit.</em> Time flies. They grow up so fast.</p>
-                <p>Cherish this time you have with them now. Each moment, each milestone, each new thing they do — or take or want or need — it's going to come and go faster than you realize. And you can't get any of it back. That urgency isn't meant to produce anxiety; it's meant to sharpen your attention toward what matters most, right now, today.</p>
+            <div class="hero-sidebar-item">
+                <span class="category">Business</span>
+                <h3>Kraft Launches High-Protein Mac &amp; Cheese to Claw Back Market Share</h3>
+                <p>Kraft Heinz unveiled <a href="https://links.morningbrew.com/c/MMW?mblid=df4761155155" target="_blank" style="color:#60a5fa;">PowerMac</a> &mdash; more than double the protein of the original blue box &mdash; as the company commits $600M in marketing and R&amp;D after losing 6% market share since 2022 to healthier rivals. New CEO Steve Cahillane is overhauling all 56 product categories. <span class="source source-brew">Morning Brew</span></p>
             </div>
         </div>
-
-        <!-- How To Section — The Rundown AI -->
-        <div class="howto-section">
-            <div class="howto-header">
-                <span class="source source-rundown">The Rundown AI</span>
-                <span class="section-label">AI Training &amp; Community Workflows</span>
-            </div>
-            <h3>How To Use Grok for Free Automated Research</h3>
-            <div class="howto-body">
-                <p>If you have a free <a href="https://x.com" target="_blank" style="color:#a855f7;">X.com</a> account, you get 2 automated tasks each day via <a href="https://grok.com/" target="_blank" style="color:#a855f7;">Grok</a>. Use them to build automated daily research briefings pulled from live X data — no paid subscription required.</p>
-            </div>
-            <h4>Step-by-Step</h4>
-            <ol>
-                <li>Go to <a href="https://grok.com/" target="_blank" style="color:#a855f7;">grok.com</a> and sign in with your X account. Click your profile picture bottom-left, then click <code>Tasks</code> in the pop-up.</li>
-                <li>Click <code>New Task</code>, give it a name, set your schedule (daily, weekly, or specific days), and enter a prompt: <code>"Search X for the top trends in [your niche] from the last 24 hours. Summarize the top 3 and flag anything gaining traction."</code></li>
-                <li>Once saved, Grok runs the search on schedule and sends results via email and mobile push notification.</li>
-                <li>To view run results on desktop, navigate to <a href="https://grok.com/tasks" target="_blank" style="color:#a855f7;">grok.com/tasks</a> and click on the task.</li>
-            </ol>
-            <div class="howto-body" style="margin-top:15px;">
-                <p><strong style="color:#ccc;">Pro tip:</strong> Beyond your 2 daily tasks, stretch your free account by scheduling up to 10 research tasks per week or per month — a zero-cost intelligence pipeline.</p>
-            </div>
-            <h4>Community Workflow: AI as Your Marketing Strategist</h4>
-            <div class="workflow-item">
-                <p style="color:#bbb; margin-bottom:10px;"><strong style="color:#ccc;">From Barry L., Houston TX — Stand-up Comedian</strong></p>
-                <p style="color:#bbb; margin-bottom:10px;">"AI has become my go-to marketing and promotions strategist, helping me grow online and drive more ticket sales. One of the best prompting tips I've learned is ending prompts with: <code>"Ask me clarifying questions until you're 95% confident you can complete the task successfully."</code> That tip alone dramatically improved my results.</p>
-                <p style="color:#bbb;">AI helped me develop better content ideas, sharpen my messaging, and build a strong Meta ad strategy. I produce a twice-monthly comedy show, and we've sold out every show but one."</p>
-            </div>
-        </div>
-
-        <!-- Main Two-Column Section -->
-        <div class="section-grid">
-            <div class="main-column">
-
-                <!-- Article 1: Nvidia GTC Deep Dive -->
-                <div class="article">
-                    <span class="category">Tech &amp; AI</span>
-                    <h3>Nvidia's GTC 2026: Chips, Agents, Games, and Space Data Centers <span class="source source-rundown">Rundown AI</span> <span class="source source-brew">Morning Brew</span></h3>
-                    <p class="summary">Jensen Huang delivered one of the most expansive tech keynotes in recent memory at GTC 2026, positioning Nvidia as "the first vertically integrated but horizontally open company" — spanning chips, AI agents, photorealistic gaming, and robotics.</p>
-                    <div class="details">
-                        <p>The <a href="https://blogs.nvidia.com/blog/gtc-2026-news/" target="_blank" style="color:#60a5fa;">headline announcements</a> included NemoClaw, an open-source security and privacy stack for OpenClaw AI agents, and the Vera Rubin platform with seven new chips powering AI training and inference. Huang also unveiled DLSS 5, which <a href="https://www.nvidia.com/en-us/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/" target="_blank" style="color:#60a5fa;">uses AI to add photorealistic lighting and materials</a> to games in real time — with Bethesda, Capcom, and Ubisoft as launch partners.</p>
-                        <p>Huang teased <a href="https://nvidianews.nvidia.com/news/space-computing" target="_blank" style="color:#60a5fa;">space-based data centers</a>, introduced the Groq 3 language-processing unit designed for inference (not just training), and announced new AI platforms for <a href="https://nvidianews.nvidia.com/news/drive-hyperion-level-4" target="_blank" style="color:#60a5fa;">autonomous vehicles</a> and <a href="https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world" target="_blank" style="color:#60a5fa;">physical robotics</a>.</p>
-                        <div class="highlight-box">
-                            <h5>Why It Matters</h5>
-                            <ul>
-                                <li>Nvidia is no longer just a chip company — GTC showed it owning the full stack from silicon to enterprise software to game engines</li>
-                                <li>NemoClaw signals Nvidia wants to be the security layer for the entire OpenClaw agent ecosystem</li>
-                                <li>$1 trillion in projected chip sales through 2027 suggests Huang sees demand as structural, not a bubble</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article 2: Pokémon Go robots -->
-                <div class="article">
-                    <span class="category">Tech &amp; AI</span>
-                    <h3>Pokémon Go Data Is Now Training Delivery Robots <span class="source source-brew">Morning Brew</span></h3>
-                    <p class="summary">Ten years after players were catching Pokémon in the streets, all those smartphone camera scans of real-world landmarks are being used to help sidewalk robots navigate cities. The internet is not thrilled.</p>
-                    <div class="details">
-                        <p>Niantic Spatial — an AI company <a href="https://links.morningbrew.com/c/wuW?mblid=ebe7def4e2e5" target="_blank" style="color:#60a5fa;">spun off</a> from Pokémon Go developer Niantic — built a model using 30+ billion images captured by Pokémon Go users that can reportedly geolocate down to the centimeter. Now, a Sam Altman-backed company called Coco Robotics will <a href="https://links.morningbrew.com/c/MJ2?mblid=ad0d9ee88a2c" target="_blank" style="color:#60a5fa;">use this tool</a> to teach its 1,000-bot fleet to better navigate Los Angeles, Chicago, and other cities — especially in urban canyons where GPS signals degrade.</p>
-                        <p>The controversy: A 2020 Pokémon Go feature called "Field Research" <a href="https://links.morningbrew.com/c/MJ3?mblid=4fb9917066d5" target="_blank" style="color:#60a5fa;">incentivized users</a> to scan real-world landmarks for in-game rewards. Many players may not have realized their scans would fuel a commercial robotics dataset. Niantic only <a href="https://links.morningbrew.com/c/sg3?mblid=d634a85611e0" target="_blank" style="color:#60a5fa;">announced</a> its plan to build a navigation model from the data in 2024. The long-term goal: a live, centimeter-accurate map of the entire world.</p>
-                    </div>
-                </div>
-
-                <!-- Article 3: ChatGPT Adult Mode -->
-                <div class="article">
-                    <span class="category">AI &amp; Society</span>
-                    <h3>OpenAI Delays ChatGPT "Adult Mode" After "Sexy Suicide Coach" Warning <span class="source source-onepercent">1% Better</span></h3>
-                    <p class="summary">OpenAI shelved its planned erotic chatbot feature after its own advisory council raised alarms, including a warning that ChatGPT could inadvertently become what one adviser called a "sexy suicide coach."</p>
-                    <div class="details">
-                        <p>The feature, originally planned for Q1 2026, was pulled after the company discovered its age-verification system was misclassifying minors as adults roughly 12% of the time. The advisory council warned the feature risked fostering emotional overreliance and that the misclassification rate put vulnerable users at risk.</p>
-                        <p>OpenAI confirmed the adult feature is still planned, saying it remains "committed to treating adult users as adults" while building stronger safeguards first. The delay comes as AI companionship products like Character.ai face intensifying regulatory scrutiny over their effects on teenagers.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-
-                <div class="sidebar-section">
-                    <h4>Quick Hits</h4>
-                    <div class="sidebar-item">
-                        <span class="category">Health</span>
-                        <h5><a href="https://links.morningbrew.com/c/MJl?mblid=73d9f8e6a40a" target="_blank" style="color:#e8e8e8;">Federal Judge Blocks RFK Jr.'s Vaccine Order</a></h5>
-                        <p>A federal judge temporarily blocked Health Secretary Robert F. Kennedy Jr.'s order slimming down the number of recommended childhood vaccines. <span class="source source-brew">Brew</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">Politics</span>
-                        <h5><a href="https://links.morningbrew.com/c/MJo?mblid=4a8b607227e0" target="_blank" style="color:#e8e8e8;">Susie Wiles Diagnosed With Breast Cancer</a></h5>
-                        <p>White House Chief of Staff Susie Wiles has been diagnosed with breast cancer and plans to continue working while receiving treatment. <span class="source source-brew">Brew</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">Finance</span>
-                        <h5><a href="https://links.morningbrew.com/c/MJn?mblid=11e58a8933fa" target="_blank" style="color:#e8e8e8;">Bank of America Settles Epstein Lawsuit</a></h5>
-                        <p>BofA settled a lawsuit by victims of sex offender Jeffrey Epstein that accused the bank of facilitating his crimes. <span class="source source-brew">Brew</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">Business</span>
-                        <h5><a href="https://www.newsweek.com/doordash-settlement-lawsuit-payout-new-york-dashers-11686665" target="_blank" style="color:#e8e8e8;">DoorDash Settles Tip-Theft Claims for $16.75M</a></h5>
-                        <p>Settlement covers 63,000 New York delivery workers affected by tip theft from 2017–2019. <span class="source source-onepercent">1%</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">Energy</span>
-                        <h5><a href="https://links.morningbrew.com/c/MJm?mblid=0d78557e3ba4" target="_blank" style="color:#e8e8e8;">Cuba Suffers Island-Wide Blackout</a></h5>
-                        <p>Cuba's energy crisis, exacerbated by US blockade, caused a complete island-wide power outage. <span class="source source-brew">Brew</span></p>
-                    </div>
-                </div>
-
-                <div class="sidebar-section">
-                    <h4>AI &amp; Tech</h4>
-                    <div class="sidebar-item">
-                        <span class="category">Music &amp; AI</span>
-                        <h5><a href="https://x.com/TheRundownAI/status/2033568236227244451?s=20" target="_blank" style="color:#e8e8e8;">Exposed AI Band "Neon Oni" Goes Real in Japan</a></h5>
-                        <p>A pseudonymous producer built an entirely AI-generated Japanese metal band on Spotify with 80k+ monthly listeners — then, after fans uncovered the deception, hired seven real Tokyo musicians to perform the AI music live. Three shows done, a headline gig set for March 29. <span class="source source-rundown">Rundown</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">AI Agents</span>
-                        <h5><a href="https://manus.im/blog/manus-my-computer-desktop" target="_blank" style="color:#e8e8e8;">Manus Launches AI Agent for Local Machines</a></h5>
-                        <p>Manus "My Computer" moves the cloud-based AI agent to users' desktops to manage files, run terminal commands, and build apps. Meta <a href="https://www.rundown.ai/articles/metas-next-big-ai-bet-manus" target="_blank" style="color:#60a5fa;">acquired</a> the startup in December for $2B. <span class="source source-rundown">Rundown</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">AI &amp; Legal</span>
-                        <h5><a href="https://techcrunch.com/2026/03/16/merriam-webster-openai-encyclopedia-brittanica-lawsuit/" target="_blank" style="color:#e8e8e8;">Merriam-Webster &amp; Britannica Sue OpenAI</a></h5>
-                        <p>The publishers allege OpenAI scraped their articles, produced competing outputs, and attributed AI hallucinations to them. <span class="source source-rundown">Rundown</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <span class="category">AI Infrastructure</span>
-                        <h5><a href="https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta" target="_blank" style="color:#e8e8e8;">Meta Signs $27B Nebius AI Infrastructure Deal</a></h5>
-                        <p>One of the first large-scale deployments of Nvidia's new Vera Rubin platform, as Meta builds out AI cloud infrastructure capacity. <span class="source source-rundown">Rundown</span></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Bottom Three-Column Section -->
-        <div class="bottom-section">
-
-            <!-- Politics -->
-            <div class="bottom-column">
-                <h4>Politics</h4>
-                <div class="bottom-item">
-                    <h5><a href="https://abcnews.com/Politics/story?id=131013014" target="_blank" style="color:#e8e8e8;">Rubio vs. Vance: The 2028 Race Already Has Donors</a> <span class="source source-onepercent">1%</span></h5>
-                    <p>Republican donors have begun quietly organizing a "draft Rubio" effort for 2028 as Secretary of State Marco Rubio's profile has grown through the Iran war. Trump has reportedly asked associates whether they prefer Rubio or VP JD Vance for the next ticket — but hasn't endorsed either. Vance remains well-positioned, and operatives note that donor enthusiasm rarely translates directly to votes.</p>
-                </div>
-                <div class="bottom-item">
-                    <h5><a href="https://links.morningbrew.com/c/MJp?mblid=9c77c4dcb58d" target="_blank" style="color:#e8e8e8;">Airline CEOs Urge Congress: Pay TSA During DHS Shutdown</a> <span class="source source-brew">Brew</span></h5>
-                    <p>US airline executives called on Congress to fund TSA personnel during the ongoing DHS funding lapse to prevent security checkpoint disruptions at major airports.</p>
-                </div>
-                <div class="bottom-item">
-                    <h5>Extreme Weather Hits 200M Americans <span class="source source-brew">Brew</span></h5>
-                    <p>AccuWeather estimates 200+ million people were at risk from <a href="https://links.morningbrew.com/c/MJg?mblid=427de2cd3c38" target="_blank" style="color:#60a5fa;">extreme weather</a> Monday: Midwest snow, East Coast tornado risk, West Coast triple-digit heat, and floods in Hawaii.</p>
-                </div>
-            </div>
-
-            <!-- Finance &amp; Business -->
-            <div class="bottom-column">
-                <h4>Finance &amp; Business</h4>
-                <div class="bottom-item">
-                    <h5>The Buy-Borrow-Die Wealth Strategy <span class="source source-onepercent">1%</span></h5>
-                    <p>A legal wealth-preservation technique lets investors avoid capital gains taxes indefinitely: buy an appreciating asset, borrow against it (no tax on loans), and die holding it. Heirs inherit at current market value, erasing decades of taxable gains. The strategy is <a href="https://smartasset.com/investing/buy-borrow-die-how-the-rich-avoid-taxes" target="_blank" style="color:#60a5fa;">widely used</a> among high-net-worth families.</p>
-                </div>
-                <div class="bottom-item">
-                    <h5><a href="https://links.morningbrew.com/c/MJk?mblid=2f06d42c7277" target="_blank" style="color:#e8e8e8;">Billionaire Giving Pledge Loses Steam</a> <span class="source source-brew">Brew</span></h5>
-                    <p>The Giving Pledge signed 113 billionaires in its first five years (2010–2015). The next five years brought 72. The most recent five: just 43 — with only 4 new sign-ons in 2024. Coinbase's Brian Armstrong unsigned; Oracle's Larry Ellison amended his to allow more for-profit giving.</p>
-                </div>
-                <div class="bottom-item">
-                    <h5><a href="https://www.wsj.com/real-estate/mamdanis-rental-plan-risks-pushing-small-landlords-toward-extinction-b3228648" target="_blank" style="color:#e8e8e8;">NYC Landlords Flee as Rent Freeze Looms</a> <span class="source source-onepercent">1%</span></h5>
-                    <p>Family-owned buildings are being sold as a proposed rent freeze and 9.5% property tax hike in New York City accelerate corporate takeover of the rental market.</p>
-                </div>
-            </div>
-
-            <!-- Life &amp; Health -->
-            <div class="bottom-column">
-                <h4>Life &amp; Health</h4>
-                <div class="bottom-item">
-                    <h5>Lenny Kravitz's Ageless Body Secrets at 61 <span class="source source-onepercent">1%</span></h5>
-                    <p>The rock star's approach: primarily raw vegan diet, 5–6 days/week of resistance training (dumbbells, barbells, pull-ups, compound movements), and built-in mobility work. He skips food entirely if hungry late at night, drinking water instead. Experts say the real drivers are protein intake, controlled calories, and decades of consistency — <a href="https://www.youtube.com/watch?v=e7d_V5GBfCY" target="_blank" style="color:#60a5fa;">breakdown here</a>.</p>
-                </div>
-                <div class="bottom-item">
-                    <h5><a href="https://links.morningbrew.com/c/MJq?mblid=bea7d900e376" target="_blank" style="color:#e8e8e8;">Peloton Launches Equipment for Gyms</a> <span class="source source-brew">Brew</span></h5>
-                    <p>After demand for home fitness slowed post-Covid, Peloton is pivoting to sell bikes and treadmills directly to commercial gyms — a strategic shift to find new revenue beyond its home consumer base.</p>
-                </div>
-                <div class="bottom-item">
-                    <h5>OpenAI Restructuring Stargate Team <span class="source source-rundown">Rundown</span></h5>
-                    <p>OpenAI is reportedly <a href="https://www.theinformation.com/articles/openai-names-new-infrastructure-leaders-following-stargate-strategy-shift" target="_blank" style="color:#60a5fa;">restructuring</a> its Stargate computing team alongside a strategic shift toward renting more AI server capacity rather than building its own data centers.</p>
-                </div>
-            </div>
-
-        </div>
-
     </div>
 
-    <footer>
-        <p>The Daily Brief — Tuesday, March 17, 2026 (St. Patrick's Day)</p>
-        <p>Compiled from Morning Brew, The Rundown AI, 1% Better, and Daily Dad</p>
-        <div class="sources">
-            <span class="source source-brew">Morning Brew</span>
-            <span class="source source-rundown">The Rundown AI</span>
-            <span class="source source-onepercent">1% Better</span>
-            <span class="source source-dailydad">Daily Dad</span>
+    <!-- Markets Strip -->
+    <div class="markets-strip">
+        <h3>Markets <span style="color:#444; font-size:0.7rem; text-transform:none; letter-spacing:0;">as of market close</span></h3>
+        <div class="market-items">
+            <div class="market-item">
+                <div class="name">Nasdaq</div>
+                <div class="value">22,479.53</div>
+                <div class="change positive">+0.47%</div>
+            </div>
+            <div class="market-item">
+                <div class="name">S&amp;P 500</div>
+                <div class="value">6,716.09</div>
+                <div class="change positive">+0.25%</div>
+            </div>
+            <div class="market-item">
+                <div class="name">Dow</div>
+                <div class="value">46,993.26</div>
+                <div class="change positive">+0.10%</div>
+            </div>
+            <div class="market-item">
+                <div class="name">10-Year</div>
+                <div class="value">4.202%</div>
+                <div class="change negative">&minus;2.0 bps</div>
+            </div>
+            <div class="market-item">
+                <div class="name">Bitcoin</div>
+                <div class="value">$74,547</div>
+                <div class="change positive">+0.80%</div>
+            </div>
+            <div class="market-item">
+                <div class="name">Delta</div>
+                <div class="value">$64.83</div>
+                <div class="change positive">+6.56%</div>
+            </div>
         </div>
-    </footer>
+        <div style="font-family:-apple-system,sans-serif; font-size:0.7rem; color:#555;">Stocks <a href="https://links.morningbrew.com/c/MN0?mblid=79a6c3b0970f" target="_blank" style="color:#60a5fa;">advanced cautiously</a> amid more Middle East attacks. Delta surged after signaling strong travel demand. <span class="source source-brew">Morning Brew</span></div>
+    </div>
+
+    <!-- Daily Dad Columnist Section -->
+    <div class="columnist-section">
+        <div class="columnist-header">
+            <span class="columnist-label">Columnist</span>
+            <span>|</span>
+            <span class="columnist-name">Daily Dad <span class="source source-dailydad">Daily Dad</span></span>
+        </div>
+        <h3>Are You Making Time for Yourself?</h3>
+        <div class="columnist-body">
+            <p>They wanted guitar lessons. They wanted to join the hockey team. They wanted gymnastics, dance, wilderness survival. So you signed them up &mdash; you want to encourage them to learn, enrich themselves, stay curious, build skills, find something they love. Maybe even find their calling.</p>
+            <p>But what do you do for <em>you</em>? What do you want to sign up for that you haven&rsquo;t? What new &mdash; or forgotten &mdash; hobby would you take up if you had the time? What books have you been meaning to read?</p>
+            <p>You know you need to grow. We all do. You need to keep learning, keep enriching yourself, keep acquiring new skills. And the only way that&rsquo;s possible is if you clean out some of the stuff that&rsquo;s taking up space &mdash; literally and figuratively. The overcommitment, the digital distractions, the endless to-do list, the zombie obligations.</p>
+            <p>How great would it feel to clear that path? To get rid of some of life&rsquo;s clutter and have some room and runway? Spring is exactly the time for it &mdash; to refresh, get back on track, and renew motivation around what matters most to you.</p>
+        </div>
+    </div>
+
+    <!-- How To Section — The Rundown AI -->
+    <div class="howto-section">
+        <div class="howto-header">
+            <span class="source source-rundown">The Rundown AI</span>
+            <span class="section-label">AI Training &amp; Community Workflows</span>
+        </div>
+        <h3>How To Generate a Cohesive E-Commerce Product Shoot for Free</h3>
+        <div class="howto-body">
+            <p>Using <a href="https://grok.com/" target="_blank" style="color:#a855f7;">Grok&rsquo;s Aurora model</a>, you can generate a full set of product photos that look like they came from the same professional session &mdash; building each image off the last one for visual consistency. No paid subscription required.</p>
+        </div>
+        <h4>Step-by-Step</h4>
+        <ol>
+            <li>Go to <a href="https://grok.com/" target="_blank" style="color:#a855f7;">grok.com</a>, upload a product photo, and prompt: <code>"Product photo of [your product] on a matte black surface, soft box lighting from the upper left, shot on 85mm lens, f/2.8, shallow depth of field, commercial product photography"</code></li>
+            <li>Build more shots from the first output &mdash; keep the same studio description but change only the angle or crop: a 3/4 angle, a close-up, or a white background.</li>
+            <li>Add a lifestyle shot. Describe the product in use: being worn, held, or placed in a real environment. Include setting, lighting, and mood.</li>
+            <li>Lay out all your images. They should look like they came from the same shoot.</li>
+        </ol>
+        <div class="howto-body" style="margin-top:15px;">
+            <p><strong style="color:#ccc;">Pro tip:</strong> Try a themed studio shoot &mdash; basketball-themed, nature-themed, etc. Grok may surprise you with the results.</p>
+        </div>
+        <h4>Community Workflow: AI as Your Vehicle Maintenance Logbook</h4>
+        <div class="workflow-item">
+            <p style="color:#bbb; margin-bottom:10px;"><strong style="color:#ccc;">From Dmitry K., Livonia MI</strong></p>
+            <p style="color:#bbb;">"I have two vehicles and found it challenging to keep meticulous maintenance records over the years. I set up a Claude project to create a Vehicle Maintenance Logbook. Every time I have a service appointment, I take a picture of the receipt &mdash; including the work performed &mdash; and upload it to Claude. It enters all relevant information into my logbook, keeps me informed of manufacturer-recommended maintenance, and gives me an overall health score for each vehicle. Now I have better maintenance clarity and a fully digital record, which will come in handy when selling either car!"</p>
+        </div>
+    </div>
+
+    <!-- Main Two-Column Section -->
+    <div class="section-grid">
+        <div class="main-column">
+
+            <div class="article">
+                <span class="category">Tech &amp; AI</span>
+                <h3>Mistral Opens Its Model-Training Playbook to Enterprises <span class="source source-rundown">Rundown AI</span></h3>
+                <p class="summary">Mistral&rsquo;s new <a href="https://mistral.ai/news/forge" target="_blank" style="color:#60a5fa;">Forge platform</a> hands companies the same training infrastructure the French AI lab uses internally &mdash; letting them build custom models on proprietary data with zero exposure to Mistral.</p>
+                <div class="details">
+                    <p>Rather than basic fine-tuning, Forge offers full pre-training, post-training, and RL pipelines that mirror how Mistral builds its own flagship models. Training can run entirely on a company&rsquo;s own servers &mdash; a hard requirement for defense, finance, and government buyers. Early partners include ASML, Ericsson, and the European Space Agency, with use cases ranging from legacy code migration to ancient manuscript restoration.</p>
+                    <p>Forge arrived during a busy Mistral release week that also includes <a href="https://mistral.ai/news/mistral-small-4" target="_blank" style="color:#60a5fa;">Mistral Small 4</a> (open-source reasoning + coding + vision in one model), <a href="https://mistral.ai/news/leanstral" target="_blank" style="color:#60a5fa;">Leanstral</a>, and a <a href="https://mistral.ai/news/mistral-ai-and-nvidia-partner-to-accelerate-open-frontier-models" target="_blank" style="color:#60a5fa;">Nvidia Nemotron Coalition partnership</a>. The core bet: companies with proprietary data don&rsquo;t need a general model prompted with context &mdash; they need a model trained on that knowledge.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Tech &amp; AI</span>
+                <h3>Microsoft Merges Copilot Teams, Frees Suleyman for Superintelligence Push <span class="source source-rundown">Rundown AI</span></h3>
+                <p class="summary">Microsoft <a href="https://blogs.microsoft.com/blog/2026/03/17/announcing-copilot-leadership-update/" target="_blank" style="color:#60a5fa;">overhauled its AI org chart</a>, consolidating fragmented Copilot teams under former Snap exec Jacob Andreou, and refocusing Microsoft AI CEO Mustafa Suleyman on a five-year superintelligence mission.</p>
+                <div class="details">
+                    <p>Suleyman said the move &ldquo;enables me to focus all my energy on our Superintelligence efforts.&rdquo; A reworked OpenAI partnership cleared the way for Microsoft to pursue AGI solo &mdash; lifting a ban on independent development that had run through 2030. Copilot currently has 6M daily users vs. ChatGPT&rsquo;s 440M, and its enterprise add-on has reached just 3% of Office subscribers. Microsoft stock is down this year.</p>
+                    <div class="highlight-box">
+                        <h5>New AI Tools This Week</h5>
+                        <ul>
+                            <li><a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano/" target="_blank" style="color:#60a5fa;">GPT-5.4 Mini &amp; Nano</a> &mdash; Fast, cheap small models from OpenAI for coding agents and multi-agent systems</li>
+                            <li><a href="https://mistral.ai/news/mistral-small-4" target="_blank" style="color:#60a5fa;">Mistral Small 4</a> &mdash; Open-source reasoning + coding + vision in one model</li>
+                            <li>Anthropic <strong>Dispatch</strong> &mdash; Claude Desktop feature letting you message the assistant from your phone while it works on your PC</li>
+                            <li><a href="https://world.org/ja-jp/blog/announcements/now-available-agentkit-proof-of-human-for-the-agentic-web" target="_blank" style="color:#60a5fa;">AgentKit by World</a> &mdash; Proof-of-human layer for AI shopping agents</li>
+                            <li>Google <a href="https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/" target="_blank" style="color:#60a5fa;">Personal Intelligence</a> now rolling out to free users in AI Mode, Gemini, and Chrome</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Prediction Markets</span>
+                <h3>Polymarket Bettors Threatened a War Reporter to Change His Story <span class="source source-brew">Morning Brew</span></h3>
+                <p class="summary">Times of Israel reporter Emanuel Fabian says Polymarket bettors <a href="https://links.morningbrew.com/c/MNb?mblid=81aa368eae34" target="_blank" style="color:#60a5fa;">tried to intimidate him</a> into issuing a correction &mdash; because a $14M+ market depended on his story being wrong.</p>
+                <div class="details">
+                    <p>Fabian broke news of an Iranian ballistic missile hitting an open area near Beit Shemesh on March 10. Bettors who wagered that no Iranian projectile would strike Israel without interception flooded his DMs with threats and bribe offers, claiming a fragment of an interceptor missile caused the explosion. Fabian stands by his reporting. Polymarket banned the accounts after he reported it to both police and the platform.</p>
+                    <p>It&rsquo;s the latest prediction-market integrity incident: an IDF reservist was recently indicted for placing Polymarket bets using classified information. Arizona has now become the first state to <a href="https://links.morningbrew.com/c/MMH?mblid=fd1eea023d77" target="_blank" style="color:#60a5fa;">file criminal charges against Kalshi</a>, calling the platform &ldquo;an illegal gambling operation taking bets on Arizona elections&rdquo; &mdash; despite Kalshi&rsquo;s federal CFTC registration.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h4>Quick Hits</h4>
+
+                <div class="sidebar-item">
+                    <span class="category">World</span>
+                    <h5>Top U.S. Counterterrorism Chief Resigns Over Iran War</h5>
+                    <p>Joe Kent, director of the National Counterterrorism Center, <a href="https://links.morningbrew.com/c/MMF?mblid=bfa280323fd2" target="_blank" style="color:#60a5fa;">resigned</a> saying he couldn&rsquo;t support the war &ldquo;in good conscience,&rdquo; alleging the U.S. started it under pressure from Israel. Trump called him &ldquo;weak on security.&rdquo; <span class="source source-brew">Morning Brew</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Politics</span>
+                    <h5>House Subpoenas AG Pam Bondi for Epstein Deposition</h5>
+                    <p>The House Oversight Committee <a href="https://links.morningbrew.com/c/MMG?mblid=7e7ed9981b30" target="_blank" style="color:#60a5fa;">subpoenaed Bondi</a> to testify April 14 on DOJ compliance with the Epstein Files Transparency Act. Commerce Secretary Howard Lutnick also agreed to testify after documents revealed he visited Epstein&rsquo;s private island in 2012. <span class="source source-brew">Morning Brew</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Business</span>
+                    <h5>Amazon Slashes USPS Volume by Two-Thirds This Fall</h5>
+                    <p><a href="https://www.wsj.com/business/retail/amazon-usps-package-volume-change-93d0f6db" target="_blank" style="color:#60a5fa;">Amazon is cutting USPS shipments</a> dramatically, threatening billions in revenue for the already-struggling postal service as Amazon expands its own last-mile delivery network. <span class="source source-onepercent">1% Better</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Tech</span>
+                    <h5>Amazon Launches 1-Hour and 3-Hour Delivery Nationwide</h5>
+                    <p><a href="https://links.morningbrew.com/c/MML?mblid=6bdabec351c9" target="_blank" style="color:#60a5fa;">Amazon rolled out</a> ultra-fast delivery options in hundreds of U.S. cities as it races to fully own the logistics stack. <span class="source source-brew">Morning Brew</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Tech</span>
+                    <h5>Alibaba Shifts AI Strategy Toward Agents</h5>
+                    <p><a href="https://www.reuters.com/world/china/alibabas-ai-strategy-shift-comes-into-focus-with-big-bets-agents-2026-03-18/" target="_blank" style="color:#60a5fa;">Alibaba is pivoting to AI agents</a> connecting businesses across its entire empire. Nvidia separately <a href="https://www.wsj.com/tech/ai/nvidia-says-it-is-restarting-production-of-ai-chips-for-sale-in-china-eea7029e" target="_blank" style="color:#60a5fa;">restarted H200 chip production</a> for China after months of regulatory uncertainty. <span class="source source-onepercent">1% Better</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Policy</span>
+                    <h5>Greece to Ban Social Media for Under-15s</h5>
+                    <p>Greece is <a href="https://links.morningbrew.com/c/MMM?mblid=0f8a1fecdabd" target="_blank" style="color:#60a5fa;">preparing legislation</a> to ban social media for those under 15, joining Spain, France, and Portugal in restricting teen app access. <span class="source source-brew">Morning Brew</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Three-Column Section -->
+    <div class="bottom-section">
+        <div class="bottom-column">
+            <h4>Life &amp; Science</h4>
+
+            <div class="bottom-item">
+                <h5>How to Bounce Back After Bad Sleep</h5>
+                <p>Per neuroscientist Andrew Huberman: wake at your normal time (don&rsquo;t sleep in), get sunlight immediately, delay caffeine 90&ndash;120 minutes, exercise in the morning, and use an NSDR nap instead of afternoon coffee. <a href="https://www.hubermanlab.com/daily-blueprint" target="_blank" style="color:#60a5fa;">His free Blueprint</a>. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Bull Sharks Have Friend Groups, Study Finds</h5>
+                <p>A six-year study of 184 bull sharks at Fiji&rsquo;s Shark Reef Marine Reserve found the species forms <a href="https://www.msn.com/en-us/money/general/ar-AA1YM0dw" target="_blank" style="color:#60a5fa;">clear social bonds</a> with preferred companions &mdash; challenging their reputation as solitary predators. Adults drove most social networks; both sexes preferred female companions. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Dune: Part Three &mdash; First Trailer Drops</h5>
+                <p>Warner Bros. released the <a href="https://www.youtube.com/watch?si=POANqHmqKmQxiOtA&v=3_9vCamtuPY&feature=youtu.be" target="_blank" style="color:#60a5fa;">first trailer</a> for Dune: Part Three, set 17 years after Part Two. Villeneuve calls it darker and more action-packed. Robert Pattinson and Anya Taylor-Joy join the cast. In theaters December 18. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Wellness Services Now Majority of U.S. Retail Space</h5>
+                <p>For the first time ever, service-based businesses &mdash; gyms, salons, spas &mdash; <a href="https://links.morningbrew.com/c/MMI?mblid=c7b020892519" target="_blank" style="color:#60a5fa;">account for over 50%</a> of U.S. retail space, as e-commerce doubles its share of total retail sales to 16% over the last decade. <span class="source source-brew">Morning Brew</span></p>
+            </div>
+        </div>
+
+        <div class="bottom-column">
+            <h4>World</h4>
+
+            <div class="bottom-item">
+                <h5>Israel Says It Killed Iran&rsquo;s Security Chief</h5>
+                <p><a href="https://links.morningbrew.com/c/MMJ?mblid=bf6174a14e01" target="_blank" style="color:#60a5fa;">Israel claimed an airstrike</a> killed Ali Larijani, Iran&rsquo;s security chief. <a href="https://www.wsj.com/world/middle-east/israels-decapitation-strategy-wipes-out-another-two-top-iranians-66a360aa" target="_blank" style="color:#60a5fa;">Israel&rsquo;s decapitation strategy</a> has now eliminated multiple top Iranian officials in recent weeks. <span class="source source-brew">Morning Brew</span> <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Pakistan Airstrike Kills 400+ at Kabul Hospital</h5>
+                <p>Afghanistan said <a href="https://links.morningbrew.com/c/MMK?mblid=861087a91bbe" target="_blank" style="color:#60a5fa;">Pakistan struck</a> a drug rehabilitation hospital in Kabul, killing at least 400 people &mdash; a dramatic escalation in regional tensions. <span class="source source-brew">Morning Brew</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Western U.S. Heat Wave to Shatter March and April Records</h5>
+                <p>An <a href="https://links.morningbrew.com/c/MMP?mblid=89d861e6ea3c" target="_blank" style="color:#60a5fa;">unprecedented heat wave</a> is expected to break temperature records across both March and April in the Western U.S. Phoenix is already under an extreme heat warning. <span class="source source-brew">Morning Brew</span> <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>U.S. EV Fast-Charging Grew 87% in 2025 &mdash; Still Trails China</h5>
+                <p>U.S. fast-charging sites <a href="https://www.wsj.com/business/autos/china-has-five-minute-ev-charging-america-is-trying-to-catch-up-ef7d707a" target="_blank" style="color:#60a5fa;">grew 87% last year</a> but still lag China&rsquo;s five-minute recharge technology by a wide margin. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Tim Cook: &ldquo;I Can&rsquo;t Imagine Life Without Apple&rdquo;</h5>
+                <p>Apple CEO Tim Cook <a href="https://links.morningbrew.com/c/MMN?mblid=70a82e103815" target="_blank" style="color:#60a5fa;">shut down retirement speculation</a> in a Good Morning America interview. <span class="source source-brew">Morning Brew</span></p>
+            </div>
+        </div>
+
+        <div class="bottom-column">
+            <h4>Entertainment &amp; Culture</h4>
+
+            <div class="bottom-item">
+                <h5>WBD CEO David Zaslav Could Receive $800M in Paramount Deal</h5>
+                <p>Warner Bros. Discovery CEO David Zaslav <a href="https://links.morningbrew.com/c/MMO?mblid=ca0d26611214" target="_blank" style="color:#60a5fa;">could receive up to $800M</a> in payments when Paramount Skydance acquires the company, per reports. <span class="source source-brew">Morning Brew</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>March Madness Bracket: 32 Games Thursday &amp; Friday</h5>
+                <p>The main bracket&rsquo;s first round begins Thursday with <a href="https://www.ncaa.com/news/basketball-men/mml-official-bracket/2026-03-18/2026-ncaa-tournament-printable-bracket-schedule-march-madness" target="_blank" style="color:#60a5fa;">32 games across CBS, TBS, TNT, and truTV</a>. <a href="https://www.theringer.com/2026/03/16/college-basketball/march-madness-mens-ncaa-tournament-bracket-breakdown-2026" target="_blank" style="color:#60a5fa;">The Ringer&rsquo;s full bracket breakdown</a>. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Has Banksy&rsquo;s Identity Been Revealed?</h5>
+                <p>Reuters published a <a href="https://www.reuters.com/investigates/special-report/global-art-banksy/" target="_blank" style="color:#60a5fa;">special investigation</a> into the long-running mystery of Banksy&rsquo;s true identity. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5>Gamma Launches AI Design Tool with Auto Brand Styling</h5>
+                <p><a href="https://x.com/thisisgrantlee/status/2033907266727133415" target="_blank" style="color:#60a5fa;">Gamma&rsquo;s Imagine</a> generates logos, infographics, and social graphics with automatic brand styling baked into its presentation platform. <span class="source source-rundown">Rundown AI</span></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>The Daily Brief &mdash; Wednesday, March 18, 2026</p>
+    <p>Compiled from Morning Brew, The Rundown AI, 1% Better, and Daily Dad</p>
+    <div class="sources">
+        <span style="color:#f59e0b;">Morning Brew</span>
+        <span style="color:#8b5cf6;">The Rundown AI</span>
+        <span style="color:#10b981;">1% Better</span>
+        <span style="color:#3b82f6;">Daily Dad</span>
+    </div>
+</footer>
 
 </body>
 </html>
