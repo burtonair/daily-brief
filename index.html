@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief - Sunday, May 17, 2026</title>
+    <title>The Daily Brief - Monday, May 18, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
@@ -37,11 +37,23 @@
         .source-rundown { background: #8b5cf6; color: #fff; }
         .source-onepercent { background: #10b981; color: #fff; }
         .source-dailydad { background: #3b82f6; color: #fff; }
-        .columnist-section { background: #111; border-left: 4px solid #8b5cf6; padding: 25px 35px; margin-bottom: 50px; border-radius: 0 8px 8px 0; }
-        .columnist-section .section-label { font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #8b5cf6; margin-bottom: 12px; }
+        .markets-strip { background: #111; border: 1px solid #2a2a2a; border-radius: 6px; padding: 18px 25px; margin-bottom: 35px; display: flex; gap: 30px; flex-wrap: wrap; align-items: center; }
+        .markets-strip .markets-label { font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-right: 10px; flex-shrink: 0; }
+        .market-item { display: flex; flex-direction: column; align-items: flex-start; }
+        .market-item .ticker { font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px; color: #666; }
+        .market-item .price { font-family: -apple-system, sans-serif; font-size: 0.95rem; font-weight: 600; color: #e8e8e8; }
+        .market-item .change { font-family: -apple-system, sans-serif; font-size: 0.75rem; }
+        .change-up { color: #10b981; }
+        .change-down { color: #ef4444; }
+        .columnist-section { background: #111; border-left: 4px solid #3b82f6; padding: 25px 35px; margin-bottom: 35px; border-radius: 0 8px 8px 0; }
+        .columnist-section.howto { border-left-color: #8b5cf6; }
+        .columnist-section .section-label { font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #3b82f6; margin-bottom: 12px; }
+        .columnist-section.howto .section-label { color: #8b5cf6; }
         .columnist-section h2 { font-size: 1.5rem; font-weight: 400; margin-bottom: 15px; line-height: 1.3; }
         .columnist-section .lead { font-size: 1.05rem; color: #bbb; margin-bottom: 20px; line-height: 1.7; }
         .columnist-section p { color: #999; font-size: 0.95rem; margin-bottom: 12px; line-height: 1.7; }
+        .columnist-section ol { margin: 10px 0 12px 20px; color: #999; font-size: 0.95rem; }
+        .columnist-section ol li { margin-bottom: 8px; line-height: 1.6; }
         .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-top: 20px; }
         .tool-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 16px 18px; }
         .tool-card .tool-name { font-family: -apple-system, sans-serif; font-size: 0.78rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
@@ -84,6 +96,7 @@
             .main-column { border-right: none; padding-right: 0; }
             .bottom-section { grid-template-columns: 1fr; }
             .tool-grid { grid-template-columns: 1fr 1fr; }
+            .markets-strip { gap: 20px; }
         }
         @media (max-width: 600px) {
             body { font-size: 18px; line-height: 1.7; }
@@ -108,6 +121,7 @@
             .nav-date { font-size: 0.8rem; }
             .tool-grid { grid-template-columns: 1fr; }
             .columnist-section { padding: 20px; }
+            .markets-strip { flex-direction: column; gap: 15px; }
         }
     </style>
 </head>
@@ -118,12 +132,12 @@
             <div class="nav-categories">
                 <span>Labor</span>
                 <span>AI</span>
-                <span>Career</span>
-                <span>Business</span>
-                <span>Education</span>
+                <span>Finance</span>
+                <span>World</span>
                 <span>Culture</span>
+                <span>Sports</span>
             </div>
-            <div class="nav-date">Sunday, May 17, 2026</div>
+            <div class="nav-date">Monday, May 18, 2026</div>
         </div>
     </nav>
 
@@ -131,7 +145,7 @@
         <h1>The Daily Brief</h1>
         <p class="tagline">Your morning news, integrated and distilled</p>
         <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-            Sources: Morning Brew (6:03 AM) | The Rundown AI (6:06 AM) | <span style="color:#ef4444;">1% Better &#10007;</span> | <span style="color:#ef4444;">Daily Dad &#10007;</span>
+            Sources: Daily Dad (5:03 AM) | The Rundown AI (5:04 AM) | 1% Better (5:05 AM) | Morning Brew (6:03 AM)
         </p>
     </header>
 
@@ -140,113 +154,149 @@
         <!-- Hero Section -->
         <div class="hero-section">
             <div class="hero-main">
-                <div class="category">Labor &amp; Economy</div>
-                <h2>The Great Pivot: 80% of US Workers Are Ready to Quit</h2>
+                <div class="category">Labor &amp; Transit</div>
+                <h2>LIRR Strike Snarls 270,000 NYC Commuters as Talks Stall</h2>
                 <span class="source source-brew">Morning Brew</span>
-                <p class="summary">Nearly 80% of US professionals say they&rsquo;re ready for a new job &mdash; and roughly half want to switch fields entirely. AI anxiety, aging workforces, and surging demand for tradespeople are reshaping who America is at work.</p>
+                <p class="summary">The Long Island Railroad&rsquo;s first strike since 1994 is now into its third day, with no new negotiations scheduled and quarter of a million commuters scrambling for alternatives.</p>
                 <div class="content">
-                    <p>According to a recent <a href="https://links.morningbrew.com/c/PCt?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">FlexJobs survey</a>, about half of professionals actively looking want to change fields entirely, not just employers. The average career pivot age is around 39, with millennials leading the charge. Remote work options, higher salaries, and better work-life balance top the reasons &mdash; but mass tech and media layoffs have also forced many hands.</p>
-                    <p>The workforce is also aging. Baby boomers working longer have pushed the <a href="https://links.morningbrew.com/c/PCv?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">average age of US workers</a> from 40.5 in 2022 to over 42 in 2025, per Revelio Labs. Fields that saw the biggest age jump over the last decade: insurance, sales, real estate, and the service industry.</p>
-                    <p>Meanwhile, construction, plumbing, and the trades face an opposite crisis: a mass boomer retirement with no one to replace them. As data center buildouts surge, recruiting firm Broadstaff reports a spike in demand for electricians and fiber-optic technicians &mdash; a potential second act for the <a href="https://links.morningbrew.com/c/PCx?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">hundreds of thousands of tech workers</a> laid off since 2022.</p>
+                    <p>The dispute pits five LIRR unions against the Metropolitan Transportation Authority over wages frozen since 2022. Workers are seeking a 9.5% retroactive raise covering 2023&ndash;2025 &mdash; which the MTA agreed to &mdash; but the sticking point is a 5% raise for 2026. The MTA countered with 3% plus a lump-sum payment, which was rejected. Average cash compensation for affected workers in 2025 was reportedly $136,000.</p>
+                    <p>"The raises weren't really raises, when you factor in inflation," said Steve Ammirati of the Brotherhood of Locomotive Engineers and Trainmen. The MTA also sought to abolish work rules that result in higher pay &mdash; for example, workers switching from a diesel to an electric train in the same day currently receive two days&rsquo; pay.</p>
+                    <p>New York Gov. Kathy Hochul warned striking workers that three days on the picket line would erase any gains from a new contract. <a href="https://links.morningbrew.com/c/PGD?mblid=72b7bb945644" target="_blank" style="color:#60a5fa;">Full coverage from the NY Times</a>.</p>
                 </div>
             </div>
             <div class="hero-sidebar">
                 <div class="hero-sidebar-item">
-                    <div class="category">Sports &amp; Business</div>
-                    <h3><a href="https://links.morningbrew.com/c/PCB?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">When the Game Ends: What Pro Athletes Do Next</a></h3>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p>The average pro sports career lasts 5&ndash;7 years. Most athletes end up in sales, finance, or entrepreneurship. George Foreman built a grill empire. Shaq opened car washes and Big Chicken. <a href="https://links.morningbrew.com/c/PCC?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">A quarter of retired athletes</a> go straight into sales &mdash; where competitiveness translates well. Goldman Sachs actively recruits them.</p>
+                    <div class="category">World &bull; Iran</div>
+                    <h3>Trump Warns Iran: &ldquo;Clock Is Ticking&rdquo; on Nuclear Deal</h3>
+                    <p>In a Truth Social post, the president urged Iran to &ldquo;get moving&rdquo; or face consequences, saying a 20-year nuclear moratorium would suffice &mdash; though his administration later insisted only a complete and permanent end to the program will do. <a href="https://links.morningbrew.com/c/PGW?mblid=478b87c81d61" target="_blank" style="color:#60a5fa;">Read more</a>. <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="hero-sidebar-item">
-                    <div class="category">Education &amp; Finance</div>
-                    <h3>Is Grad School Worth It? The ROI Is Wildly Uneven</h3>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p>A new American University study: pharmacy, law, and medicine pay off. Psychology and social work often yield <a href="https://links.morningbrew.com/c/Nys?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">negative ROI</a>. With loan rates at 9.08%, one standout remains clear: registered nursing at $93,600 avg salary and 35% projected job growth through 2034.</p>
+                    <div class="category">Culture &bull; Film</div>
+                    <h3>James Bond Casting Officially Begins Under Amazon MGM</h3>
+                    <p>Game of Thrones casting director Nina Gold is leading the search for the next 007. Candidates must &ldquo;ooze sex appeal&rdquo; and be young enough for 3&ndash;4 films. Jacob Elordi, Callum Turner, and Aaron Taylor-Johnson are rumored contenders. <a href="https://links.morningbrew.com/c/PGI?mblid=6e53fe4e5cc3" target="_blank" style="color:#60a5fa;">Details</a>. <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="hero-sidebar-item">
-                    <div class="category">AI &amp; Labor</div>
-                    <h3><a href="https://links.morningbrew.com/c/PCW?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">Gen Z Is Going Blue-Collar to Dodge AI</a></h3>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p>16% of college students have <a href="https://links.morningbrew.com/c/PCX?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">already switched majors</a> due to AI, per Gallup; 47% have considered it. About 25% of Gen Z is eyeing trades over white-collar careers. BlackRock and Meta are pouring tens of millions into recruiting electricians for their data center buildouts.</p>
+                    <div class="category">Business &bull; Legal</div>
+                    <h3>Musk v. Altman Jury Begins Deliberating Today in Oakland</h3>
+                    <p>An advisory jury of nine will weigh whether OpenAI and CEO Sam Altman unjustly enriched themselves by converting from nonprofit to for-profit. District Judge Gonzalez Rogers has final say. <a href="https://links.morningbrew.com/c/PGY?mblid=e3762dc11468" target="_blank" style="color:#60a5fa;">Follow the case</a>. <span class="source source-brew">Brew</span></p>
                 </div>
             </div>
+        </div>
+
+        <!-- Markets Strip -->
+        <div class="markets-strip">
+            <span class="markets-label">Markets YTD</span>
+            <div class="market-item">
+                <span class="ticker">Nasdaq</span>
+                <span class="price">26,225.14</span>
+                <span class="change change-up">+12.84%</span>
+            </div>
+            <div class="market-item">
+                <span class="ticker">S&amp;P 500</span>
+                <span class="price">7,408.50</span>
+                <span class="change change-up">+8.22%</span>
+            </div>
+            <div class="market-item">
+                <span class="ticker">Dow</span>
+                <span class="price">49,526.17</span>
+                <span class="change change-up">+3.04%</span>
+            </div>
+            <div class="market-item">
+                <span class="ticker">10-Year</span>
+                <span class="price">4.595%</span>
+                <span class="change change-up">+43.2 bps</span>
+            </div>
+            <div class="market-item">
+                <span class="ticker">Bitcoin</span>
+                <span class="price">$77,003.70</span>
+                <span class="change change-down">&minus;12.00%</span>
+            </div>
+            <div class="market-item">
+                <span class="ticker">Ryanair</span>
+                <span class="price">$53.36</span>
+                <span class="change change-down">&minus;25.59%</span>
+            </div>
+            <span style="font-family:-apple-system,sans-serif;font-size:0.72rem;color:#555;margin-left:auto;">Rising oil prices and bond yields have investors uneasy about inflation ahead of retail earnings this week.</span>
+        </div>
+
+        <!-- Daily Dad Columnist Section -->
+        <div class="columnist-section">
+            <div class="section-label">Columnist &bull; Daily Dad</div>
+            <h2>You Won&rsquo;t Regret It</h2>
+            <p class="lead">The work trip you cancelled because you&rsquo;ve been away too much. The meeting you skipped because you know you never should have agreed to it in the first place.</p>
+            <p>The days you came in late because your kids needed a little more time at dropoff. The weekend where you blew off household projects and just did something fun together. Do you think anyone has ever really regretted choosing family first? Maybe they missed out on some stuff here and there, but looking back on their life, do you think anyone even remembers?</p>
+            <p>But we will remember that day we blew off work, picked the kids up early, and drove up to the mountains. We&rsquo;ll remember that we went to their recital. We&rsquo;ll remember that we got ice cream and walked around the park.</p>
+            <p>With so many demands on our time, it helps to zoom out. To think about how you&rsquo;re going to think about this later. Remember what we&rsquo;re after: a close relationship with our kids. A sense that we didn&rsquo;t waste this brief thing called their childhood. So decide accordingly now. You won&rsquo;t regret it.</p>
         </div>
 
         <!-- How To Section (Rundown AI) -->
-        <div class="columnist-section">
-            <div class="section-label">How To &mdash; The Rundown AI</div>
-            <h2>5 AI Workflows Worth Building This Week</h2>
-            <p class="lead">The Rundown AI launched its redesigned <a href="https://app.therundown.ai/courses" target="_blank" style="color:#8b5cf6;">Rundown University</a> this week &mdash; built around a daily 10-minute build, a live weekly workshop with a practicing AI expert, and weekly office hours where an AI consultant debugs your actual workflows in real time. Pro members also unlock $1,656 in free AI tool subscriptions. Five practical guides from the launch worth bookmarking:</p>
-            <div class="tool-grid">
-                <div class="tool-card">
-                    <div class="tool-name">Granola &mdash; AI Meeting Notes</div>
-                    <p><a href="https://app.therundown.ai/guides/how-to-take-ai-notes-on-phone-calls" target="_blank" style="color:#8b5cf6;">Take AI notes on phone calls</a> with no meeting bot. Captures everything, summarizes automatically &mdash; no one knows it&rsquo;s running.</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-name">Manus &mdash; Brand Animation</div>
-                    <p><a href="https://app.therundown.ai/guides/create-an-intro-animation-for-your-brand-in-15-minutes" target="_blank" style="color:#8b5cf6;">Animate your business logo in 15 minutes.</a> General-purpose AI agent that ships real output across research, decks, and docs.</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-name">Higgsfield &mdash; Video Generation</div>
-                    <p><a href="https://app.therundown.ai/guides/how-to-generate-a-tv-commercial-with-ai" target="_blank" style="color:#8b5cf6;">Generate a TV-quality commercial with AI.</a> Holds up on complex prompts and keeps pace with the latest model releases.</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-name">Synthesia &mdash; Training Videos</div>
-                    <p><a href="https://app.therundown.ai/guides/turn-sop-training-documents-into-talking-head-training-videos" target="_blank" style="color:#8b5cf6;">Turn SOP documents into talking-head training videos</a> with studio-quality AI avatars. No camera needed.</p>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-name">Typeless &mdash; Voice Input</div>
-                    <p><a href="https://app.therundown.ai/guides/use-this-two-step-dictation-strategy-to-write-better-docs-typeless-tutorial" target="_blank" style="color:#8b5cf6;">Dictate at 3&times; your typing speed</a> using a two-step strategy that integrates into your existing workflow accurately and cross-platform.</p>
-                </div>
+        <div class="columnist-section howto">
+            <div class="section-label">How To &bull; The Rundown AI</div>
+            <h2>Build Your Own Cloud-Based Web Crawler with Manus</h2>
+            <p class="lead">Turn <a href="https://manus.im/" target="_blank" style="color:#60a5fa;">Manus</a> Cloud Computer into a private 24/7 web crawler for any site you want to monitor &mdash; without burning tokens on repetitive checks.</p>
+            <ol>
+                <li>Open the Manus desktop app, go to <strong>Settings &rsaquo; My Computer</strong>, and click <em>Create now</em> under Cloud Computer to give Manus an always-on server.</li>
+                <li>Start a new Manus task, select your Cloud Computer in the composer.</li>
+                <li>Prompt: <em>&ldquo;Set up a web crawler on my Cloud Computer for [URL]. Inspect site formatting. Check for [info] twice a day. Log to CSV. Create a script, schedule it with cron, log every run, and only save results matching [criteria].&rdquo;</em></li>
+                <li>Have Manus run the script once, then set it running 24/7. Check collected data anytime from your phone or laptop.</li>
+            </ol>
+            <p><strong>Going further:</strong> Ask Manus which repetitive parts of any AI workflow can run &ldquo;for free&rdquo; on your cloud computer, then save the agent for reuse.</p>
+            <div style="margin-top:18px;">
+                <div style="font-family:-apple-system,sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:#8b5cf6;margin-bottom:12px;">Community Workflow</div>
+                <p><strong>Guitar practice journal with Claude:</strong> One reader uses Claude to document each practice session &mdash; chords learned, minutes practiced, songs in progress &mdash; which then generates a visual data dashboard. At the end of each session, Claude suggests 3&ndash;5 new things to work on based on what&rsquo;s been practiced and similar songs to advance to next.</p>
+            </div>
+            <div style="margin-top:18px;">
+                <div style="font-family:-apple-system,sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:#8b5cf6;margin-bottom:12px;">Roundtable AI Use Cases</div>
+                <p><strong>Claude Code as CAD designer:</strong> One Rundown staffer used Claude Code to iterate a 3D-printable ring holder for a water bottle through 8 prototypes &mdash; no engineering background required.</p>
+                <p><strong>Gemini for YouTube learning:</strong> Gemini&rsquo;s Google integration lets you summarize specific YouTube videos or scan the last 5&ndash;10 videos from a creator to extract only the key takeaways &mdash; a shortcut for long-form learning.</p>
             </div>
         </div>
 
-        <!-- Main Section Grid -->
+        <!-- Two-Column Main Section -->
         <div class="section-grid">
             <div class="main-column">
 
                 <div class="article">
-                    <div class="category">Labor &amp; Workforce</div>
-                    <h3><a href="https://links.morningbrew.com/c/PCs?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">The Second-Act Economy: Who&rsquo;s Pivoting and Why</a></h3>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p class="summary">The data on career switching reveals a generational and structural reshuffling of the US workforce &mdash; driven by everything from remote work promises to AI-induced anxiety.</p>
+                    <div class="category">AI &bull; Finance</div>
+                    <h3>The AI Chip Boom Has Two Clocks &mdash; and They&rsquo;re Not Synchronized</h3>
+                    <span class="source source-onepercent">1% Better</span>
+                    <p class="summary">Cerebras Systems went public at $185/share &mdash; $66B valuation, 20x oversubscribed, largest US tech IPO since Uber. The IPO market says the AI infrastructure window is wide open. The chip suppliers say something different.</p>
                     <div class="details">
-                        <p>Millennials lead pivots at around age 39, but Gen X isn&rsquo;t far behind &mdash; Americans aged 45&ndash;54 have held an average of 2.2 jobs in that decade alone. The workforce is aging overall: the average US worker age crossed 42 in 2025 as boomers delay retirement due to rising costs and life expectancy, leaving fewer entry rungs for younger workers in fields like insurance, real estate, and sales.</p>
-                        <p>The exception is in the trades: construction, plumbing, and electrical work face a mass exodus of boomer retirees with no incoming generation to replace them. Meanwhile, the AI-driven data center buildout is creating urgent demand for highly specialized technicians &mdash; making it a potentially lucrative landing spot for laid-off knowledge workers.</p>
+                        <p>SK Hynix posted a 72% operating margin in Q1 and has reportedly sold its <em>entire</em> 2026 HBM output already, signing 3&ndash;5 year supply agreements with Microsoft, Google, and Amazon requiring advance payment. Yet capex grew only ~17% year-over-year &mdash; vs. the 50%+ increase during the 2017&ndash;2018 boom that preceded the 2019 memory bust. Micron says it can fill only 55&ndash;60% of core customer demand.</p>
+                        <p>TSMC guided 2026 capex to a record <a href="https://www.ft.com/content/9804b1de-653b-40b2-bffb-17c76ebebe34" target="_blank" style="color:#60a5fa;">$52&ndash;$56B</a>. SK Hynix&rsquo;s new mega-fab doesn&rsquo;t start production until early 2027. Samsung&rsquo;s P5 is 2028. Intel CEO Lip-Bu Tan: &ldquo;no relief until 2028.&rdquo;</p>
+                        <p>The capital cycle is pricing multi-year compute demand at any valuation the market will bear. The manufacturing clock is monetizing discipline, letting new wafers arrive in 2028 &mdash; after the demand signal has been pressure-tested. &ldquo;Strategically managed scarcity,&rdquo; as one analyst put it. Watch for which clock breaks first.</p>
                     </div>
                 </div>
 
                 <div class="article">
-                    <div class="category">Sports &amp; Second Acts</div>
-                    <h3><a href="https://links.morningbrew.com/c/PCB?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">Game Over: What Pro Athletes Actually Do After Sports</a></h3>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p class="summary">The average pro sports career lasts 5&ndash;7 years and ends before age 30. Most athletes don&rsquo;t become coaches or broadcasters &mdash; they go into business. The results are mixed.</p>
+                    <div class="category">AI &bull; Art &amp; Culture</div>
+                    <h3>Artist Tricks X Users Into Trashing a Real Monet as &ldquo;AI Slop&rdquo;</h3>
+                    <span class="source source-rundown">The Rundown AI</span>
+                    <p class="summary">Conceptual artist SHL0MS posted a genuine Monet from the Water Lilies collection (c. 1915) and told followers he&rsquo;d generated it with AI, asking them to explain why it was inferior. Thousands obliged.</p>
                     <div class="details">
-                        <p><a href="https://links.morningbrew.com/c/PCC?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">LinkedIn data from 2022</a> shows more than a quarter of retired athletes go into sales, where competitiveness and drive translate naturally. Finance is also a common path &mdash; Goldman Sachs prioritizes recruiting former athletes; ex-Giants player Justin Tuck has been there since 2018.</p>
-                        <p>The marquee success stories: George Foreman turned his name into a <a href="https://links.morningbrew.com/c/PCF?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">grill empire</a>. Shaq has Papa Johns stakes, car washes, and Big Chicken. Magic Johnson built a multibillion-dollar investment firm and holds stakes in multiple pro sports franchises. Michael Jordan bought the Charlotte Hornets for $275M in 2010 and sold his stake for $3 billion in 2023.</p>
-                        <p>The cautionary tales are just as instructive: Curt Schilling&rsquo;s <a href="https://links.morningbrew.com/c/PCH?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">video game company</a> collapsed spectacularly. Lenny Dykstra&rsquo;s financial advice magazine failed. Mark Brunell&rsquo;s real estate business went under. The athlete-to-entrepreneur pipeline is not a guarantee.</p>
+                        <p>Critics called the image &ldquo;emotionless,&rdquo; &ldquo;slop,&rdquo; and picked apart its depth, reflections, and composition &mdash; all of which are, of course, authentic Monet. <a href="https://x.com/SHL0MS/status/2054280631807316329?s=20" target="_blank" style="color:#60a5fa;">The original post</a> drew thousands of confident critiques before the reveal.</p>
+                        <p>The saga aligns with 2024 <a href="https://www.nature.com/articles/s41598-024-54294-4" target="_blank" style="color:#60a5fa;">Norwegian research</a> finding that people actually prefer AI art but show a clear negative bias against it once they know it&rsquo;s AI-generated. For a growing crowd, the word &ldquo;AI&rdquo; alone triggers backlash regardless of context.</p>
                     </div>
                 </div>
 
                 <div class="article">
-                    <div class="category">Education</div>
-                    <h3>Grad School&rsquo;s Uneven Bet: The ROI Gap Is Getting Wider</h3>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p class="summary">A new study from American University finds grad school returns vary wildly by field &mdash; and with loan rates at 9.08%, the math on some degrees has turned deeply negative.</p>
+                    <div class="category">AI &bull; Finance</div>
+                    <h3>ChatGPT Connects to Your Money via Plaid</h3>
+                    <span class="source source-rundown">The Rundown AI</span>
+                    <p class="summary">OpenAI launched a personal finance experience inside ChatGPT, giving the chatbot real-time access to your spending, investments, and bills across 12,000+ institutions.</p>
                     <div class="details">
-                        <p>Pharmacy, law, and medicine deliver strong financial returns on investment. Psychology and social work often yield <a href="https://links.morningbrew.com/c/Nys?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">negative returns</a> once tuition and interest are factored in. Some MBA programs are now offering <a href="https://links.morningbrew.com/c/PCU?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">steep discounts</a> to attract applicants in a softening market.</p>
-                        <p>The clearest winner right now: registered nursing. The Labor Department puts average salary at <a href="https://links.morningbrew.com/c/PCV?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">$93,600 per year</a>, with advanced-degree nurse employment projected to jump 35% from 2024 to 2034. Healthcare created more US jobs in 2025 than any other sector.</p>
+                        <p>Users connect via <a href="https://openai.com/index/personal-finance-chatgpt/" target="_blank" style="color:#60a5fa;">Plaid</a> across Chase, Schwab, Robinhood, and more, with a dashboard tracking spending, portfolio, and upcoming bills. Intuit support is next, adding tax estimates and credit-card approval odds. ChatGPT can analyze connected data but cannot move money, pay bills, or file taxes &mdash; yet. The feature preview starts with U.S.-based Pro accounts.</p>
+                        <p>Financial guidance has been locked behind pricey advisors or clunky apps for a decade. Plaid serves as the secure layer to get users to trust AI with that information.</p>
                     </div>
                 </div>
 
                 <div class="article">
-                    <div class="category">AI &amp; Labor</div>
-                    <h3><a href="https://links.morningbrew.com/c/PCW?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">AI Is Driving a White-Collar Exodus to the Trades</a></h3>
+                    <div class="category">Business &bull; Investing</div>
+                    <h3>Greg Abel&rsquo;s Berkshire Hathaway: Tripling Alphabet, Dumping Amazon and Visa</h3>
                     <span class="source source-brew">Morning Brew</span>
-                    <p class="summary">Students are fleeing computer science and data analysis for construction and electrical work. When a robot can&rsquo;t replace you, suddenly the trades look very attractive.</p>
+                    <p class="summary">Warren Buffett&rsquo;s successor signals his own chapter: halting the Apple sell-off, going big on Alphabet, and exiting Amazon, Visa, Mastercard, Domino&rsquo;s, and UnitedHealth Group in his first quarter at the helm.</p>
                     <div class="details">
-                        <p>A Gallup survey found that <a href="https://links.morningbrew.com/c/PCX?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">16% of college students have already switched majors</a> due to AI&rsquo;s impact on the job market, while 47% have considered it. About 25% of Gen Z is considering or actively pursuing a trade career instead of a white-collar path, per SupplyHouse. Many office workers are leaving employment entirely to train as <a href="https://links.morningbrew.com/c/PCY?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">electricians or firefighters</a>.</p>
-                        <p>The data center buildout is creating real urgency here: both BlackRock and Meta recently announced tens of millions in investments to train and recruit electricians and fiber-optic cable techs. The caveat: blue-collar <a href="https://links.morningbrew.com/c/PCZ?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">employment still shrank last year overall</a>, and average wages remain below those for degree-required positions. The shortage is real, but so is the trade-off.</p>
+                        <p>The quarterly 13F filing shows Abel more than tripled Berkshire&rsquo;s position in Alphabet and cut its Constellation Brands stake by 95%. Analysts note he is less averse to tech investing than Buffett was. <a href="https://links.morningbrew.com/c/PGZ?mblid=8ca29b87f8ac" target="_blank" style="color:#60a5fa;">Full breakdown</a>.</p>
                     </div>
                 </div>
 
@@ -254,130 +304,115 @@
 
             <div class="sidebar">
                 <div class="sidebar-section">
-                    <h4>Career Pivot by the Numbers</h4>
-
+                    <h4>Quick Hits</h4>
                     <div class="sidebar-item">
-                        <div class="category">Survey Data</div>
-                        <h5>80% of US Professionals Are Ready for a New Job</h5>
-                        <span class="source source-brew">Morning Brew</span>
-                        <p>A FlexJobs survey finds nearly 80% of US professionals say they want a new job &mdash; roughly half of those want to switch fields entirely, not just employers.</p>
+                        <div class="category">Culture</div>
+                        <h5>Everlane Reportedly Acquired by Shein</h5>
+                        <p>The sustainably-branded clothing company has allegedly been bought by the fast-fashion giant &mdash; a jarring union given Everlane&rsquo;s transparency-first founding principles. <a href="https://links.morningbrew.com/c/PH1?mblid=71a526ff53cf" target="_blank" style="color:#60a5fa;">Report</a>. <span class="source source-brew">Brew</span></p>
                     </div>
-
                     <div class="sidebar-item">
-                        <div class="category">Gen Z</div>
-                        <h5>25% of Gen Z Is Eyeing the Trades</h5>
-                        <span class="source source-brew">Morning Brew</span>
-                        <p>About a quarter of Gen Z is considering or already pursuing a trade career over white-collar work, per SupplyHouse &mdash; up sharply as AI anxiety reshapes what feels &ldquo;safe.&rdquo;</p>
+                        <div class="category">Tech</div>
+                        <h5>Google I/O 2026 Kicks Off Tomorrow</h5>
+                        <p>Google&rsquo;s annual developer conference begins Tuesday. <a href="https://links.morningbrew.com/c/PH0?mblid=b05ea6251087" target="_blank" style="color:#60a5fa;">Details</a>. <span class="source source-brew">Brew</span></p>
                     </div>
-
                     <div class="sidebar-item">
-                        <div class="category">Education</div>
-                        <h5>Nursing: $93,600 Avg Salary, 35% Job Growth by 2034</h5>
-                        <span class="source source-brew">Morning Brew</span>
-                        <p>Registered nursing is one of the clearest career-pivot winners: strong pay, massive projected growth, and a field that is structurally resistant to AI replacement.</p>
+                        <div class="category">Sports</div>
+                        <h5>Aaron Rai Wins PGA Championship with 68-Foot Putt</h5>
+                        <p>The British golfer sinks a historic putt to claim his first major. <a href="https://links.morningbrew.com/c/PH2?mblid=f7cb516aeba1" target="_blank" style="color:#60a5fa;">Highlights</a>. <span class="source source-brew">Brew</span></p>
                     </div>
-
                     <div class="sidebar-item">
-                        <div class="category">AI Impact</div>
-                        <h5>47% of College Students Have Considered Switching Majors Over AI</h5>
-                        <span class="source source-brew">Morning Brew</span>
-                        <p>Gallup data shows nearly half of all current students have thought about switching their major due to AI, with 16% having already made the change.</p>
+                        <div class="category">Sports</div>
+                        <h5>NBA Conference Finals: Spurs vs. Thunder Tonight</h5>
+                        <p>Western Conference Finals start tonight with San Antonio vs. Oklahoma City. Knicks vs. Cavaliers tip off Tuesday in the East.</p>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="category">Culture</div>
+                        <h5>Stephen Colbert&rsquo;s Last <em>Late Show</em> Is Thursday</h5>
+                        <p>After 30+ years, the show finally goes to bed. Jon Stewart, Steven Spielberg, David Byrne, and Bruce Springsteen are all appearing earlier in the week. <span class="source source-brew">Brew</span></p>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="category">AI</div>
+                        <h5>Anthropic Partners with Gates Foundation for $200M</h5>
+                        <p>Claude will be deployed in vaccine screening, disease forecasting, and K&ndash;12 tutoring in developing nations. <a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" style="color:#60a5fa;">Announcement</a>. <span class="source source-rundown">Rundown</span></p>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="category">AI</div>
+                        <h5>Eric Schmidt Booed at Arizona Graduation Speech on AI</h5>
+                        <p>The former Google CEO was met with boos after likening AI to the &ldquo;technological transformation&rdquo; brought by the computer. <a href="https://www.nbcnews.com/tech/tech-news/former-google-ceo-booed-graduation-speech-ai-rcna345585" target="_blank" style="color:#60a5fa;">Video</a>. <span class="source source-onepercent">1% Better</span></p>
                     </div>
                 </div>
 
-                <div class="sidebar-section">
-                    <h4>News You Can Use</h4>
-
-                    <div class="highlight-box">
-                        <h5>Thinking of Changing Careers?</h5>
-                        <ul>
-                            <li><a href="https://links.morningbrew.com/c/PCN?mbcid=45730354.863559" target="_blank" style="color:#aaa;">Signs it&rsquo;s time to find a new job</a></li>
-                            <li><a href="https://links.morningbrew.com/c/PCO?mbcid=45730354.863559" target="_blank" style="color:#aaa;">What to do if you get laid off</a></li>
-                            <li><a href="https://links.morningbrew.com/c/PCP?mbcid=45730354.863559" target="_blank" style="color:#aaa;">Tips from a Harvard career advisor</a></li>
-                            <li><a href="https://links.morningbrew.com/c/PCQ?mbcid=45730354.863559" target="_blank" style="color:#aaa;">R&eacute;sum&eacute; tips for the AI age</a></li>
-                            <li><a href="https://links.morningbrew.com/c/PD3?mbcid=45730354.863559" target="_blank" style="color:#aaa;">The right way to make a big career change</a></li>
-                            <li><a href="https://links.morningbrew.com/c/PCS?mbcid=45730354.863559" target="_blank" style="color:#aaa;">A bestselling author&rsquo;s advice on starting over</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="sidebar-section">
-                    <h4>Brew&rsquo;s Best</h4>
-
-                    <div class="sidebar-item">
-                        <h5><a href="https://links.morningbrew.com/c/PD1?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">An Affordable Webcam for Video Interviews</a></h5>
-                        <p>Morning Brew&rsquo;s pick for job seekers doing video interviews &mdash; solid quality without the premium price tag.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <h5><a href="https://links.morningbrew.com/c/PD2?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">Why It&rsquo;s Sometimes Easier to Succeed Later in Life</a></h5>
-                        <p>Podcast recommendation on second acts and why experience compounds differently than youth does.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <h5><a href="https://links.morningbrew.com/c/PD4?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">The Most Successful Celebrity Career Pivots</a></h5>
-                        <p>A look at culinary icons and entertainment figures who built second careers that outpaced their originals.</p>
-                    </div>
-
-                    <div class="sidebar-item">
-                        <h5><a href="https://links.morningbrew.com/c/PD5?mbcid=45730354.863559" target="_blank" style="color:inherit;text-decoration:none;">A 5-Minute Meditation for Career Stress</a></h5>
-                        <p>For when the job market feels like too much. A short guided meditation for professionals in transition.</p>
-                    </div>
+                <div class="highlight-box">
+                    <h5>Week Ahead</h5>
+                    <ul>
+                        <li><strong>Tue:</strong> Home Depot earnings; Google I/O opens</li>
+                        <li><strong>Wed:</strong> Nvidia earnings; Fed April meeting minutes; NHL Conference Finals begin</li>
+                        <li><strong>Thu:</strong> Walmart earnings; G7 finance ministers in Paris; Colbert&rsquo;s last show</li>
+                        <li><strong>Fri:</strong> <em>Star Wars: The Mandalorian and Grogu</em> in theaters</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Bottom Section -->
+        <!-- Bottom Three-Column Section -->
         <div class="bottom-section">
             <div class="bottom-column">
-                <h4>Reader Mailbag</h4>
+                <h4>AI &amp; Tech</h4>
                 <div class="bottom-item">
-                    <h5>&ldquo;I Left Insurance for a Superyacht&rdquo;</h5>
-                    <p>&ldquo;After five years in consulting with 10 days of annual leave, I booked a one-way flight to Australia and became a stewardess on a superyacht in Sydney Harbour. The only job requirement: don&rsquo;t throw up on the deck.&rdquo; &mdash; Jacque from Pennsylvania</p>
+                    <h5>Anthropic&rsquo;s $1.5B Copyright Settlement Halted</h5>
+                    <p>A federal judge paused the class-action settlement with authors over copyright infringement to investigate why some class members objected and opted out. <a href="https://links.morningbrew.com/c/PG_?mblid=e20723e1b185" target="_blank" style="color:#60a5fa;">Report</a>. <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>&ldquo;Headsets to Bush Pilot in Alaska&rdquo;</h5>
-                    <p>&ldquo;Went from selling football headsets to quitting, going to flight school, and becoming a bush pilot. I now fly 300+ people internationally every week.&rdquo; &mdash; Billy from Washington</p>
+                    <h5>OpenAI Quietly Acquired Voice-Clone Startup Weights.gg</h5>
+                    <p>The social network featuring celebrity voice replicas was bought in January; six staff members have joined OpenAI. <a href="https://www.theinformation.com/briefings/openai-buys-audio-startup-weights?rc=a8sc5q" target="_blank" style="color:#60a5fa;">The Information</a>. <span class="source source-rundown">Rundown</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>&ldquo;Union President to Lawyer at 38&rdquo;</h5>
-                    <p>&ldquo;After 10 years of teaching, I went to law school at 35, passed the bar at 38. I miss summer break &mdash; but not the part where people think they know how to do my job because they&rsquo;ve watched court TV.&rdquo; &mdash; Jodee from Iowa</p>
-                </div>
-            </div>
-
-            <div class="bottom-column">
-                <h4>More Reader Pivots</h4>
-                <div class="bottom-item">
-                    <h5>&ldquo;It Was a Literal Hallmark Movie&rdquo;</h5>
-                    <p>&ldquo;High-powered insurance exec in Phoenix returns to her island hometown in Maine at Christmas, participates in the annual gingerbread contest, and quits her 25-year career to care for her mother and resurrect the family cooking newsletter.&rdquo; &mdash; Amie from Southport, ME</p>
+                    <h5>Pope Leo XIV Creates Vatican AI Advisory Body</h5>
+                    <p>The new pope signed his first encyclical, expected to frame AI as this generation&rsquo;s Industrial Revolution. <a href="https://apnews.com/article/vatican-artificial-intelligence-pope-musk-nvidia-trump-889c0066f0d5ce784c07abb72b33e24c" target="_blank" style="color:#60a5fa;">AP News</a>. <span class="source source-rundown">Rundown</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>&ldquo;Jury Duty Changed My Life&rdquo;</h5>
-                    <p>&ldquo;I served on a jury and was fascinated. I worked in retail my whole career. Now I&rsquo;m studying to become a California Certified Court Interpreter, using my bilingual skills professionally for the first time.&rdquo; &mdash; Angelica from San Diego</p>
-                </div>
-                <div class="bottom-item">
-                    <h5>This Week&rsquo;s Community Question</h5>
-                    <span class="source source-brew">Morning Brew</span>
-                    <p>What&rsquo;s an outdated piece of technology you feel sentimental about? <a href="https://links.morningbrew.com/c/PGn?mbcid=45730354.863559" target="_blank" style="color:#60a5fa;">Submit your response.</a></p>
+                    <h5>New AI Tools This Week</h5>
+                    <p><a href="https://openai.com/index/work-with-codex-from-anywhere/" target="_blank" style="color:#60a5fa;">Codex</a> goes mobile &bull; <a href="https://www.rundown.ai/tools/higgsfield-supercomputer" target="_blank" style="color:#60a5fa;">Higgsfield Supercomputer</a> launches with memory and tools &bull; <a href="https://www.rundown.ai/tools/krea-2" target="_blank" style="color:#60a5fa;">Krea 2</a> brings moodboard-based image generation. <span class="source source-rundown">Rundown</span></p>
                 </div>
             </div>
 
             <div class="bottom-column">
-                <h4>Rundown University</h4>
+                <h4>Business &amp; Economy</h4>
                 <div class="bottom-item">
-                    <h5><a href="https://app.therundown.ai/courses" target="_blank" style="color:inherit;text-decoration:none;">Redesigned for Speed, Not Theory</a></h5>
-                    <span class="source source-rundown">Rundown AI</span>
-                    <p>Three-part rhythm: a daily 10-minute guide to stay current, a live weekly workshop to go deep, and weekly office hours with an AI consultant who reviews your actual workflows in real time.</p>
+                    <h5>Nvidia Earnings Wednesday &mdash; First Since $5.5T Market Cap</h5>
+                    <p>The world&rsquo;s most valuable company reports after CEO Jensen Huang traveled to China with President Trump last week. AI chip demand expectations are sky-high. <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5><a href="https://app.therundown.ai/plans" target="_blank" style="color:inherit;text-decoration:none;">Community Workflow Exchange &mdash; Summer 2026</a></h5>
-                    <span class="source source-rundown">Rundown AI</span>
-                    <p>Members will publish, remix, and compete on real AI workflows. Top submissions featured in the daily newsletter. Monthly challenges with prizes. Coming this summer.</p>
+                    <h5>China Sought Access to Anthropic&rsquo;s Newest AI &mdash; and Was Denied</h5>
+                    <p>The latest Claude and GPT models are extending the US lead over China, intensifying the AI rivalry between the two countries. <a href="https://www.nytimes.com/2026/05/12/us/politics/china-ai-anthropic-openai-mythos-chatgpt.html" target="_blank" style="color:#60a5fa;">NY Times</a>. <span class="source source-onepercent">1% Better</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5><a href="https://app.therundown.ai/perks" target="_blank" style="color:inherit;text-decoration:none;">$1,656 in Free AI Tools for Pro Members</a></h5>
-                    <span class="source source-rundown">Rundown AI</span>
-                    <p>Full-year subscriptions to Granola, Manus, Higgsfield, Synthesia, and Typeless &mdash; each with use-case video guides. Codes are limited and first-come.</p>
+                    <h5>Chinese AI Pulls Ahead in Video Generation</h5>
+                    <p>ByteDance and Kuaishou are outshining western rivals in AI video quality, lifting output across advertising and entertainment. <a href="https://www.ft.com/content/9804b1de-653b-40b2-bffb-17c76ebebe34" target="_blank" style="color:#60a5fa;">FT</a>. <span class="source source-onepercent">1% Better</span></p>
+                </div>
+                <div class="bottom-item">
+                    <h5>G7 Finance Ministers Meet in Paris Today &amp; Tomorrow</h5>
+                    <p>Opening the Strait of Hormuz and ending the Iran conflict tops the agenda, as energy prices drive inflation pressure across the global economy. <span class="source source-brew">Brew</span></p>
+                </div>
+            </div>
+
+            <div class="bottom-column">
+                <h4>Science &amp; Society</h4>
+                <div class="bottom-item">
+                    <h5>Two-Thirds of US Doctors Are Quietly Using an AI Tool Patients Don&rsquo;t Know About</h5>
+                    <p>OpenEvidence, an AI-powered medical search tool, is now used by nearly two-thirds of US physicians. <a href="https://www.nbcnews.com/tech/tech-news/openevidence-ai-doctor-medical-physician-login-app-what-npi-uptodate-rcna341064" target="_blank" style="color:#60a5fa;">NBC News</a>. <span class="source source-onepercent">1% Better</span></p>
+                </div>
+                <div class="bottom-item">
+                    <h5>Thailand Scientist Fulfills Childhood Promise: Names a Dinosaur</h5>
+                    <p>Paleontologist Thitiwoot Sethapanichsakul helped name <em>Nagatitan chaiyaphumensis</em> &mdash; 89 feet long, 60,000 pounds, lived ~100 million years ago. &ldquo;It fulfills a kind of childhood promise.&rdquo; <a href="https://links.morningbrew.com/c/PGP?mblid=216fc4eb0bbe" target="_blank" style="color:#60a5fa;">CNN</a>. <span class="source source-brew">Brew</span></p>
+                </div>
+                <div class="bottom-item">
+                    <h5>Fighter Jets Collide at Idaho Air Force Base Airshow</h5>
+                    <p>Two F-series aircraft collided midair during an airshow at Mountain Home AFB in Idaho. All four aviators survived. <a href="https://links.morningbrew.com/c/PG-?mblid=ac6931b6f3a1" target="_blank" style="color:#60a5fa;">Report</a>. <span class="source source-brew">Brew</span></p>
+                </div>
+                <div class="bottom-item">
+                    <h5>70% of Americans Oppose Data Centers in Their Neighborhood</h5>
+                    <p>A Gallup survey finds the infrastructure polls as less popular than local nuclear power plants. <a href="https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx" target="_blank" style="color:#60a5fa;">Gallup</a>. <span class="source source-rundown">Rundown</span></p>
                 </div>
             </div>
         </div>
@@ -385,13 +420,13 @@
     </div>
 
     <footer>
-        <p>The Daily Brief &mdash; Sunday, May 17, 2026</p>
-        <p>Compiled from publicly available newsletter sources.</p>
+        <p>The Daily Brief &mdash; Monday, May 18, 2026</p>
+        <p>Generated from 4 newsletters via Claude Code CLI</p>
         <div class="sources">
-            <span style="color:#f59e0b;">&#9632; Morning Brew</span>
-            <span style="color:#8b5cf6;">&#9632; The Rundown AI</span>
-            <span style="color:#ef4444;">&#10007; 1% Better (not received)</span>
-            <span style="color:#ef4444;">&#10007; Daily Dad (not received)</span>
+            <span style="color:#f59e0b;">&#9632;</span> Morning Brew
+            <span style="color:#8b5cf6;">&#9632;</span> The Rundown AI
+            <span style="color:#10b981;">&#9632;</span> 1% Better / Vector
+            <span style="color:#3b82f6;">&#9632;</span> Daily Dad
         </div>
     </footer>
 </body>
