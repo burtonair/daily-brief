@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief - Monday, May 18, 2026</title>
+    <title>The Daily Brief - Tuesday, May 19, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
@@ -54,10 +54,6 @@
         .columnist-section p { color: #999; font-size: 0.95rem; margin-bottom: 12px; line-height: 1.7; }
         .columnist-section ol { margin: 10px 0 12px 20px; color: #999; font-size: 0.95rem; }
         .columnist-section ol li { margin-bottom: 8px; line-height: 1.6; }
-        .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-top: 20px; }
-        .tool-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 16px 18px; }
-        .tool-card .tool-name { font-family: -apple-system, sans-serif; font-size: 0.78rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-        .tool-card p { color: #888; font-size: 0.9rem; margin: 0; }
         .section-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; margin-bottom: 50px; }
         .main-column { border-right: 1px solid #333; padding-right: 50px; }
         .article { margin-bottom: 40px; padding-bottom: 35px; border-bottom: 1px solid #333; }
@@ -77,10 +73,6 @@
         .sidebar-item h5 { font-size: 1.1rem; font-weight: 400; margin-bottom: 8px; line-height: 1.3; }
         .sidebar-item p { color: #888; font-size: 0.9rem; }
         .sidebar-item .category { display: inline-block; color: #8b5cf6; font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-        .highlight-box { background: #1a1a1a; border-left: 3px solid #f59e0b; padding: 20px; margin: 20px 0; }
-        .highlight-box h5 { font-family: -apple-system, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #f59e0b; margin-bottom: 12px; }
-        .highlight-box ul { margin: 0; padding-left: 18px; color: #aaa; }
-        .highlight-box li { margin-bottom: 8px; }
         .bottom-section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding-top: 40px; border-top: 3px double #333; }
         .bottom-column h4 { font-family: -apple-system, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 2px solid #333; }
         .bottom-item { margin-bottom: 25px; }
@@ -95,7 +87,6 @@
             .section-grid { grid-template-columns: 1fr; }
             .main-column { border-right: none; padding-right: 0; }
             .bottom-section { grid-template-columns: 1fr; }
-            .tool-grid { grid-template-columns: 1fr 1fr; }
             .markets-strip { gap: 20px; }
         }
         @media (max-width: 600px) {
@@ -119,7 +110,6 @@
             .nav-content { flex-direction: column; gap: 8px; text-align: center; }
             .nav-categories { gap: 12px; font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
             .nav-date { font-size: 0.8rem; }
-            .tool-grid { grid-template-columns: 1fr; }
             .columnist-section { padding: 20px; }
             .markets-strip { flex-direction: column; gap: 15px; }
         }
@@ -130,14 +120,14 @@
     <nav>
         <div class="nav-content">
             <div class="nav-categories">
-                <span>Labor</span>
                 <span>AI</span>
-                <span>Finance</span>
+                <span>Legal</span>
                 <span>World</span>
-                <span>Culture</span>
-                <span>Sports</span>
+                <span>Finance</span>
+                <span>Business</span>
+                <span>Tech</span>
             </div>
-            <div class="nav-date">Monday, May 18, 2026</div>
+            <div class="nav-date">Tuesday, May 19, 2026</div>
         </div>
     </nav>
 
@@ -145,7 +135,7 @@
         <h1>The Daily Brief</h1>
         <p class="tagline">Your morning news, integrated and distilled</p>
         <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-            Sources: Daily Dad (5:03 AM) | The Rundown AI (5:04 AM) | 1% Better (5:05 AM) | Morning Brew (6:03 AM)
+            Sources: Daily Dad (5:04 AM) | The Rundown AI (5:04 AM) | 1% Better (5:05 AM) | Morning Brew (5:18 AM)
         </p>
     </header>
 
@@ -154,101 +144,98 @@
         <!-- Hero Section -->
         <div class="hero-section">
             <div class="hero-main">
-                <div class="category">Labor &amp; Transit</div>
-                <h2>LIRR Strike Snarls 270,000 NYC Commuters as Talks Stall</h2>
+                <div class="category">AI &amp; Legal</div>
+                <h2>Jury Tosses Musk&#8217;s Case Against OpenAI &#8212; But the Trial Transcript Lives Forever</h2>
                 <span class="source source-brew">Morning Brew</span>
-                <p class="summary">The Long Island Railroad&rsquo;s first strike since 1994 is now into its third day, with no new negotiations scheduled and quarter of a million commuters scrambling for alternatives.</p>
+                <span class="source source-rundown">The Rundown AI</span>
+                <span class="source source-onepercent">1% Better</span>
+                <p class="summary">After three weeks of blockbuster testimony, a nine-member jury dismissed Elon Musk&#8217;s $100B+ lawsuit against OpenAI in under two hours &#8212; finding the case filed years too late. Musk called it a &#8220;calendar technicality&#8221; and vowed to appeal.</p>
                 <div class="content">
-                    <p>The dispute pits five LIRR unions against the Metropolitan Transportation Authority over wages frozen since 2022. Workers are seeking a 9.5% retroactive raise covering 2023&ndash;2025 &mdash; which the MTA agreed to &mdash; but the sticking point is a 5% raise for 2026. The MTA countered with 3% plus a lump-sum payment, which was rejected. Average cash compensation for affected workers in 2025 was reportedly $136,000.</p>
-                    <p>"The raises weren't really raises, when you factor in inflation," said Steve Ammirati of the Brotherhood of Locomotive Engineers and Trainmen. The MTA also sought to abolish work rules that result in higher pay &mdash; for example, workers switching from a diesel to an electric train in the same day currently receive two days&rsquo; pay.</p>
-                    <p>New York Gov. Kathy Hochul warned striking workers that three days on the picket line would erase any gains from a new contract. <a href="https://links.morningbrew.com/c/PGD?mblid=72b7bb945644" target="_blank" style="color:#60a5fa;">Full coverage from the NY Times</a>.</p>
+                    <p>The suit alleged that Sam Altman &#8220;stole a charity&#8221; by converting OpenAI from a nonprofit to a for-profit entity. But the jury found the three-year statute of limitations had expired &#8212; OpenAI went for-profit in 2019, and Musk didn&#8217;t sue until 2024. Judge Yvonne Gonzalez Rogers <a href="https://www.cnn.com/2026/05/18/tech/openai-musk-lawsuit-verdict" target="_blank" style="color:#60a5fa;">immediately dismissed the case</a>. Microsoft, named as co-defendant for its multibillion-dollar backing of OpenAI, was also cleared. Musk <a href="https://x.com/elonmusk/status/2056474896641782077" target="_blank" style="color:#60a5fa;">posted on X</a> that he will appeal.</p>
+                    <p>The verdict was decisive &#8212; but the trial produced something more durable: a federal docket full of sworn testimony that didn&#8217;t previously exist. Ilya Sutskever testified that Altman exhibits a &#8220;consistent pattern of lying.&#8221; Brockman confirmed his OpenAI stake is worth nearly $30 billion. Internal Microsoft emails about the 2023 board crisis are now on the public record. And Altman, who told Congress he had no direct OpenAI stake, acknowledged roughly $2 billion in adjacent equity in companies doing business with the lab.</p>
+                    <p>OpenAI&#8217;s PBC restructure &#8212; valued at $852 billion, with both California and Delaware AGs issuing statements of no objection &#8212; was already legally settled before the trial began. Wall Street read Monday&#8217;s verdict as a green light for a potential $1 trillion IPO. But as <em>1% Better</em> notes: &#8220;The verdict closed Musk&#8217;s case. The transcript is the part everyone else now gets to read for free.&#8221;</p>
                 </div>
             </div>
             <div class="hero-sidebar">
                 <div class="hero-sidebar-item">
-                    <div class="category">World &bull; Iran</div>
-                    <h3>Trump Warns Iran: &ldquo;Clock Is Ticking&rdquo; on Nuclear Deal</h3>
-                    <p>In a Truth Social post, the president urged Iran to &ldquo;get moving&rdquo; or face consequences, saying a 20-year nuclear moratorium would suffice &mdash; though his administration later insisted only a complete and permanent end to the program will do. <a href="https://links.morningbrew.com/c/PGW?mblid=478b87c81d61" target="_blank" style="color:#60a5fa;">Read more</a>. <span class="source source-brew">Brew</span></p>
+                    <div class="category">World &#8226; Violence</div>
+                    <h3>Three Killed in Hate Crime Attack at San Diego&#8217;s Largest Mosque</h3>
+                    <p>Two teenage gunmen <a href="https://links.morningbrew.com/c/PLW?mblid=6d0697e442c2" target="_blank" style="color:#60a5fa;">attacked</a> the Islamic Center of San Diego, killing three including a security guard. Both shooters died. One suspect&#8217;s mother had reported him missing with multiple weapons just hours earlier. <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="hero-sidebar-item">
-                    <div class="category">Culture &bull; Film</div>
-                    <h3>James Bond Casting Officially Begins Under Amazon MGM</h3>
-                    <p>Game of Thrones casting director Nina Gold is leading the search for the next 007. Candidates must &ldquo;ooze sex appeal&rdquo; and be young enough for 3&ndash;4 films. Jacob Elordi, Callum Turner, and Aaron Taylor-Johnson are rumored contenders. <a href="https://links.morningbrew.com/c/PGI?mblid=6e53fe4e5cc3" target="_blank" style="color:#60a5fa;">Details</a>. <span class="source source-brew">Brew</span></p>
+                    <div class="category">World &#8226; Iran</div>
+                    <h3>Trump Says He Called Off Iran Strike at Gulf Leaders&#8217; Request</h3>
+                    <p>Trump <a href="https://links.morningbrew.com/c/PLm?mblid=239b8a3ddc51" target="_blank" style="color:#60a5fa;">posted on Truth Social</a> that a military strike planned for today was postponed at Qatar, Saudi Arabia, and UAE&#8217;s request. &#8220;Serious negotiations are now taking place&#8221; &#8212; but he also ordered the military to stay ready for a &#8220;full, large scale assault.&#8221; <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="hero-sidebar-item">
-                    <div class="category">Business &bull; Legal</div>
-                    <h3>Musk v. Altman Jury Begins Deliberating Today in Oakland</h3>
-                    <p>An advisory jury of nine will weigh whether OpenAI and CEO Sam Altman unjustly enriched themselves by converting from nonprofit to for-profit. District Judge Gonzalez Rogers has final say. <a href="https://links.morningbrew.com/c/PGY?mblid=e3762dc11468" target="_blank" style="color:#60a5fa;">Follow the case</a>. <span class="source source-brew">Brew</span></p>
+                    <div class="category">Labor &#8226; Transit</div>
+                    <h3>LIRR Strike Ends After One Day &#8212; MTA Deal Reached Overnight</h3>
+                    <p>Unions representing Long Island Rail Road workers struck a <a href="https://links.morningbrew.com/c/PLX?mblid=1fab682f0f01" target="_blank" style="color:#60a5fa;">deal with the MTA</a> overnight, ending the strike that snarled transit for roughly 250,000 NYC-area commuters. Terms not yet disclosed. <span class="source source-brew">Brew</span></p>
                 </div>
             </div>
         </div>
 
         <!-- Markets Strip -->
         <div class="markets-strip">
-            <span class="markets-label">Markets YTD</span>
+            <span class="markets-label">Markets</span>
             <div class="market-item">
                 <span class="ticker">Nasdaq</span>
-                <span class="price">26,225.14</span>
-                <span class="change change-up">+12.84%</span>
+                <span class="price">26,090.73</span>
+                <span class="change change-down">&#8722;0.51%</span>
             </div>
             <div class="market-item">
                 <span class="ticker">S&amp;P 500</span>
-                <span class="price">7,408.50</span>
-                <span class="change change-up">+8.22%</span>
+                <span class="price">7,403.05</span>
+                <span class="change change-down">&#8722;0.07%</span>
             </div>
             <div class="market-item">
                 <span class="ticker">Dow</span>
-                <span class="price">49,526.17</span>
-                <span class="change change-up">+3.04%</span>
+                <span class="price">49,686.12</span>
+                <span class="change change-up">+0.32%</span>
             </div>
             <div class="market-item">
                 <span class="ticker">10-Year</span>
-                <span class="price">4.595%</span>
-                <span class="change change-up">+43.2 bps</span>
+                <span class="price">4.623%</span>
+                <span class="change change-up">+3.0 bps</span>
             </div>
             <div class="market-item">
                 <span class="ticker">Bitcoin</span>
-                <span class="price">$77,003.70</span>
-                <span class="change change-down">&minus;12.00%</span>
+                <span class="price">$76,953.64</span>
+                <span class="change change-down">&#8722;1.79%</span>
             </div>
             <div class="market-item">
-                <span class="ticker">Ryanair</span>
-                <span class="price">$53.36</span>
-                <span class="change change-down">&minus;25.59%</span>
+                <span class="ticker">Seagate</span>
+                <span class="price">$740.84</span>
+                <span class="change change-down">&#8722;6.87%</span>
             </div>
-            <span style="font-family:-apple-system,sans-serif;font-size:0.72rem;color:#555;margin-left:auto;">Rising oil prices and bond yields have investors uneasy about inflation ahead of retail earnings this week.</span>
+            <span style="font-family:-apple-system,sans-serif;font-size:0.72rem;color:#555;margin-left:auto;"><a href="https://links.morningbrew.com/c/PLi?mblid=c3c1a856e01b" target="_blank" style="color:#555;">Stocks mixed</a> on climbing oil prices and inflation fears. Chip stocks fell after Seagate warned new factories will &#8220;take too long.&#8221; Nvidia earnings Wednesday.</span>
         </div>
 
         <!-- Daily Dad Columnist Section -->
         <div class="columnist-section">
-            <div class="section-label">Columnist &bull; Daily Dad</div>
-            <h2>You Won&rsquo;t Regret It</h2>
-            <p class="lead">The work trip you cancelled because you&rsquo;ve been away too much. The meeting you skipped because you know you never should have agreed to it in the first place.</p>
-            <p>The days you came in late because your kids needed a little more time at dropoff. The weekend where you blew off household projects and just did something fun together. Do you think anyone has ever really regretted choosing family first? Maybe they missed out on some stuff here and there, but looking back on their life, do you think anyone even remembers?</p>
-            <p>But we will remember that day we blew off work, picked the kids up early, and drove up to the mountains. We&rsquo;ll remember that we went to their recital. We&rsquo;ll remember that we got ice cream and walked around the park.</p>
-            <p>With so many demands on our time, it helps to zoom out. To think about how you&rsquo;re going to think about this later. Remember what we&rsquo;re after: a close relationship with our kids. A sense that we didn&rsquo;t waste this brief thing called their childhood. So decide accordingly now. You won&rsquo;t regret it.</p>
+            <div class="section-label">Columnist &#8226; Daily Dad</div>
+            <h2>They Need To Hear It Again</h2>
+            <p class="lead">The most highly paid athletes in the world &#8212; people who have trained their whole lives and have every incentive to perform &#8212; still need their coaches to repeat the basics. Over and over.</p>
+            <p>But your kid? You assume they should get it because &#8220;you already told them?&#8221; If the pros need to hear it a thousand times, your kids probably need to hear it again. And by &#8220;it,&#8221; we mean everything &#8212; every lesson, every rule, every instruction. And by &#8220;again,&#8221; we mean essentially an infinite number of times.</p>
+            <p>Not just for sports, but for all the things you want them to understand. They&#8217;re going to need to hear it explained over and over. They&#8217;re going to need it simplified, boiled down to its essence. They&#8217;re going to need it put up on the wall, told via stories and examples, called out when it&#8217;s done well &#8212; and reviewed when it isn&#8217;t.</p>
+            <p>That&#8217;s the only way they&#8217;ll learn it. That&#8217;s the only way they &#8212; or anyone &#8212; can live up to it.</p>
         </div>
 
         <!-- How To Section (Rundown AI) -->
         <div class="columnist-section howto">
-            <div class="section-label">How To &bull; The Rundown AI</div>
-            <h2>Build Your Own Cloud-Based Web Crawler with Manus</h2>
-            <p class="lead">Turn <a href="https://manus.im/" target="_blank" style="color:#60a5fa;">Manus</a> Cloud Computer into a private 24/7 web crawler for any site you want to monitor &mdash; without burning tokens on repetitive checks.</p>
+            <div class="section-label">How To &#8226; The Rundown AI</div>
+            <h2>3D Model Anything with Claude and Blender</h2>
+            <p class="lead">Connect <a href="https://www.blender.org/" target="_blank" style="color:#60a5fa;">Blender</a> to Claude Code via MCP, then use plain English to create and edit a full 3D scene &#8212; no 3D experience required.</p>
             <ol>
-                <li>Open the Manus desktop app, go to <strong>Settings &rsaquo; My Computer</strong>, and click <em>Create now</em> under Cloud Computer to give Manus an always-on server.</li>
-                <li>Start a new Manus task, select your Cloud Computer in the composer.</li>
-                <li>Prompt: <em>&ldquo;Set up a web crawler on my Cloud Computer for [URL]. Inspect site formatting. Check for [info] twice a day. Log to CSV. Create a script, schedule it with cron, log every run, and only save results matching [criteria].&rdquo;</em></li>
-                <li>Have Manus run the script once, then set it running 24/7. Check collected data anytime from your phone or laptop.</li>
+                <li>Download and install Blender and its <a href="https://www.blender.org/lab/mcp-server/" target="_blank" style="color:#60a5fa;">MCP extension</a>. In Blender, go to <strong>Edit &gt; Preferences</strong>, search MCP, and enable the extension.</li>
+                <li>In Terminal, open Claude Code in your project folder. Connect Blender with: <code style="background:#1a1a1a;padding:2px 6px;border-radius:3px;font-size:0.9em;">claude mcp add blender -- uvx blender-mcp-server</code></li>
+                <li>Ask Claude to verify setup: <em>&#8220;Connect Claude Code to Blender and confirm the MCP config is set up correctly. Check Blender is running the MCP server, confirm the host and port, and verify the connection before editing.&#8221;</em></li>
+                <li>Test it: <em>&#8220;Use Blender MCP to model my name in 3D. Add disco balls and lighting, reflective materials, and a camera angle to make it like an event poster.&#8221;</em></li>
             </ol>
-            <p><strong>Going further:</strong> Ask Manus which repetitive parts of any AI workflow can run &ldquo;for free&rdquo; on your cloud computer, then save the agent for reuse.</p>
+            <p><strong>Pro tip:</strong> Download models from <a href="https://www.blenderkit.com/" target="_blank" style="color:#60a5fa;">BlenderKit</a>, open them in Blender, and ask Claude to arrange objects, adjust lighting, and prepare a render.</p>
             <div style="margin-top:18px;">
-                <div style="font-family:-apple-system,sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:#8b5cf6;margin-bottom:12px;">Community Workflow</div>
-                <p><strong>Guitar practice journal with Claude:</strong> One reader uses Claude to document each practice session &mdash; chords learned, minutes practiced, songs in progress &mdash; which then generates a visual data dashboard. At the end of each session, Claude suggests 3&ndash;5 new things to work on based on what&rsquo;s been practiced and similar songs to advance to next.</p>
-            </div>
-            <div style="margin-top:18px;">
-                <div style="font-family:-apple-system,sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:#8b5cf6;margin-bottom:12px;">Roundtable AI Use Cases</div>
-                <p><strong>Claude Code as CAD designer:</strong> One Rundown staffer used Claude Code to iterate a 3D-printable ring holder for a water bottle through 8 prototypes &mdash; no engineering background required.</p>
-                <p><strong>Gemini for YouTube learning:</strong> Gemini&rsquo;s Google integration lets you summarize specific YouTube videos or scan the last 5&ndash;10 videos from a creator to extract only the key takeaways &mdash; a shortcut for long-form learning.</p>
+                <div style="font-family:-apple-system,sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:#8b5cf6;margin-bottom:10px;">Community Workflow &#8212; Michael D., Littleton CO</div>
+                <p><strong>Obsidian vault + Claude as a mindfulness teaching assistant:</strong> A mindfulness teacher consolidated years of scattered notes into Obsidian as tagged markdown files. With Claude pointed at the vault, lessons now draw on real personal practice &#8212; not generic synthesis. Unexpected payoff: &#8220;Claude sometimes uses my notes in ways I wouldn&#8217;t have thought of, and I end up with a new perspective on my own experience that I didn&#8217;t even plan for.&#8221;</p>
             </div>
         </div>
 
@@ -257,46 +244,43 @@
             <div class="main-column">
 
                 <div class="article">
-                    <div class="category">AI &bull; Finance</div>
-                    <h3>The AI Chip Boom Has Two Clocks &mdash; and They&rsquo;re Not Synchronized</h3>
-                    <span class="source source-onepercent">1% Better</span>
-                    <p class="summary">Cerebras Systems went public at $185/share &mdash; $66B valuation, 20x oversubscribed, largest US tech IPO since Uber. The IPO market says the AI infrastructure window is wide open. The chip suppliers say something different.</p>
-                    <div class="details">
-                        <p>SK Hynix posted a 72% operating margin in Q1 and has reportedly sold its <em>entire</em> 2026 HBM output already, signing 3&ndash;5 year supply agreements with Microsoft, Google, and Amazon requiring advance payment. Yet capex grew only ~17% year-over-year &mdash; vs. the 50%+ increase during the 2017&ndash;2018 boom that preceded the 2019 memory bust. Micron says it can fill only 55&ndash;60% of core customer demand.</p>
-                        <p>TSMC guided 2026 capex to a record <a href="https://www.ft.com/content/9804b1de-653b-40b2-bffb-17c76ebebe34" target="_blank" style="color:#60a5fa;">$52&ndash;$56B</a>. SK Hynix&rsquo;s new mega-fab doesn&rsquo;t start production until early 2027. Samsung&rsquo;s P5 is 2028. Intel CEO Lip-Bu Tan: &ldquo;no relief until 2028.&rdquo;</p>
-                        <p>The capital cycle is pricing multi-year compute demand at any valuation the market will bear. The manufacturing clock is monetizing discipline, letting new wafers arrive in 2028 &mdash; after the demand signal has been pressure-tested. &ldquo;Strategically managed scarcity,&rdquo; as one analyst put it. Watch for which clock breaks first.</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="category">AI &bull; Art &amp; Culture</div>
-                    <h3>Artist Tricks X Users Into Trashing a Real Monet as &ldquo;AI Slop&rdquo;</h3>
+                    <div class="category">AI &#8226; Coding</div>
+                    <h3>Cursor&#8217;s Composer 2.5 Hits Frontier Performance for Under $1 per Task</h3>
                     <span class="source source-rundown">The Rundown AI</span>
-                    <p class="summary">Conceptual artist SHL0MS posted a genuine Monet from the Water Lilies collection (c. 1915) and told followers he&rsquo;d generated it with AI, asking them to explain why it was inferior. Thousands obliged.</p>
+                    <p class="summary">Cursor <a href="https://cursor.com/blog/composer-2-5" target="_blank" style="color:#60a5fa;">released</a> Composer 2.5, an in-house coding model built on Moonshot&#8217;s Kimi K2.5 that benchmarks near Anthropic&#8217;s Claude 4.7 and OpenAI&#8217;s GPT-5.5 &#8212; at a fraction of the cost.</p>
                     <div class="details">
-                        <p>Critics called the image &ldquo;emotionless,&rdquo; &ldquo;slop,&rdquo; and picked apart its depth, reflections, and composition &mdash; all of which are, of course, authentic Monet. <a href="https://x.com/SHL0MS/status/2054280631807316329?s=20" target="_blank" style="color:#60a5fa;">The original post</a> drew thousands of confident critiques before the reveal.</p>
-                        <p>The saga aligns with 2024 <a href="https://www.nature.com/articles/s41598-024-54294-4" target="_blank" style="color:#60a5fa;">Norwegian research</a> finding that people actually prefer AI art but show a clear negative bias against it once they know it&rsquo;s AI-generated. For a growing crowd, the word &ldquo;AI&rdquo; alone triggers backlash regardless of context.</p>
+                        <p>An average CursorBench task costs under $1 with Composer 2.5, compared to up to $11 per task for Opus 4.7 or GPT-5.5 at similar performance levels &#8212; a nearly 10% step up from its predecessor. Composer 2.5 was partially trained on xAI&#8217;s Colossus 2 compute cluster. Cursor is currently training a larger model with 10x more compute. With xAI&#8217;s compute now behind Cursor, the next model could be the one that takes over the frontier.</p>
                     </div>
                 </div>
 
                 <div class="article">
-                    <div class="category">AI &bull; Finance</div>
-                    <h3>ChatGPT Connects to Your Money via Plaid</h3>
+                    <div class="category">AI &#8226; Acquisitions</div>
+                    <h3>Anthropic Acquires Stainless, the Team Behind Its Official SDKs and MCP Tooling</h3>
                     <span class="source source-rundown">The Rundown AI</span>
-                    <p class="summary">OpenAI launched a personal finance experience inside ChatGPT, giving the chatbot real-time access to your spending, investments, and bills across 12,000+ institutions.</p>
+                    <p class="summary">Anthropic <a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" style="color:#60a5fa;">acquired</a> Stainless, the startup responsible for the official Claude developer libraries and MCP server tooling, bringing the team in-house.</p>
                     <div class="details">
-                        <p>Users connect via <a href="https://openai.com/index/personal-finance-chatgpt/" target="_blank" style="color:#60a5fa;">Plaid</a> across Chase, Schwab, Robinhood, and more, with a dashboard tracking spending, portfolio, and upcoming bills. Intuit support is next, adding tax estimates and credit-card approval odds. ChatGPT can analyze connected data but cannot move money, pay bills, or file taxes &mdash; yet. The feature preview starts with U.S.-based Pro accounts.</p>
-                        <p>Financial guidance has been locked behind pricey advisors or clunky apps for a decade. Plaid serves as the secure layer to get users to trust AI with that information.</p>
+                        <p>Stainless built and maintained Claude&#8217;s SDKs across Python, TypeScript, and other languages. The acquisition signals Anthropic&#8217;s intent to own more of its developer experience stack as the MCP ecosystem grows.</p>
                     </div>
                 </div>
 
                 <div class="article">
-                    <div class="category">Business &bull; Investing</div>
-                    <h3>Greg Abel&rsquo;s Berkshire Hathaway: Tripling Alphabet, Dumping Amazon and Visa</h3>
+                    <div class="category">AI &#8226; World Models</div>
+                    <h3>Odyssey Drops First Real-Time Multimodal World Model &#8212; and the First Multiplayer One</h3>
+                    <span class="source source-rundown">The Rundown AI</span>
+                    <p class="summary">Odyssey <a href="https://odyssey.ml/introducing-starchild-1" target="_blank" style="color:#60a5fa;">introduced</a> Starchild-1 &#8212; the first real-time multimodal world model &#8212; and <a href="https://odyssey.ml/introducing-agora-1" target="_blank" style="color:#60a5fa;">Agora-1</a>, which lets up to 4 players interact inside the same AI-generated world stream simultaneously.</p>
+                    <div class="details">
+                        <p>Starchild-1 generates synchronized audio and video on the fly while adjusting to user inputs with no fixed generation length. Agora-1 was demoed via a GoldenEye-style simulation where every pixel is produced live &#8212; tracking each agent&#8217;s position and health as actions change the shared world state.</p>
+                        <p>Many of the sharpest minds in tech view world models as the industry&#8217;s next frontier. Going from rendered clips to live, adjustable shared streams opens whole new avenues for gaming, storytelling, robotics, and AI agent training in simulation.</p>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="category">Business &#8226; Retail</div>
+                    <h3>Lululemon Fires Back at Founder Chip Wilson: &#8220;Misguided&#8221; and &#8220;Outdated&#8221;</h3>
                     <span class="source source-brew">Morning Brew</span>
-                    <p class="summary">Warren Buffett&rsquo;s successor signals his own chapter: halting the Apple sell-off, going big on Alphabet, and exiting Amazon, Visa, Mastercard, Domino&rsquo;s, and UnitedHealth Group in his first quarter at the helm.</p>
+                    <p class="summary">More than a decade after leaving, Lululemon founder Chip Wilson is trying to overhaul the company&#8217;s board &#8212; prompting the company&#8217;s first public <a href="https://links.morningbrew.com/c/PKH?mblid=622f4d6c309e" target="_blank" style="color:#60a5fa;">response</a> calling his views outdated and urging shareholders to back existing board members.</p>
                     <div class="details">
-                        <p>The quarterly 13F filing shows Abel more than tripled Berkshire&rsquo;s position in Alphabet and cut its Constellation Brands stake by 95%. Analysts note he is less averse to tech investing than Buffett was. <a href="https://links.morningbrew.com/c/PGZ?mblid=8ca29b87f8ac" target="_blank" style="color:#60a5fa;">Full breakdown</a>.</p>
+                        <p>Lululemon&#8217;s revenue tripled in the nine years after Wilson left the board in 2015 &#8212; but its stock is now down ~75% from a 2023 peak amid competition from Vuori and Alo, tariffs, and a consumer spending pullback. Wilson, the company&#8217;s second-largest shareholder, has <a href="https://links.morningbrew.com/c/PKK?mblid=d9d758ea88de" target="_blank" style="color:#60a5fa;">criticized</a> its DEI efforts and argued it lost its &#8220;cool&#8221; factor. Shareholders vote on competing board nominees June 25.</p>
                     </div>
                 </div>
 
@@ -306,50 +290,59 @@
                 <div class="sidebar-section">
                     <h4>Quick Hits</h4>
                     <div class="sidebar-item">
-                        <div class="category">Culture</div>
-                        <h5>Everlane Reportedly Acquired by Shein</h5>
-                        <p>The sustainably-branded clothing company has allegedly been bought by the fast-fashion giant &mdash; a jarring union given Everlane&rsquo;s transparency-first founding principles. <a href="https://links.morningbrew.com/c/PH1?mblid=71a526ff53cf" target="_blank" style="color:#60a5fa;">Report</a>. <span class="source source-brew">Brew</span></p>
+                        <div class="category">Energy &#8226; Utilities</div>
+                        <h5><a href="https://links.morningbrew.com/c/PLl?mblid=c1ffbad8cb56" target="_blank" style="color:#e8e8e8;">NextEra Buying Dominion in $67B Deal &#8212; Creating America&#8217;s Largest Power Producer</a></h5>
+                        <p>The all-stock deal would better position the combined company to serve surging data center demand. <span class="source source-brew">Brew</span></p>
                     </div>
                     <div class="sidebar-item">
-                        <div class="category">Tech</div>
-                        <h5>Google I/O 2026 Kicks Off Tomorrow</h5>
-                        <p>Google&rsquo;s annual developer conference begins Tuesday. <a href="https://links.morningbrew.com/c/PH0?mblid=b05ea6251087" target="_blank" style="color:#60a5fa;">Details</a>. <span class="source source-brew">Brew</span></p>
+                        <div class="category">AI &#8226; Labor</div>
+                        <h5><a href="https://www.cnbc.com/2026/05/18/metas-layoffs-starting-this-week-underscore-zuckerbergs-ai-reality-.html" target="_blank" style="color:#e8e8e8;">Meta Laying Off Up to 8,000 This Week in AI Efficiency Push</a></h5>
+                        <p>Meta is also no longer planning to hire for 6,000 open roles as part of Zuckerberg&#8217;s AI-first restructuring. <span class="source source-rundown">Rundown</span></p>
                     </div>
                     <div class="sidebar-item">
-                        <div class="category">Sports</div>
-                        <h5>Aaron Rai Wins PGA Championship with 68-Foot Putt</h5>
-                        <p>The British golfer sinks a historic putt to claim his first major. <a href="https://links.morningbrew.com/c/PH2?mblid=f7cb516aeba1" target="_blank" style="color:#60a5fa;">Highlights</a>. <span class="source source-brew">Brew</span></p>
+                        <div class="category">AI &#8226; Government</div>
+                        <h5><a href="https://openai.com/index/malta-chatgpt-plus-partnership/" target="_blank" style="color:#e8e8e8;">Malta Gives Free ChatGPT Plus to Every Citizen Who Passes an AI Literacy Course</a></h5>
+                        <p>OpenAI&#8217;s first country-wide deal of its kind &#8212; an AI literacy prerequisite in exchange for national access. <span class="source source-rundown">Rundown</span></p>
                     </div>
                     <div class="sidebar-item">
-                        <div class="category">Sports</div>
-                        <h5>NBA Conference Finals: Spurs vs. Thunder Tonight</h5>
-                        <p>Western Conference Finals start tonight with San Antonio vs. Oklahoma City. Knicks vs. Cavaliers tip off Tuesday in the East.</p>
+                        <div class="category">AI &#8226; Voice</div>
+                        <h5><a href="https://links.morningbrew.com/c/PLx?mblid=3798ef6a943f" target="_blank" style="color:#e8e8e8;">Amazon&#8217;s Alexa Can Now Generate Full AI Podcasts with Fake Hosts</a></h5>
+                        <p>Alexa+ creates NotebookLM-style conversations between two AI hosts on any topic, in partnership with major news outlets. <span class="source source-brew">Brew</span></p>
                     </div>
                     <div class="sidebar-item">
-                        <div class="category">Culture</div>
-                        <h5>Stephen Colbert&rsquo;s Last <em>Late Show</em> Is Thursday</h5>
-                        <p>After 30+ years, the show finally goes to bed. Jon Stewart, Steven Spielberg, David Byrne, and Bruce Springsteen are all appearing earlier in the week. <span class="source source-brew">Brew</span></p>
+                        <div class="category">AI &#8226; Enterprise</div>
+                        <h5><a href="https://openai.com/index/dell-codex-enterprise-partnership/" target="_blank" style="color:#e8e8e8;">OpenAI &amp; Dell Partner to Run Codex Inside Corporate Data Centers</a></h5>
+                        <p>The deal connects OpenAI&#8217;s coding agent to enterprise internal systems, extending Codex beyond the cloud. <span class="source source-rundown">Rundown</span></p>
                     </div>
                     <div class="sidebar-item">
-                        <div class="category">AI</div>
-                        <h5>Anthropic Partners with Gates Foundation for $200M</h5>
-                        <p>Claude will be deployed in vaccine screening, disease forecasting, and K&ndash;12 tutoring in developing nations. <a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank" style="color:#60a5fa;">Announcement</a>. <span class="source source-rundown">Rundown</span></p>
-                    </div>
-                    <div class="sidebar-item">
-                        <div class="category">AI</div>
-                        <h5>Eric Schmidt Booed at Arizona Graduation Speech on AI</h5>
-                        <p>The former Google CEO was met with boos after likening AI to the &ldquo;technological transformation&rdquo; brought by the computer. <a href="https://www.nbcnews.com/tech/tech-news/former-google-ceo-booed-graduation-speech-ai-rcna345585" target="_blank" style="color:#60a5fa;">Video</a>. <span class="source source-onepercent">1% Better</span></p>
+                        <div class="category">Legal &#8226; Finance</div>
+                        <h5>DOJ Creates $1.8B &#8220;Anti-Weaponization&#8221; Fund</h5>
+                        <p>As part of resolving Trump&#8217;s IRS lawsuit, the DOJ <a href="https://links.morningbrew.com/c/PLk?mblid=2348a4b196ef" target="_blank" style="color:#60a5fa;">established</a> a $1.776B fund to compensate those claiming they were targeted under Biden. Critics call it a slush fund for Trump allies. <span class="source source-brew">Brew</span></p>
                     </div>
                 </div>
 
-                <div class="highlight-box">
-                    <h5>Week Ahead</h5>
-                    <ul>
-                        <li><strong>Tue:</strong> Home Depot earnings; Google I/O opens</li>
-                        <li><strong>Wed:</strong> Nvidia earnings; Fed April meeting minutes; NHL Conference Finals begin</li>
-                        <li><strong>Thu:</strong> Walmart earnings; G7 finance ministers in Paris; Colbert&rsquo;s last show</li>
-                        <li><strong>Fri:</strong> <em>Star Wars: The Mandalorian and Grogu</em> in theaters</li>
-                    </ul>
+                <div class="sidebar-section">
+                    <h4>Also in the News</h4>
+                    <div class="sidebar-item">
+                        <div class="category">Health</div>
+                        <h5>American in Congo Tests Positive for Ebola</h5>
+                        <p>A US worker tested positive amid a <a href="https://links.morningbrew.com/c/PLu?mblid=d81f96c198a0" target="_blank" style="color:#60a5fa;">deadly outbreak</a> in the Democratic Republic of Congo. <span class="source source-brew">Brew</span></p>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="category">Legal &#8226; Celebrity</div>
+                        <h5>Shakira Acquitted of Tax Fraud by Spanish Court</h5>
+                        <p>The pop star was <a href="https://links.morningbrew.com/c/PLy?mblid=3c8dd4d576f4" target="_blank" style="color:#60a5fa;">cleared</a> of charges that she owed &#8364;14.5 million in unpaid taxes to Spanish authorities. <span class="source source-brew">Brew</span></p>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="category">Legal &#8226; Business</div>
+                        <h5>DOJ Seeks to Drop Fraud Charges Against Gautam Adani</h5>
+                        <p>US prosecutors are <a href="https://links.morningbrew.com/c/PLv?mblid=5b0947e1cbae" target="_blank" style="color:#60a5fa;">moving to dismiss</a> conspiracy charges tied to an alleged solar project fraud. <span class="source source-brew">Brew</span></p>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="category">Aviation</div>
+                        <h5>Ryanair CEO Warns Europe&#8217;s Weaker Airlines May Not Survive Summer</h5>
+                        <p>Fuel price hikes are squeezing thin-margin carriers. The Ryanair CEO warned that several European discount airlines might not make it through the season. <a href="https://links.morningbrew.com/c/PLw?mblid=70fa5c16795a" target="_blank" style="color:#60a5fa;">Details</a>. <span class="source source-brew">Brew</span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -357,62 +350,54 @@
         <!-- Bottom Three-Column Section -->
         <div class="bottom-section">
             <div class="bottom-column">
-                <h4>AI &amp; Tech</h4>
+                <h4>The Trial Record</h4>
                 <div class="bottom-item">
-                    <h5>Anthropic&rsquo;s $1.5B Copyright Settlement Halted</h5>
-                    <p>A federal judge paused the class-action settlement with authors over copyright infringement to investigate why some class members objected and opted out. <a href="https://links.morningbrew.com/c/PG_?mblid=e20723e1b185" target="_blank" style="color:#60a5fa;">Report</a>. <span class="source source-brew">Brew</span></p>
+                    <h5>What Went Into the Federal Docket</h5>
+                    <p>Three weeks of sworn testimony put on record: Brockman&#8217;s $30B personal stake; Sutskever&#8217;s $7B; Altman&#8217;s ~$2B in adjacent equity; the November 2017 Brockman memo acknowledging the for-profit shift; and internal Microsoft emails about the 2023 board crisis. None of this was previously confirmed under oath. <span class="source source-onepercent">1% Better</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>OpenAI Quietly Acquired Voice-Clone Startup Weights.gg</h5>
-                    <p>The social network featuring celebrity voice replicas was bought in January; six staff members have joined OpenAI. <a href="https://www.theinformation.com/briefings/openai-buys-audio-startup-weights?rc=a8sc5q" target="_blank" style="color:#60a5fa;">The Information</a>. <span class="source source-rundown">Rundown</span></p>
+                    <h5>OpenAI IPO Path Cleared</h5>
+                    <p>Wall Street read Monday&#8217;s verdict as a green light for OpenAI&#8217;s anticipated IPO at a potential $1 trillion valuation. The PBC restructure &#8212; valued at $852B &#8212; received state AG blessing from both California and Delaware last October. <span class="source source-onepercent">1% Better</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>Pope Leo XIV Creates Vatican AI Advisory Body</h5>
-                    <p>The new pope signed his first encyclical, expected to frame AI as this generation&rsquo;s Industrial Revolution. <a href="https://apnews.com/article/vatican-artificial-intelligence-pope-musk-nvidia-trump-889c0066f0d5ce784c07abb72b33e24c" target="_blank" style="color:#60a5fa;">AP News</a>. <span class="source source-rundown">Rundown</span></p>
-                </div>
-                <div class="bottom-item">
-                    <h5>New AI Tools This Week</h5>
-                    <p><a href="https://openai.com/index/work-with-codex-from-anywhere/" target="_blank" style="color:#60a5fa;">Codex</a> goes mobile &bull; <a href="https://www.rundown.ai/tools/higgsfield-supercomputer" target="_blank" style="color:#60a5fa;">Higgsfield Supercomputer</a> launches with memory and tools &bull; <a href="https://www.rundown.ai/tools/krea-2" target="_blank" style="color:#60a5fa;">Krea 2</a> brings moodboard-based image generation. <span class="source source-rundown">Rundown</span></p>
+                    <h5>xAI IPO Also on Deck</h5>
+                    <p>Musk&#8217;s xAI is set to go public as part of the massive SpaceX IPO, planned for as early as next month &#8212; setting up a direct Wall Street competition with OpenAI. <span class="source source-brew">Brew</span></p>
                 </div>
             </div>
 
             <div class="bottom-column">
-                <h4>Business &amp; Economy</h4>
+                <h4>Travel &amp; Economy</h4>
                 <div class="bottom-item">
-                    <h5>Nvidia Earnings Wednesday &mdash; First Since $5.5T Market Cap</h5>
-                    <p>The world&rsquo;s most valuable company reports after CEO Jensen Huang traveled to China with President Trump last week. AI chip demand expectations are sky-high. <span class="source source-brew">Brew</span></p>
+                    <h5><a href="https://links.morningbrew.com/c/PKn?mbcid=45766839.869543" target="_blank" style="color:#e8e8e8;">TSA Testing Off-Site Screening Near Boston Starting June 1</a></h5>
+                    <p>Delta and JetBlue passengers departing Logan can clear TSA at a location in Framingham, MA (25 miles away), then take a $9 shuttle to the gate. Eight airports approved for the pilot. Daily parking $7. <span class="source source-brew">Brew</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>China Sought Access to Anthropic&rsquo;s Newest AI &mdash; and Was Denied</h5>
-                    <p>The latest Claude and GPT models are extending the US lead over China, intensifying the AI rivalry between the two countries. <a href="https://www.nytimes.com/2026/05/12/us/politics/china-ai-anthropic-openai-mythos-chatgpt.html" target="_blank" style="color:#60a5fa;">NY Times</a>. <span class="source source-onepercent">1% Better</span></p>
+                    <h5>SpaceX Worker Killed at Starbase Days Before Starship Test</h5>
+                    <p>A contractor died from a fall while helping build out the Brownsville complex. The accident occurred just ahead of Wednesday&#8217;s much-delayed redesigned Starship test flight. <span class="source source-onepercent">1% Better</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>Chinese AI Pulls Ahead in Video Generation</h5>
-                    <p>ByteDance and Kuaishou are outshining western rivals in AI video quality, lifting output across advertising and entertainment. <a href="https://www.ft.com/content/9804b1de-653b-40b2-bffb-17c76ebebe34" target="_blank" style="color:#60a5fa;">FT</a>. <span class="source source-onepercent">1% Better</span></p>
-                </div>
-                <div class="bottom-item">
-                    <h5>G7 Finance Ministers Meet in Paris Today &amp; Tomorrow</h5>
-                    <p>Opening the Strait of Hormuz and ending the Iran conflict tops the agenda, as energy prices drive inflation pressure across the global economy. <span class="source source-brew">Brew</span></p>
+                    <h5>Jensen Huang Expects China Market to Reopen for US AI Chips</h5>
+                    <p>The Nvidia CEO, added last-minute to Trump&#8217;s Beijing delegation, says he never raised H200 sales directly with Chinese officials &#8212; who have quietly stalled already-licensed purchases to boost Huawei. <span class="source source-onepercent">1% Better</span></p>
                 </div>
             </div>
 
             <div class="bottom-column">
-                <h4>Science &amp; Society</h4>
+                <h4>AI Toolbox</h4>
                 <div class="bottom-item">
-                    <h5>Two-Thirds of US Doctors Are Quietly Using an AI Tool Patients Don&rsquo;t Know About</h5>
-                    <p>OpenEvidence, an AI-powered medical search tool, is now used by nearly two-thirds of US physicians. <a href="https://www.nbcnews.com/tech/tech-news/openevidence-ai-doctor-medical-physician-login-app-what-npi-uptodate-rcna341064" target="_blank" style="color:#60a5fa;">NBC News</a>. <span class="source source-onepercent">1% Better</span></p>
+                    <h5><a href="https://cursor.com/blog/composer-2-5" target="_blank" style="color:#e8e8e8;">Composer 2.5 &#8212; Cursor&#8217;s Near-Frontier Coding Model</a></h5>
+                    <p>Partially trained on xAI&#8217;s Colossus 2. Near-frontier benchmark scores for under $1/task. A larger model at 10x compute is in training. <span class="source source-rundown">Rundown</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>Thailand Scientist Fulfills Childhood Promise: Names a Dinosaur</h5>
-                    <p>Paleontologist Thitiwoot Sethapanichsakul helped name <em>Nagatitan chaiyaphumensis</em> &mdash; 89 feet long, 60,000 pounds, lived ~100 million years ago. &ldquo;It fulfills a kind of childhood promise.&rdquo; <a href="https://links.morningbrew.com/c/PGP?mblid=216fc4eb0bbe" target="_blank" style="color:#60a5fa;">CNN</a>. <span class="source source-brew">Brew</span></p>
+                    <h5><a href="https://www.rundown.ai/tools/krea-2" target="_blank" style="color:#e8e8e8;">Krea 2 &#8212; First In-House Image Model from Krea</a></h5>
+                    <p>Now generally available. Krea&#8217;s new image model is their first built in-house rather than via third-party APIs. <span class="source source-rundown">Rundown</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>Fighter Jets Collide at Idaho Air Force Base Airshow</h5>
-                    <p>Two F-series aircraft collided midair during an airshow at Mountain Home AFB in Idaho. All four aviators survived. <a href="https://links.morningbrew.com/c/PG-?mblid=ac6931b6f3a1" target="_blank" style="color:#60a5fa;">Report</a>. <span class="source source-brew">Brew</span></p>
+                    <h5>Google &amp; Blackstone Form New AI Cloud Company</h5>
+                    <p>Blackstone will be majority owner, running on Google TPUs rather than Nvidia silicon, with 500 megawatts of capacity targeted by 2027. <span class="source source-onepercent">1% Better</span></p>
                 </div>
                 <div class="bottom-item">
-                    <h5>70% of Americans Oppose Data Centers in Their Neighborhood</h5>
-                    <p>A Gallup survey finds the infrastructure polls as less popular than local nuclear power plants. <a href="https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx" target="_blank" style="color:#60a5fa;">Gallup</a>. <span class="source source-rundown">Rundown</span></p>
+                    <h5><a href="https://x.com/cognition/status/2056396941181727210" target="_blank" style="color:#e8e8e8;">Devin &#8212; New Auto-Triage Security Feature with Long-Term Memory</a></h5>
+                    <p>Cognition&#8217;s AI coding agent adds Auto-Triage for security vulnerabilities, now with persistent long-term memory across sessions. <span class="source source-rundown">Rundown</span></p>
                 </div>
             </div>
         </div>
@@ -420,14 +405,15 @@
     </div>
 
     <footer>
-        <p>The Daily Brief &mdash; Monday, May 18, 2026</p>
-        <p>Generated from 4 newsletters via Claude Code CLI</p>
+        <p>The Daily Brief &#8212; Tuesday, May 19, 2026</p>
+        <p>Compiled from Morning Brew, The Rundown AI, 1% Better (Vector), and Daily Dad</p>
         <div class="sources">
-            <span style="color:#f59e0b;">&#9632;</span> Morning Brew
-            <span style="color:#8b5cf6;">&#9632;</span> The Rundown AI
-            <span style="color:#10b981;">&#9632;</span> 1% Better / Vector
-            <span style="color:#3b82f6;">&#9632;</span> Daily Dad
+            <span class="source source-brew">Morning Brew</span>
+            <span class="source source-rundown">The Rundown AI</span>
+            <span class="source source-onepercent">1% Better</span>
+            <span class="source source-dailydad">Daily Dad</span>
         </div>
     </footer>
+
 </body>
 </html>
