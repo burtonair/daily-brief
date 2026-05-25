@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief - Sunday, May 24, 2026</title>
+    <title>The Daily Brief - Monday, May 25, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
@@ -46,10 +46,14 @@
         .change-up { color: #10b981; }
         .change-down { color: #ef4444; }
         .columnist-section { background: #111; border-left: 4px solid #3b82f6; padding: 25px 35px; margin-bottom: 35px; border-radius: 0 8px 8px 0; }
+        .columnist-section.how-to { border-left-color: #8b5cf6; }
         .columnist-section .section-label { font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #3b82f6; margin-bottom: 12px; }
+        .columnist-section.how-to .section-label { color: #8b5cf6; }
         .columnist-section h2 { font-size: 1.5rem; font-weight: 400; margin-bottom: 15px; line-height: 1.3; }
         .columnist-section .lead { font-size: 1.05rem; color: #bbb; margin-bottom: 20px; line-height: 1.7; font-style: italic; }
         .columnist-section p { color: #999; font-size: 0.95rem; margin-bottom: 12px; line-height: 1.7; }
+        .columnist-section ol { color: #999; font-size: 0.95rem; margin-bottom: 12px; padding-left: 20px; line-height: 1.7; }
+        .columnist-section ol li { margin-bottom: 8px; }
         .section-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; margin-bottom: 50px; }
         .main-column { border-right: 1px solid #333; padding-right: 50px; }
         .article { margin-bottom: 40px; padding-bottom: 35px; border-bottom: 1px solid #333; }
@@ -115,13 +119,13 @@
     <div class="nav-content">
         <div class="nav-categories">
             <span>Markets</span>
-            <span>Travel</span>
+            <span>Tech</span>
             <span>Business</span>
             <span>World</span>
             <span>Culture</span>
-            <span>Destinations</span>
+            <span>Life</span>
         </div>
-        <div class="nav-date">Sunday, May 24, 2026</div>
+        <div class="nav-date">Monday, May 25, 2026</div>
     </div>
 </nav>
 
@@ -129,7 +133,7 @@
     <h1>The Daily Brief</h1>
     <p class="tagline">Your morning intelligence digest</p>
     <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-        Sources: Morning Brew (6:02 AM ET) | <span style="color:#ef4444;">The Rundown AI ✗</span> | <span style="color:#ef4444;">1% Better ✗</span> | <span style="color:#ef4444;">Daily Dad ✗</span>
+        Sources: Daily Dad (5:02 AM ET) | The Rundown AI (5:04 AM ET) | 1% Better (5:19 AM ET) | <span style="color:#ef4444;">Morning Brew ✗</span>
     </p>
 </header>
 
@@ -138,236 +142,266 @@
     <!-- HERO SECTION -->
     <div class="hero-section">
         <div class="hero-main">
-            <span class="category">Travel &amp; Economy</span>
-            <span class="source source-brew">Morning Brew</span>
-            <h2>The K-Shaped Economy Has Arrived at the Airport</h2>
-            <p class="summary">Airlines, hotels, and destinations are all following the same script: double down on the wealthy and let everyone else fight over the scraps. The travel industry's split personality is now impossible to ignore.</p>
+            <span class="category">AI &amp; Science</span>
+            <span class="source source-rundown">The Rundown AI</span>
+            <h2>Google's AI Cracks Nine Decades-Old Math Problems in One Day</h2>
+            <p class="summary">A day after OpenAI claimed its own Erdős breakthrough, Google DeepMind quietly did them eight better — autonomously solving nine open problems considered among the hardest unsolved questions in mathematics.</p>
             <div class="content">
-                <p>At Delta, <a href="https://links.morningbrew.com/c/Q03?mblid=cd202cf0b4da&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">premium ticket sales surpassed economy for the first time ever</a> last year — business and first-class rose 9% while main cabin seats dropped 7%. The airline has been deliberately directing investment toward premium products, and the math is working. United and American are following the same playbook.</p>
-                <p>The divergence is sharper in hotels. From November 2024 to November 2025, luxury properties posted a 2.9% gain in revenue per available room while midscale dropped 2.6% and economy properties fell 4.1%. Meanwhile, <a href="https://links.morningbrew.com/c/O-t?mblid=2b1c5f78cb00&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">Spirit Airlines abruptly shut down</a> earlier this month, specifically citing fuel costs driven in part by the Iran war.</p>
-                <p>That said, two-thirds of Americans still plan to take a domestic trip this summer. They're just doing it differently — <a href="https://links.morningbrew.com/c/Q06?mblid=4fe8ba958169&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">hunting "destination dupes"</a> (Brussels instead of Paris, Naples instead of Rome), leaning on loyalty points, and spending lunch breaks refreshing deal sites.</p>
+                <p>Google DeepMind's <a href="https://arxiv.org/abs/2605.22763v1" target="_blank" style="color:#60a5fa;">AlphaProof Nexus</a> solved nine open Erdős problems — including two unsolved for 56 years — spanning combinatorics and graph theory. The system paired a large language model with Lean, a formal proof assistant, to generate machine-verified proofs at a cost of just a few hundred dollars per problem.</p>
+                <p>The AI also proved 44 open conjectures from the Online Encyclopedia of Integer Sequences. A simpler version of the agent matched results at higher cost, and problems requiring entirely new mathematical constructions remained out of reach.</p>
+                <p>This comes just one day after OpenAI claimed its AI <a href="https://www.therundown.ai/p/openai-cracks-an-80-year-math-belief" target="_blank" style="color:#60a5fa;">disproved an 80-year-old Erdős conjecture</a> — months after walking back an earlier claim of solving 10 novel problems. Google's formal verification approach changes the game: the system generates proofs, checks them in Lean, and repeats until one passes. Over time, this enables researchers to make novel discoveries at machine speed.</p>
             </div>
         </div>
         <div class="hero-sidebar">
             <div class="hero-sidebar-item">
-                <span class="category">Destinations</span>
-                <h3>Las Vegas Visits Drop 7.5% — The Biggest Non-COVID Decline Since the '70s</h3>
-                <p>Despite fewer visitors, Vegas casinos posted <a href="https://links.morningbrew.com/c/Q0f?mblid=ca037deab76f&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">record revenue of $8.8 billion</a> last year. The culprits: GLP-1 drugs curbing gambling and drinking urges, Gen Z drinking less, and casinos tweaking odds against players to chase higher-income whales.</p>
-                <span class="source source-brew">Morning Brew</span>
+                <span class="category">Sports &amp; Culture</span>
+                <h3><a href="https://www.theguardian.com/sport/2026/may/23/enhanced-games-las-vegas-sports-ultimate-taboo-athletes-risk-all-for-millions" target="_blank" style="color:#e8e8e8;">The Steroid Olympics Are Here — 42 Athletes, $1M Bonuses, No Rules</a></h3>
+                <p>The inaugural Enhanced Games launched in Las Vegas, pitting athletes in swimming, weightlifting, and the 100m sprint with performance-enhancing drugs fully permitted. Backed by Peter Thiel and a Trump Jr.-partnered fund, organizers call enhancement a "decade-long mega-trend."</p>
+                <span class="source source-onepercent">1% Better</span>
             </div>
             <div class="hero-sidebar-item">
-                <span class="category">Retail</span>
-                <h3><a href="https://links.morningbrew.com/c/Q0l?mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">The Chic Luggage Race Is Getting Crowded — Has It Peaked?</a></h3>
-                <p>DJ John Summit's viral Rimowa bonfire post triggered a comment section battle between Away, Béis, Tumi, and Samsonite. The $1.4B Away sparked the D2C suitcase boom in 2015; now every brand from Casetify to Shay Mitchell's Béis wants a piece of Samsonite's 25% market share.</p>
-                <span class="source source-brew">Morning Brew</span>
+                <span class="category">AI Security</span>
+                <h3><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" style="color:#e8e8e8;">Claude Mythos Finds 10,000+ Critical Vulnerabilities in One Month</a></h3>
+                <p>Anthropic's Project Glasswing revealed that Claude Mythos Preview, working with ~50 partners, flagged over 10,000 high- or critical-severity bugs. Cloudflare found 2K bugs at a false positive rate better than human testers. Mozilla fixed 271 Firefox 150 vulnerabilities. One bank used Mythos to block a $1.5M fraudulent wire transfer.</p>
+                <span class="source source-rundown">The Rundown AI</span>
             </div>
             <div class="hero-sidebar-item">
-                <span class="category">Hacks</span>
-                <h3>Travel Tips Actually Worth Your Time This Summer</h3>
-                <p>Compression socks for long flights, AirTags in your luggage, a VPN when booking to <a href="https://links.morningbrew.com/c/Q0B?mblid=3e5d03e4f784&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">work around surveillance pricing</a> — and take the day after you get home off. Morning Brew says that last one may be the best travel hack of all.</p>
-                <span class="source source-brew">Morning Brew</span>
+                <span class="category">Auto &amp; Tech</span>
+                <h3><a href="https://www.wsj.com/business/autos/its-chinas-answer-to-a-rolls-royceand-its-stuffed-with-gadgets-ef27bdf9" target="_blank" style="color:#e8e8e8;">China's "Rolls-Royce" Undercuts the Real Thing by 75%</a></h3>
+                <p>Huawei and JAC Motors have sold 17,000+ Maextro S800 luxury EVs in one year. At $173K fully loaded — with a 40-inch screen and ~40 speakers — it undercuts a Mercedes-Maybach by half. An ultra-premium $300K model arrives as soon as June.</p>
+                <span class="source source-onepercent">1% Better</span>
             </div>
         </div>
     </div>
 
-    <!-- MARKETS STRIP -->
+    <!-- MARKETS STRIP (Morning Brew missing — Memorial Day) -->
     <div class="markets-strip">
         <span class="markets-label">Markets</span>
         <div class="market-item">
-            <span class="ticker">Nasdaq</span>
-            <span class="price">26,343.97</span>
-            <span class="change change-up">+0.19%</span>
+            <span class="ticker">Status</span>
+            <span class="price" style="color:#666; font-size: 0.85rem;">Memorial Day</span>
+            <span class="change" style="color:#555;">US markets closed</span>
         </div>
         <div class="market-item">
-            <span class="ticker">S&amp;P 500</span>
-            <span class="price">7,473.47</span>
-            <span class="change change-up">+0.37%</span>
-        </div>
-        <div class="market-item">
-            <span class="ticker">Dow</span>
-            <span class="price">50,579.70</span>
-            <span class="change change-up">+0.59%</span>
-        </div>
-        <div class="market-item">
-            <span class="ticker">10-Year</span>
-            <span class="price">4.558%</span>
-            <span class="change change-down">&#8209;3.0 bps</span>
-        </div>
-        <div class="market-item">
-            <span class="ticker">Bitcoin</span>
-            <span class="price">$75,889.85</span>
-            <span class="change change-down">&#8209;2.20%</span>
-        </div>
-        <div style="margin-left: auto; font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; align-self: center; text-align: right;">
-            As of Friday's close<br>S&amp;P 500: 8 straight weeks in the green
+            <span class="ticker">Note</span>
+            <span class="price" style="color:#666; font-size: 0.85rem;">Morning Brew</span>
+            <span class="change" style="color:#ef4444;">Not received today</span>
         </div>
     </div>
 
-    <!-- TWO-COLUMN MAIN SECTION -->
+    <!-- DAILY DAD COLUMNIST SECTION -->
+    <div class="columnist-section">
+        <div class="section-label">Columnist | Daily Dad</div>
+        <h2>You Never Know Where They'll Find Their Thing</h2>
+        <p class="lead">Nobody knows where your kids will find that thing that lights them up — the thing that makes them think, for the first time, <em>I want to do that with my life.</em></p>
+        <p>It could happen at school. It could happen on that trip where you took them out of school. It could happen while they're home sick, watching TV. It could happen at a museum or a music store. At the zoo. During a surfing lesson, stumbling across a fossil, or while reading a book. You don't know — nobody does — where your kids will find their thing.</p>
+        <p>That's probably why the great Robert Greene (in his book <a href="https://www.thepaintedporch.com/products/selfhelp15" target="_blank" style="color:#60a5fa;"><em>Mastery</em></a>) calls it our "life's task." The life's task of a parent, we might say, is to help our kids find <em>their</em> life's task.</p>
+        <p>Which is why we have to cast a wide net. We have to travel with them, read to them, watch things with them, take them to hear and see stuff. Be deliberate — and deliberately allow serendipity into their lives. Think about how random it was when you found your own thing. What a freak occurrence. What a miracle. We have to do the work to recreate that for them. It's not something we can give them, but it is a process we can facilitate, encourage, and most of all, never stifle.</p>
+    </div>
+
+    <!-- HOW TO SECTION (Rundown AI) -->
+    <div class="columnist-section how-to">
+        <div class="section-label">How To | The Rundown AI</div>
+        <h2>Build an AI Secretary That Plans Your Day</h2>
+        <p class="lead">Use Codex or Claude Code to build an AI taskmaster that checks Slack, Gmail, and your calendar every morning — turning the mess into a prioritized to-do list that gets better every day you use it.</p>
+        <ol>
+            <li>Create a folder, open Claude Code inside it, and ask it to create a skill that looks at your Slack, Gmail, and calendar daily, prioritizes tasks high to low, and puts them at the top of <code>MonoNote.md</code> with date, feedback, and status checkboxes.</li>
+            <li>Tell the agent to create <code>MonoNote.md</code> and <code>task-rules.md</code>, and add any high/low priority rules you have per task into task-rules.md.</li>
+            <li>Run the skill and review the list. MonoNote.md should have today's date at the top, grouped tasks, source links, and checkboxes you can use all day.</li>
+            <li>After the first run, ask the agent to create the automation. It will review yesterday's feedback, roll over bumped tasks, update the rules, then generate the new list.</li>
+        </ol>
+        <p><strong>Pro tip:</strong> Create a weekly audit skill that scans your task list, finds repeated tasks, and suggests which ones you could automate with AI.</p>
+        <p style="margin-top: 8px;"><strong>Community workflow from Alicia in Fresno:</strong> "I asked ChatGPT to help me search and compare universities' programs, costs, and online availability. It helped me come up with questions for admissions counselors that I hadn't thought about — narrowing my decision of which school program may better fit my situation."</p>
+    </div>
+
+    <!-- MAIN TWO-COLUMN SECTION -->
     <div class="section-grid">
         <div class="main-column">
 
             <div class="article">
-                <span class="category">Travel</span>
-                <span class="source source-brew">Morning Brew</span>
-                <h3>What Happened in Vegas Is Staying in the Statistics</h3>
-                <p class="summary">Annual trips to Las Vegas <a href="https://links.morningbrew.com/c/Q0a?mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">dropped 7.5% last year</a> — outside Covid, the worst decline the Las Vegas Convention and Visitors Authority has recorded since it started tracking visits in the 1970s. But the casinos don't care: they made more money anyway.</p>
+                <span class="category">AI &amp; Business</span>
+                <span class="source source-rundown">The Rundown AI</span>
+                <h3>DeepSeek Permanently Cuts V4-Pro Pricing by 75%</h3>
+                <p class="summary">DeepSeek's flagship model now costs $0.435 per million input tokens and $0.87 per million output tokens — far below closed-source rivals.</p>
                 <div class="details">
-                    <p>The theories for the decline range from geopolitical headwinds (Mayor Shelley Berkley publicly begged Canadians to return) to GLP-1 drugs reducing gambling and drinking urges, to Gen Z's declining alcohol consumption. But the strongest case is simple economics: casinos <a href="https://links.morningbrew.com/c/Q0e?mblid=0e700c9c71b2&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">tweaked odds against gamblers</a> in roulette, raised blackjack minimums, and piled on resort fees, inflated food prices, and eliminated free parking — all to chase higher-income visitors.</p>
-                    <p>It's working financially: despite fewer visitors, casinos posted <a href="https://links.morningbrew.com/c/Q0f?mblid=ca037deab76f&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">record revenue of roughly $8.8 billion</a>. An LVCVA survey found 44% of visitors now have household incomes of $150,000 or more. For everyone else, Atlantic City awaits.</p>
+                    <p>DeepSeek <a href="https://x.com/deepseek_ai/status/2057854261699195173" target="_blank" style="color:#60a5fa;">permanently slashed</a> V4-Pro pricing by 75%, making it one of the most cost-competitive frontier models available. The move follows Google's Gemini 3.5 Flash launch, which is reportedly 4x faster at half the previous price point. The price war in foundation models continues to accelerate.</p>
+                    <p>New AI tools this week: <a href="https://polsia.com/" target="_blank" style="color:#60a5fa;">Polsia</a> is a new AI co-founder that plans, builds, and operates businesses 24/7. <a href="https://www.rundown.ai/tools/gemini-3-5-flash" target="_blank" style="color:#60a5fa;">Gemini 3.5 Flash</a> is Google's new flash model, 4x faster at half price.</p>
                 </div>
             </div>
 
             <div class="article">
-                <span class="category">Destinations</span>
-                <span class="source source-brew">Morning Brew</span>
-                <h3>Six Overlooked Destinations Worth the Trip This Summer</h3>
-                <p class="summary">Not one to follow the herd? Morning Brew's travel edition rounds up genuinely nonobvious picks — from a Revolutionary War battlefield in upstate New York to a 800-year-old camphor tree in Nagasaki.</p>
+                <span class="category">Policy &amp; National Security</span>
+                <span class="source source-rundown">The Rundown AI</span>
+                <h3>White House Approves $9B for Spy Agencies to Acquire Advanced AI Chips</h3>
+                <p class="summary">Amid concerns that U.S. intelligence agencies are falling behind in deploying frontier AI models, the White House is stepping in with a major capital injection.</p>
                 <div class="details">
-                    <p><strong>Fort William Henry, Lake George, NY</strong> — America's semiquincentennial is the time to visit. The site of a decisive Revolutionary War battle is now a history museum surrounded by natural beauty; hike Prospect Mountain for views of Lake George.</p>
-                    <p><strong>La Grange, Kentucky</strong> — The quaint town 30 minutes outside Louisville has a CSX freight train running along its main street. Best spotted from the Train Observation Tower, alongside a 1929 dining car and a caboose at the railroad museum.</p>
-                    <p><strong>Burns, Oregon</strong> — Drive the High Desert Discovery Scenic Byway through eastern Oregon for desert vistas, spectacular birdwatching at <a href="https://links.morningbrew.com/c/Q0J?mblid=206a39cdf3fe&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">Malheur National Wildlife Refuge</a>, and a soak at Crane Hot Springs.</p>
-                    <p><strong>Kyrgyzstan</strong> — Nomadic practices, mountainous terrain on horseback, yurt sleeping, and kok boru — a polo-like sport played with a goat carcass. Morning Brew's Macy Gilliam <a href="https://links.morningbrew.com/c/Q0K?mblid=dc041a28f38c&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">traversed the country</a> and reported back.</p>
-                    <p><strong>Tallinn, Estonia</strong> — Cobbled streets, a medieval old town, and UNESCO-recognized sauna culture. Visit in June for the Nordic-style summer solstice festival at the Estonian Open Air Museum.</p>
-                    <p><strong>Nagasaki, Japan</strong> — Beyond the Peace Park, there's an <a href="https://links.morningbrew.com/c/Q0M?mblid=f31495de7c39&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">800-year-old camphor tree</a> and a dessert shop that's been operating since 1624.</p>
+                    <p>The White House <a href="https://www.nytimes.com/2026/05/22/us/politics/spy-agencies-ai-chips-shortage.html" target="_blank" style="color:#60a5fa;">approved $9 billion</a> to help U.S. spy agencies acquire advanced AI chips, per the NYT. Officials cited concerns that intelligence agencies are falling behind in deploying frontier models relative to both Chinese players and the private sector. Anthropic's Glasswing expansion will also extend to U.S. and allied governments.</p>
                 </div>
             </div>
 
             <div class="article">
-                <span class="category">Retail</span>
-                <span class="source source-brew">Morning Brew</span>
-                <h3><a href="https://links.morningbrew.com/c/Q0l?mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">The $1.4 Billion Suitcase Wars: Away, Béis, Rimowa, and Everyone Else</a></h3>
-                <p class="summary">DJ John Summit's viral post — kicking, hammering, and setting a Rimowa on fire after repeated breakdowns — unleashed a luggage brand pile-on that reveals just how crowded the premium suitcase market has become.</p>
+                <span class="category">Business &amp; AI</span>
+                <span class="source source-rundown">The Rundown AI</span>
+                <h3>McKinsey Is Rethinking Its Entire Billing Model as AI Compresses Billable Hours</h3>
+                <p class="summary">The consulting giant is considering shifting from hourly fees to outcome-based pricing as AI reduces the value of traditional time-and-materials work.</p>
                 <div class="details">
-                    <p>Away, which launched in 2015 as a prettier-than-Samsonite but cheaper-than-Rimowa option, <a href="https://links.morningbrew.com/c/Q0q?mblid=fd53e8f6511e&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">hit a $1.4 billion valuation in four years</a> and opened the D2C suitcase floodgates. Shay Mitchell's Béis launched in 2018 and has since collaborated with Rare Beauty. Casetify — yes, the phone case company — launched its first suitcase in 2024.</p>
-                    <p>Legacy brands Samsonite (25% market share) and LVMH-owned Rimowa still dominate the carousel, but the upstarts are chipping. "We're all fighting to steal market share from Samsonite," the co-founder of Australian brand July told Fast Company. The next trendy suitcase, they say, better come with a built-in television.</p>
+                    <p>McKinsey is <a href="https://www.ft.com/content/8318a754-7b63-4f1f-8978-7691e7ed3511" target="_blank" style="color:#60a5fa;">rethinking its billing model</a> as AI reduces the value of billable hours and clients demand fees tied to actual business outcomes, the FT reported. The shift reflects a broader reckoning across professional services: when AI can compress weeks of work into hours, the hourly model breaks down. Starbucks, meanwhile, <a href="https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/" target="_blank" style="color:#60a5fa;">scrapped its AI inventory system</a> after nine months, citing persistent miscounts and mislabeled products across North American stores — a reminder that enterprise AI deployments still fail at scale.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Productivity</span>
+                <span class="source source-onepercent">1% Better</span>
+                <h3>The Rockefeller Approach to Productivity: Clockwork Over Speed</h3>
+                <p class="summary">Rockefeller wasn't the fastest or smartest man in the room. He was slow, methodical, and relentlessly focused on winning long-term while everyone else chased speed.</p>
+                <div class="details">
+                    <p>His approach, detailed in Ron Chernow's <a href="https://www.amazon.com/dp/B00EDSLSBK" target="_blank" style="color:#60a5fa;"><em>Titan</em></a>: build a schedule that fits you and stick to it for years, not weeks, so every action compounds. Plan like chess — mapping every counter-move before committing. Once you execute, never look back. Treat work as a calling, not a 9-to-5 obligation. He approached his entire life with what one writer called "clockwork regularity" — and it never felt like a grind.</p>
+                    <p>Also from 1% Better: Dan Harris's 3-step approach to anxiety — mindful awareness of physical discomfort, take any action (any action absorbs anxiety), and never worry alone. Show up in community, talk to friends, create a chat group. <a href="https://b-e-t-t-e-r.com/podcasts/how-to-stop-a-mental-loop-dead-in-its-tracks-dan-harris" target="_blank" style="color:#60a5fa;">Podcast &amp; notes here.</a></p>
                 </div>
             </div>
 
         </div>
 
-        <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="sidebar-section">
-                <h4>Travel Hacks Worth Trying</h4>
+                <h4>Quick Hits</h4>
 
                 <div class="sidebar-item">
-                    <span class="category">Health</span>
-                    <h5>Compression Socks for Long Flights</h5>
-                    <p>Rare to cause serious issues, but <a href="https://links.morningbrew.com/c/Q0y?mblid=dfbb721dce65&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">they reduce swelling</a> and help those susceptible to deep vein thrombosis on longer hauls.</p>
-                    <span class="source source-brew">Morning Brew</span>
-                </div>
-
-                <div class="sidebar-item">
-                    <span class="category">Gear</span>
-                    <h5>AirTag Your Luggage</h5>
-                    <p>If it's good enough for <a href="https://links.morningbrew.com/c/Q0A?mblid=15c4003264d1&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">the Stanley Cup</a>, it's good enough for your socks. Stick one inside a checked bag before handing it over.</p>
-                    <span class="source source-brew">Morning Brew</span>
+                    <span class="category">Open Source</span>
+                    <h5>Perplexity Open-Sources Bumblebee Security Scanner</h5>
+                    <p>Bumblebee scans macOS and Linux for risky packages, extensions, and AI tool configs during supply-chain incidents. Now publicly available.</p>
+                    <span class="source source-rundown">The Rundown AI</span>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Money</span>
-                    <h5>Use a VPN When Booking</h5>
-                    <p>Works around <a href="https://links.morningbrew.com/c/Q0C?mblid=3087f99444b9&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">surveillance pricing</a> — the practice of showing higher fares to repeat visitors — and lets you compare costs across different regions.</p>
-                    <span class="source source-brew">Morning Brew</span>
+                    <span class="category">Medical AI</span>
+                    <h5><a href="https://developer.nvidia.com/blog/synthesize-realistic-3d-medical-images-at-scale-to-ship-pre-trained-models/" target="_blank" style="color:#e8e8e8;">NVIDIA Releases 3D Brain MRI Generator</a></h5>
+                    <p>NV-Generate-MR-Brain is a foundation model that synthesizes realistic 3D brain MRI scans and annotations to accelerate medical imaging AI development.</p>
+                    <span class="source source-rundown">The Rundown AI</span>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Recovery</span>
-                    <h5>Take the Next Day Off After You Get Home</h5>
-                    <p>In some ways, not being in the office on that Monday after a trip is the best day of your vacation. Plan it into the trip, not as an afterthought.</p>
-                    <span class="source source-brew">Morning Brew</span>
+                    <span class="category">AI Use Cases</span>
+                    <h5>The Rundown Roundtable: Real Claude Workflows</h5>
+                    <p>Content manager Mayur gave Claude Cowork access to a Downloads folder stuffed with 100GB of files. In minutes it organized everything by file type, removed duplicates — work that would have taken hours. Editor Shubham used Claude to build a complete Shopify store for his brother-in-law via screenshots and design references, no dev forums needed.</p>
+                    <span class="source source-rundown">The Rundown AI</span>
                 </div>
-            </div>
 
-            <div class="sidebar-section">
-                <h4>Travel Accounts Worth Following</h4>
                 <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/Q0D?mblid=aabe1c7b1620&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">Nomadic Matt</a></h5>
-                    <p>Shows you how to navigate the world on a budget — the canonical resource for doing more with less.</p>
-                    <span class="source source-brew">Morning Brew</span>
+                    <span class="category">Culture</span>
+                    <h5><a href="https://www.wsj.com/tech/ai/meta-andrew-bosworth-ai-3df12d4f" target="_blank" style="color:#e8e8e8;">Meet Zuck's Right-Hand Man</a></h5>
+                    <p>Andrew Bosworth, Meta's CTO, is profiled in the WSJ — the architect behind Meta AI's push and the executive closest to Zuckerberg.</p>
+                    <span class="source source-onepercent">1% Better</span>
                 </div>
+
                 <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/Q0E?mblid=db81ae22b1b2&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">Jess &amp; Jake</a></h5>
-                    <p>Taking a repurposed school bus all over the country. Living the dream, or at least the content version of it.</p>
-                    <span class="source source-brew">Morning Brew</span>
+                    <span class="category">Fun</span>
+                    <h5><a href="https://www.popsci.com/environment/cows-tell-humans-apart/" target="_blank" style="color:#e8e8e8;">Cows Can Tell Humans Apart</a></h5>
+                    <p>New research shows cows are capable of recognizing and distinguishing individual human faces — adding to a growing list of animals with more social cognition than previously assumed.</p>
+                    <span class="source source-onepercent">1% Better</span>
                 </div>
+
                 <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/Q0G?mblid=cd76c5ac5705&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">Jackie Grubs</a></h5>
-                    <p>Food-driven travel content. If the thing you most want to do in a new city is eat your way through it, this is your account.</p>
-                    <span class="source source-brew">Morning Brew</span>
+                    <span class="category">Streaming</span>
+                    <h5><a href="https://www.wsj.com/business/media/how-love-island-became-the-streaming-hit-peacock-needed-19f2e5fd" target="_blank" style="color:#e8e8e8;">How Love Island Became the Hit Peacock Needed</a></h5>
+                    <p>The WSJ breaks down how a British reality format became Peacock's most-watched show and a cultural touchstone for younger audiences.</p>
+                    <span class="source source-onepercent">1% Better</span>
                 </div>
-                <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/Q0Q?mblid=3bd911ccaf3a&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">Tech Journalist Bikes Across the US</a></h5>
-                    <p>Jessica Mathews is biking across the country and interviewing people along the way. A different kind of American road trip dispatches.</p>
-                    <span class="source source-brew">Morning Brew</span>
-                </div>
+
             </div>
         </div>
     </div>
 
     <!-- BOTTOM THREE-COLUMN SECTION -->
     <div class="bottom-section">
+
         <div class="bottom-column">
-            <h4>Airlines &amp; Hotels</h4>
+            <h4>AI Industry</h4>
+
             <div class="bottom-item">
-                <h5>Spirit's Collapse Is the Clearest Sign Yet of Budget Travel's Squeeze</h5>
-                <p>The low-cost carrier <a href="https://links.morningbrew.com/c/O-t?mblid=2b1c5f78cb00&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">abruptly shut down</a> this month, citing fuel costs elevated by the Iran war. Spirit was the poster child of budget flying — $35 fares, uncomfortable seats, and no frills. When fuel prices rise, carriers with no pricing cushion go first. <span class="source source-brew">Morning Brew</span></p>
+                <h5><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" style="color:#e8e8e8;">Project Glasswing Expands to Governments</a></h5>
+                <p>Anthropic's Mythos-class model, currently gated due to misuse risks, will expand to U.S. and allied governments before a general release. <span class="source source-rundown">Rundown AI</span></p>
             </div>
+
             <div class="bottom-item">
-                <h5>Durbin-Marshall Bill Could Slash Your Travel Rewards</h5>
-                <p>Legislation moving through Congress threatens to <a href="https://links.morningbrew.com/c/Npx?lp=text1&mbadid=961b0b7ba4c053fab9fd6c6819d2187c&mbadv=a&mblid=64ff65f75c52&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">gut cash-back and travel perks</a> that credit card holders rely on to subsidize trips. Proponents say it reins in interchange fees; critics say it destroys the loyalty economy. <span class="source source-brew">Morning Brew</span></p>
+                <h5><a href="https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/" target="_blank" style="color:#e8e8e8;">Starbucks Scraps AI Inventory Tool After 9 Months</a></h5>
+                <p>Persistent miscounts and mislabeled products across North American stores led Starbucks to pull the plug on its AI inventory system. <span class="source source-rundown">Rundown AI</span></p>
             </div>
+
             <div class="bottom-item">
-                <h5>Canadians Still Not Coming Back to the Vegas Strip</h5>
-                <p>Mayor Shelley Berkley publicly begged Canadians to return to Las Vegas last September after geopolitical tensions — including US tariff disputes — dampened international tourism. They have not returned in meaningful numbers. <span class="source source-brew">Morning Brew</span></p>
+                <h5><a href="https://developer.nvidia.com/blog/synthesize-realistic-3d-medical-images-at-scale-to-ship-pre-trained-models/" target="_blank" style="color:#e8e8e8;">NVIDIA's Medical Imaging Foundation Model</a></h5>
+                <p>NV-Generate-MR-Brain synthesizes 3D brain MRI scans to help train medical AI models at scale — a potential step-change for radiology research. <span class="source source-rundown">Rundown AI</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.ft.com/content/8318a754-7b63-4f1f-8978-7691e7ed3511" target="_blank" style="color:#e8e8e8;">McKinsey Rethinks the Billable Hour</a></h5>
+                <p>As AI compresses consulting work, clients are demanding outcome-based fees. McKinsey is wrestling with how to reprice its core business model. <span class="source source-rundown">Rundown AI</span></p>
             </div>
         </div>
 
         <div class="bottom-column">
-            <h4>Destination Dupes</h4>
+            <h4>Memorial Day</h4>
+
             <div class="bottom-item">
-                <h5>Brussels Instead of Paris</h5>
-                <p>Similar architecture, world-class chocolate and beer, and dramatically lower prices. <a href="https://links.morningbrew.com/c/Q06?mblid=4fe8ba958169&mbcid=45845010.823496" target="_blank" style="color:#60a5fa;">Destination dupes</a> are the budget traveler's workaround for expensive hot spots. Brussels consistently ranks as one of Europe's most underrated cities. <span class="source source-brew">Morning Brew</span></p>
+                <h5><a href="https://www.telegraph.co.uk/sport/2026/05/23/athletes-steroid-olympics-walking-billboards-for-big-pharma/" target="_blank" style="color:#e8e8e8;">Enhanced Games: Athletes as "Walking Billboards for Big Pharma"</a></h5>
+                <p>The Telegraph profiles the 42 athletes competing in the inaugural Enhanced Games — some running on hormone therapies, peptides, and weight-loss drugs legally provided by event organizers. <span class="source source-onepercent">1% Better</span></p>
             </div>
+
             <div class="bottom-item">
-                <h5>Naples Instead of Rome</h5>
-                <p>Naples offers authentic southern Italian cuisine, Pompeii day trips, and a fraction of the tourist crowds of Rome. The city has undergone a quiet renaissance and is increasingly on the radar for travelers who have already done the classics. <span class="source source-brew">Morning Brew</span></p>
+                <h5>Best Memorial Day Deals (2026)</h5>
+                <p>
+                    <a href="https://amerisleep.com/" target="_blank" style="color:#60a5fa;">Amerisleep</a>: $1,000 off mattresses (code MD600) &bull;
+                    <a href="https://www.amazon.com/dp/B0G86TCCQS" target="_blank" style="color:#60a5fa;">Ninja Blender</a>: 27% off &bull;
+                    <a href="https://www.amazon.com/Traeger-TFB88PZBO-Bronze-Pellet-Grill/dp/B07GL7PNPQ" target="_blank" style="color:#60a5fa;">Traeger Smoker</a>: $250 off &bull;
+                    <a href="https://www.nordictrack.com/" target="_blank" style="color:#60a5fa;">NordicTrack</a>: 28% off treadmills
+                    <span class="source source-onepercent">1% Better</span>
+                </p>
             </div>
+
             <div class="bottom-item">
-                <h5>Tallinn Instead of... Anywhere in Scandinavia</h5>
-                <p>A fraction of the cost of Stockholm or Copenhagen, with medieval old-town charm, Baltic amber, and sauna culture that the Nordics claim but Estonia perfected. Summer solstice festival in June. <span class="source source-brew">Morning Brew</span></p>
+                <h5>Honoring Memorial Day</h5>
+                <p>1% Better opens today with a reminder of the day's true meaning: honoring U.S. service members who died in uniform. Worth a moment before the deals and the barbecue.</p>
             </div>
         </div>
 
         <div class="bottom-column">
-            <h4>Pack &amp; Plan</h4>
+            <h4>Life &amp; Fatherhood</h4>
+
             <div class="bottom-item">
-                <h5><a href="https://links.morningbrew.com/c/Q0O?mblid=853429704a88&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">What to Pack in Your Carry-On for 10 Days</a></h5>
-                <p>Morning Brew's Henah Velez put together a practical packing guide. The art of carry-on-only for a ten-day trip is its own skill set — one that sidesteps checked bag fees entirely. <span class="source source-brew">Morning Brew</span></p>
+                <h5>The Wide Net: Raising Kids to Find Their Thing</h5>
+                <p>Daily Dad's essay today is a meditation on parenting as facilitation — not forcing outcomes, but creating conditions for serendipity. Cast wide. Travel. Read aloud. Show them things. Then get out of the way. <span class="source source-dailydad">Daily Dad</span></p>
             </div>
+
             <div class="bottom-item">
-                <h5><a href="https://links.morningbrew.com/c/Q0S?mblid=dfa1dccbb973&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">The Best Way to Prepare for Japan</a></h5>
-                <p>Japan remains the most-searched travel destination and one of the most logistically intensive to plan. Morning Brew's prep guide covers IC cards, pocket Wi-Fi, temple etiquette, and the JR Pass decision. <span class="source source-brew">Morning Brew</span></p>
+                <h5><a href="https://www.amazon.com/dp/B00EDSLSBK" target="_blank" style="color:#e8e8e8;">Titan: The Life of John D. Rockefeller Sr.</a></h5>
+                <p>Ron Chernow's biography is recommended by 1% Better as a lens on long-term thinking — slow, methodical compounding over speed. The book's central argument: clockwork regularity beats frantic hustle over decades. <span class="source source-onepercent">1% Better</span></p>
             </div>
+
             <div class="bottom-item">
-                <h5><a href="https://links.morningbrew.com/c/Q0R?mblid=e8c84ad8adb3&mbcid=45845010.823496" target="_blank" style="color:#e8e8e8;">Best Airport Meals Around the World</a></h5>
-                <p>No more sad salads. A guide to airports where the food is genuinely worth arriving early for — because eating well before a long flight is underrated self-care. <span class="source source-brew">Morning Brew</span></p>
+                <h5><a href="https://b-e-t-t-e-r.com/podcasts/how-to-stop-a-mental-loop-dead-in-its-tracks-dan-harris" target="_blank" style="color:#e8e8e8;">Dan Harris: Stop the Mental Loop</a></h5>
+                <p>Mindful awareness of discomfort, followed by any action at all, followed by community — Dan Harris's three-step framework for breaking an anxiety spiral. <span class="source source-onepercent">1% Better</span></p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.wsj.com/business/leon-capital-group-fernando-de-leon-wsj-money-interview-bdb2218c" target="_blank" style="color:#e8e8e8;">The Billionaire Obsessed With Frugality</a></h5>
+                <p>WSJ profiles Fernando de Leon, whose discipline around spending has become a defining characteristic despite his massive wealth. <span class="source source-onepercent">1% Better</span></p>
             </div>
         </div>
+
     </div>
 
 </div>
 
 <footer>
-    <p>The Daily Brief &mdash; Sunday, May 24, 2026</p>
-    <p>Compiled from your morning newsletters.</p>
+    <p>The Daily Brief &mdash; Monday, May 25, 2026</p>
+    <p>Generated from available newsletters. Morning Brew not received today (Memorial Day).</p>
     <div class="sources">
-        <span class="source source-brew">Morning Brew</span>
-        <span style="color:#ef4444; font-family: -apple-system, sans-serif; font-size: 0.75rem;">The Rundown AI &#10007; (not received)</span>
-        <span style="color:#ef4444; font-family: -apple-system, sans-serif; font-size: 0.75rem;">1% Better &#10007; (not received)</span>
-        <span style="color:#ef4444; font-family: -apple-system, sans-serif; font-size: 0.75rem;">Daily Dad &#10007; (not received)</span>
+        <span style="color:#ef4444;">Morning Brew ✗</span>
+        <span style="color:#8b5cf6;">&#9679; The Rundown AI (5:04 AM ET)</span>
+        <span style="color:#10b981;">&#9679; 1% Better (5:19 AM ET)</span>
+        <span style="color:#3b82f6;">&#9679; Daily Dad (5:02 AM ET)</span>
     </div>
 </footer>
+
 </body>
 </html>
