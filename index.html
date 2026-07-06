@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief &mdash; July 5, 2026</title>
+    <title>The Daily Brief &mdash; July 6, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
@@ -37,6 +37,13 @@
         .source-rundown { background: #8b5cf6; color: #fff; }
         .source-onepercent { background: #10b981; color: #fff; }
         .source-dailydad { background: #3b82f6; color: #fff; }
+        .markets-strip { background: #111; border: 1px solid #222; border-radius: 6px; padding: 18px 25px; margin-bottom: 35px; display: flex; gap: 30px; flex-wrap: wrap; align-items: center; }
+        .markets-strip .markets-label { font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #555; margin-right: 10px; }
+        .market-item { font-family: -apple-system, sans-serif; font-size: 0.85rem; }
+        .market-item .ticker { color: #888; font-size: 0.75rem; margin-right: 5px; }
+        .market-item .value { color: #e8e8e8; font-weight: 600; }
+        .market-item .change-up { color: #10b981; font-size: 0.75rem; margin-left: 4px; }
+        .market-item .change-down { color: #ef4444; font-size: 0.75rem; margin-left: 4px; }
         .columnist-section { background: #111; border-left: 4px solid #3b82f6; padding: 25px 35px; margin-bottom: 35px; border-radius: 0 8px 8px 0; }
         .columnist-section.how-to { border-left-color: #8b5cf6; }
         .columnist-section .section-label { font-family: -apple-system, sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #3b82f6; margin-bottom: 12px; }
@@ -71,7 +78,6 @@
         footer { background: #111; border-top: 1px solid #333; padding: 40px 30px; margin-top: 50px; text-align: center; }
         footer p { color: #555; font-size: 0.85rem; margin-bottom: 5px; }
         footer .sources { display: flex; justify-content: center; gap: 20px; margin-top: 15px; flex-wrap: wrap; align-items: center; }
-        .missing-notice { background: #1a1010; border: 1px solid #3a2020; border-radius: 6px; padding: 20px 25px; margin-bottom: 35px; font-family: -apple-system, sans-serif; font-size: 0.85rem; color: #888; }
         blockquote { border-left: 3px solid #f59e0b; padding-left: 20px; margin: 15px 0; font-style: italic; color: #bbb; font-size: 1.05rem; line-height: 1.7; }
         @media (max-width: 1000px) {
             .hero-section { grid-template-columns: 1fr; }
@@ -79,6 +85,7 @@
             .section-grid { grid-template-columns: 1fr; }
             .main-column { border-right: none; padding-right: 0; }
             .bottom-section { grid-template-columns: 1fr; }
+            .markets-strip { gap: 18px; }
         }
         @media (max-width: 600px) {
             body { font-size: 18px; line-height: 1.7; }
@@ -102,6 +109,7 @@
             .nav-categories { gap: 12px; font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
             .nav-date { font-size: 0.8rem; }
             .columnist-section { padding: 20px; }
+            .markets-strip { flex-direction: column; gap: 12px; align-items: flex-start; }
         }
     </style>
 </head>
@@ -112,100 +120,129 @@
 <nav>
     <div class="nav-content">
         <div class="nav-categories">
-            <span>Business History</span>
-            <span>Made in USA</span>
-            <span>Innovation</span>
-            <span>Wealth</span>
+            <span>Finance</span>
+            <span>World</span>
+            <span>AI</span>
+            <span>Sports</span>
+            <span>Fatherhood</span>
         </div>
-        <div class="nav-date">Sunday, July 5, 2026</div>
+        <div class="nav-date">Monday, July 6, 2026</div>
     </div>
 </nav>
 
 <header>
     <h1>The Daily Brief</h1>
-    <p class="tagline">Your morning intelligence digest &mdash; Sunday, July 5, 2026</p>
-    <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px">Sources: Morning Brew (6:01 AM) | <span style="color:#ef4444;">The Rundown AI &#x2717;</span> | <span style="color:#ef4444;">1% Better &#x2717;</span> | <span style="color:#ef4444;">Daily Dad &#x2717;</span></p>
+    <p class="tagline">Your morning intelligence digest &mdash; Monday, July 6, 2026</p>
+    <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px">Sources: Daily Dad (4:45 AM) | The Rundown AI (5:04 AM) | Morning Brew (5:18 AM) | 1% Better (5:30 AM)</p>
 </header>
 
 <div class="main-content">
 
-    <!-- MISSING NEWSLETTERS NOTICE -->
-    <div class="missing-notice">
-        <strong style="color:#ef4444;">Note:</strong> The Rundown AI, 1% Better, and Daily Dad did not arrive this morning &mdash; likely due to the post-holiday weekend. Today&rsquo;s brief is built from Morning Brew&rsquo;s special 250th anniversary edition only.
-    </div>
-
-    <!-- HERO SECTION -->
     <div class="hero-section">
         <div class="hero-main">
-            <span class="category">Special Edition <span class="source source-brew">Morning Brew</span></span>
-            <h2><a href="https://links.morningbrew.com/c/RVD?mbcid=46419584.781230" target="_blank" style="color:#e8e8e8;">250 Years of American Business: From Farms to $1 Trillion Fortunes</a></h2>
-            <p class="summary">The US turned 250 yesterday. Morning Brew&rsquo;s special edition traces how an agrarian economy that ran on tobacco and firewood became the birthplace of the iPhone, ChatGPT, and the world&rsquo;s first trillionaire.</p>
+            <span class="category">Finance <span class="source source-brew">Morning Brew</span></span>
+            <h2><a href="https://links.morningbrew.com/c/RXE?mblid=2382103c1481" target="_blank" style="color:#e8e8e8;">Trump Accounts Are Live &mdash; Every American Child Can Now Start Saving for Retirement</a></h2>
+            <p class="summary">July 4th marked the official launch of 530A &ldquo;Trump Accounts,&rdquo; a new vehicle designed to give American children a head start on retirement savings, with free seed money from the government and private donors.</p>
             <div class="content">
-                <p>In 1776, 95% of American laborers worked on farms. The economy was so fragile that bad weather could trigger a recession. Firewood accounted for 18% of GDP. The most impressive tech on the continent was Ben Franklin&rsquo;s iron stove.</p>
-                <p>Two and a half centuries later, the US is home to Nvidia &mdash; the world&rsquo;s most valuable company by market cap &mdash; and Elon Musk, the <a href="https://links.morningbrew.com/c/R0J?mblid=838a4a9fa64f" target="_blank" style="color:#60a5fa;">world&rsquo;s first trillionaire</a>, worth roughly $1 trillion. That trajectory &mdash; from whale oil exports to AGI startups &mdash; is the subject of today&rsquo;s issue.</p>
-                <p>The key inflection points: mass production (early 1800s), commercial electricity (Edison, 1882), air conditioning (1902), microchips (late 1950s), GPS (2000), the iPhone (2007), and <a href="https://links.morningbrew.com/c/RVZ?mblid=fb08ebb15f7b" target="_blank" style="color:#60a5fa;">ChatGPT (2022)</a>. Each one didn&rsquo;t just create an industry &mdash; it restructured how Americans worked, spent, and spent too much time looking at screens.</p>
-                <p>The richest American in history, adjusted for inflation? Elon Musk at ~$1 trillion. Behind him: Rockefeller ($516B), Carnegie ($475B), Larry Page (~$300B), and Vanderbilt ($284B). Vanderbilt made one major philanthropic donation before dying in 1877: $1 million to build a university. Musk&rsquo;s philanthropy math looks a little different.</p>
+                <p>Any American with a Social Security number can open a Trump Account as long as they enroll before the year they turn 18. The structure mirrors a Roth IRA: pre-tax contributions from parents, employers, family, or charitable organizations up to $5,000 per year, automatically invested in a long-term index fund. The beneficiary takes control at 18.</p>
+                <p>Free money on the table: children born 2025&ndash;2028 receive <strong style="color:#bbb;">$1,000 from the federal government</strong>. Children born 2016&ndash;2024 in zip codes with median income under $150,000 may receive $250, funded by a pledge from Michael and Susan Dell. Many large banks and tech companies offer grants to employees&rsquo; children. An anonymous San Francisco donor will contribute $500 to every baby born there this year.</p>
+                <p>The pitch: if a child receives the $1,000 seed and nothing else, that could grow to <strong style="color:#bbb;">$243,000 by age 55</strong> &mdash; assuming consistent market returns. <a href="https://links.morningbrew.com/c/RXG?mblid=d45a62683d9a" target="_blank" style="color:#60a5fa;">Critics argue</a> the accounts won&rsquo;t close income inequality gaps because parents who already have more will deposit more. Supporters counter that starting the compounding clock early is the whole point.</p>
+                <p>Apple jumped nearly 5% last week on reports it may launch a <a href="https://links.morningbrew.com/c/RXC?mblid=69fdbfca8114" target="_blank" style="color:#60a5fa;">foldable iPhone</a> and other new models in the first half of next year &mdash; while most other tech stocks tumbled.</p>
             </div>
         </div>
 
         <div class="hero-sidebar">
             <div class="hero-sidebar-item">
-                <span class="category">Wealth <span class="source source-brew">Morning Brew</span></span>
-                <h3><a href="https://links.morningbrew.com/c/RW5?mblid=5400e2e2873e" target="_blank" style="color:#e8e8e8;">Elon Musk: the first trillionaire in human history</a></h3>
-                <p>His ~$1 trillion fortune dwarfs every American who came before him. It traces back to a digital city guide sold for ~$300M in 1999, then PayPal, then SpaceX and Tesla. SpaceX equity is carrying most of the weight now.</p>
+                <span class="category">Breaking <span class="source source-onepercent">1% Better</span></span>
+                <h3><a href="https://www.youtube.com/watch?v=YsvVVj5xots" target="_blank" style="color:#e8e8e8;">Brooklyn Bridge Briefly Catches Fire During Macy&rsquo;s Fireworks</a></h3>
+                <p>Flames erupted from at least four spots along the 143-year-old bridge Saturday night just after 9 PM. Fire officials confirmed the fireworks ignited the blaze. Two engines knocked it down by 10 PM &mdash; zero injuries, but the bridge stayed closed past midnight.</p>
             </div>
             <div class="hero-sidebar-item">
-                <span class="category">Manufacturing <span class="source source-brew">Morning Brew</span></span>
-                <h3><a href="https://links.morningbrew.com/c/RVP?mbcid=46419584.781230" target="_blank" style="color:#e8e8e8;">&ldquo;Made in USA&rdquo; &mdash; the myth, the reality, and the tariff gamble</a></h3>
-                <p>Levi&rsquo;s, Rawlings baseballs, and Harley-Davidson motorcycles are all made abroad. Trump&rsquo;s Liberation Day tariffs were designed to change that &mdash; but the <a href="https://links.morningbrew.com/c/RXz?mblid=9add33d24c16" target="_blank" style="color:#60a5fa;">Joint Economic Committee found</a> 108,000 manufacturing jobs lost in year one. Any reshoring impact could take years.</p>
+                <span class="category">AI <span class="source source-rundown">Rundown AI</span></span>
+                <h3><a href="https://www.businessinsider.com/meta-ai-model-catches-up-openai-gpt-5-says-2026-7" target="_blank" style="color:#e8e8e8;">Meta&rsquo;s &lsquo;Watermelon&rsquo; Claims Parity with GPT-5.5 as Frontier Race Heats Up</a></h3>
+                <p>Meta superintelligence chief Alexandr Wang told employees Watermelon &mdash; in training on 10x the compute of Muse Spark &mdash; has matched OpenAI&rsquo;s GPT-5.5. Wang also teased an Opus-level coding model &ldquo;pretty soon.&rdquo; The catch: OAI&rsquo;s 5.6 models are reportedly rolling out this week.</p>
             </div>
             <div class="hero-sidebar-item">
-                <span class="category">Future <span class="source source-brew">Morning Brew</span></span>
-                <h3><a href="https://links.morningbrew.com/c/RV_?mbcid=46419584.781230" target="_blank" style="color:#e8e8e8;">Companies that will define the next 250 years</a></h3>
-                <p>OpenAI, Anthropic, and Amazon&rsquo;s cloud lead the AI race. Alphabet holds stakes in Anthropic, SpaceX, and Waymo. Fusion energy startups &mdash; Commonwealth Fusion, Helion, Zap Energy &mdash; could own the power grid. Johnson &amp; Johnson leads healthcare durability.</p>
+                <span class="category">Sports <span class="source source-brew">Morning Brew</span></span>
+                <h3>USMNT vs. Belgium Tonight &mdash; Balogun Suspension Reversed After Trump&rsquo;s Call to FIFA</h3>
+                <p>FIFA reversed Folarin Balogun&rsquo;s red-card suspension in a surprise announcement. The USMNT&rsquo;s leading scorer can play tonight at 8 PM ET. If the US wins, they face Portugal or Spain in LA on Friday.</p>
             </div>
         </div>
     </div>
 
-    <!-- TWO-COLUMN: MAIN ARTICLES + SIDEBAR -->
+    <div class="markets-strip">
+        <span class="markets-label">Markets <span class="source source-brew">Morning Brew</span></span>
+        <div class="market-item"><span class="ticker">Nasdaq</span><span class="value">25,832</span><span class="change-up">+11.15% YTD</span></div>
+        <div class="market-item"><span class="ticker">S&amp;P 500</span><span class="value">7,483</span><span class="change-up">+9.32% YTD</span></div>
+        <div class="market-item"><span class="ticker">Dow</span><span class="value">52,900</span><span class="change-up">+10.06% YTD</span></div>
+        <div class="market-item"><span class="ticker">10-Year</span><span class="value">4.485%</span><span class="change-up">+32.2 bps</span></div>
+        <div class="market-item"><span class="ticker">Bitcoin</span><span class="value">$63,337</span><span class="change-down">&minus;27.62% YTD</span></div>
+        <div class="market-item"><span class="ticker">Apple</span><span class="value">$308.63</span><span class="change-up">+13.74% YTD</span></div>
+    </div>
+
+    <div class="columnist-section">
+        <div class="section-label">Columnist &nbsp;|&nbsp; Daily Dad <span class="source source-dailydad">Daily Dad</span></div>
+        <h2>They&rsquo;re Bringing You</h2>
+        <p class="lead">You drive them to soccer practice. You get them to school early on choir days. You drop them off at friends&rsquo; houses and football games and school dances and the movies. This is how it goes. Our job is to drag them around, to expose them to things &mdash; but aren&rsquo;t they also doing the same thing for us?</p>
+        <p>There&rsquo;s a scene in a documentary about Swiftie dads where one dad in the parking lot of a Taylor Swift show gushes about his daughter: <em>&ldquo;We&rsquo;re not bringing her &mdash; she&rsquo;s bringing us to see Taylor Swift.&rdquo;</em></p>
+        <p>Her interest is driving them, even if they are the ones literally driving the car. And this is what happens when you embrace what your kids are doing, what they&rsquo;re interested in, what they&rsquo;re including you in &mdash; intentionally or not.</p>
+        <p>Because you can be in a bad mood about having to go, you can look at your phone while they do their thing, or you can enjoy it with them. You can bond with them. You can create a memory that they &mdash; and you &mdash; will not forget.</p>
+    </div>
+
+    <div class="columnist-section how-to">
+        <div class="section-label">AI How-To &nbsp;|&nbsp; The Rundown AI <span class="source source-rundown">Rundown AI</span></div>
+        <h2><a href="https://app.therundown.ai/guides/how-to-go-from-screenshot-to-bug-fix-with-cursor-mobile" target="_blank" style="color:#e8e8e8;">Go from Screenshot to Bug Fix with Cursor Mobile</a></h2>
+        <p class="lead">Spotted a bug on your website from your phone? Here&rsquo;s how to hand it off to a Cursor Cloud agent that fixes it, opens a PR, and tracks it in GitHub before you&rsquo;re back at your desk.</p>
+        <ol>
+            <li>Install the <a href="https://apps.apple.com/us/app/cursor/id6767085653" target="_blank" style="color:#60a5fa;">Cursor iOS app</a> (Cursor Pro required) and <a href="https://apps.apple.com/us/app/github/id1477376905" target="_blank" style="color:#60a5fa;">GitHub Mobile</a> so you can review PRs from your phone.</li>
+            <li>Screenshot the bug or broken layout. Add a short note: what page you&rsquo;re on, what should happen instead.</li>
+            <li>Open Cursor Mobile, tap the plus button, choose the correct repository, start a new thread with the screenshot and note attached.</li>
+            <li>Prompt: <em>&ldquo;Investigate this bug, find the relevant page component, make a fix, and open a PR.&rdquo;</em> Review, approve, and merge from your phone.</li>
+        </ol>
+        <p><strong style="color:#bbb;">Pro tip:</strong> Enable Remote Agents on desktop so Cursor can prep local changes before you get back to your desk.</p>
+        <p><strong style="color:#bbb;">Community workflow (Leah M., McMinnville OR):</strong> Built a &ldquo;Road to Championships&rdquo; swim tracking dashboard with ChatGPT for her competitive swimmer daughter &mdash; tracks personal bests vs. three levels of qualifying standards with visual progress bars. Update personal bests after each meet and the whole dashboard refreshes instantly. &ldquo;Every race now has a clear purpose.&rdquo;</p>
+    </div>
+
     <div class="section-grid">
         <div class="main-column">
 
             <div class="article">
-                <span class="category">Business History <span class="source source-brew">Morning Brew</span></span>
-                <h3><a href="https://links.morningbrew.com/c/RVE?mbcid=46419584.781230" target="_blank" style="color:#e8e8e8;">The most iconic US brands of the last 250 years</a></h3>
-                <p class="summary">Coca-Cola, McDonald&rsquo;s, Ford, GE, and Big Tech &mdash; the companies that didn&rsquo;t just dominate markets but shaped American culture, labor rights, and what it means to have an eight-hour workday.</p>
+                <span class="category">World Cup <span class="source source-brew">Morning Brew</span></span>
+                <h3>FIFA Reverses Balogun&rsquo;s Suspension &mdash; Trump Called FIFA&rsquo;s Infantino to Request a Review</h3>
+                <p class="summary">The USMNT&rsquo;s top scorer can play tonight&rsquo;s Round of 16 vs. Belgium &mdash; but the reversal is drawing scrutiny over whether presidential intervention shaped a sporting decision.</p>
                 <div class="details">
-                    <p><strong style="color:#bbb;">Coca-Cola</strong> was incorporated in Atlanta in 1892 to sell a syrupy concoction invented by <a href="https://links.morningbrew.com/c/RVF?mblid=397e10c8e391" target="_blank" style="color:#60a5fa;">a morphine-addicted chemist</a> and former Confederate soldier. It now controls ~40% of the nonalcoholic beverage market.</p>
-                    <p><strong style="color:#bbb;">Ford and GM</strong> gave us the assembly line, the Mustang, and ground zero for the American labor movement. The 1936 Flint sit-down strike at GM saw 136,000 workers hold out for 44 days &mdash; and won. The UAW got recognition.</p>
-                    <p><strong style="color:#bbb;">General Electric</strong>, tracing to Thomas Edison in 1892, ushered in home appliances. CEO Jack Welch later introduced something even more integral to American business: <a href="https://links.morningbrew.com/c/RVJ?mblid=e780039f42ea" target="_blank" style="color:#60a5fa;">maximizing shareholder value as the primary corporate objective</a>.</p>
-                    <p><strong style="color:#bbb;">Big Tech:</strong> Microsoft hit a <a href="https://links.morningbrew.com/c/RVK?mblid=5bebeabc9409" target="_blank" style="color:#60a5fa;">$500 billion market cap</a> in 1999. Apple passed $1 trillion in 2018. Amazon and Meta kick-started the era of celebrity CEOs. None of them existed 50 years ago.</p>
+                    <p>Folarin Balogun had <a href="https://links.morningbrew.com/c/RXK?mblid=93b49d456878" target="_blank" style="color:#60a5fa;">received a red card</a> against Bosnia and Herzegovina in the Round of 32, triggering a mandatory one-game suspension to be served tonight. Late Sunday, FIFA quietly announced on its website &mdash; not on social media &mdash; that Balogun would be reprieved. Many fans felt the original card was unjustified, but Trump&rsquo;s direct call to FIFA chief Gianni Infantino has some watchers concerned about the optics.</p>
+                    <p>If the US wins tonight (8 PM ET), they face either Portugal or Spain in Los Angeles on Friday. By tomorrow, only 8 teams will remain in the tournament.</p>
                 </div>
             </div>
 
             <div class="article">
-                <span class="category">Innovation Timeline <span class="source source-brew">Morning Brew</span></span>
-                <h3><a href="https://links.morningbrew.com/c/RVX?mblid=b401c20d0a6e" target="_blank" style="color:#e8e8e8;">250 years of American invention: the moments that restructured everything</a></h3>
-                <p class="summary">From mass production in the early 1800s to ChatGPT in 2022 &mdash; each inflection point didn&rsquo;t just create an industry. It changed what ordinary Americans could do with their time, money, and attention.</p>
+                <span class="category">Housing / Economy <span class="source source-brew">Morning Brew</span></span>
+                <h3><a href="https://links.morningbrew.com/c/RXO?mblid=9e106c900301" target="_blank" style="color:#e8e8e8;">49% of Adults Under 30 Now Live With a Parent &mdash; Up 12 Points Since 2019</a></h3>
+                <p class="summary">The &ldquo;boomerang kid&rdquo; stigma is collapsing. High housing costs have made multigenerational living the norm rather than the exception, with nearly one-third of adults 25+ living with a parent.</p>
                 <div class="details">
-                    <p><strong style="color:#bbb;">1882:</strong> Thomas Edison flips the switch on the world&rsquo;s first commercial power station in Manhattan. Gas lamps begin their long goodbye.</p>
-                    <p><strong style="color:#bbb;">1902:</strong> Air conditioning is invented to stop <em>magazines from wrinkling</em> at a Brooklyn publishing plant. It later enables the entire post-WWII Southern population boom.</p>
-                    <p><strong style="color:#bbb;">1955:</strong> Dr. Jonas Salk introduces the polio vaccine and <a href="https://links.morningbrew.com/c/RVY?mblid=925a4e1b55c3" target="_blank" style="color:#60a5fa;">refuses to patent it</a> to keep costs low. A decision that looks increasingly unusual in hindsight.</p>
-                    <p><strong style="color:#bbb;">Late 1950s:</strong> The first microchips are created independently in Texas and California, igniting the semiconductor industry and beginning the long march from room-sized computers to pocket-sized ones.</p>
-                    <p><strong style="color:#bbb;">2007:</strong> Steve Jobs unveils the iPhone &mdash; sounding the death knell for BlackBerry and, arguably, boredom.</p>
-                    <p><strong style="color:#bbb;">2022:</strong> <a href="https://links.morningbrew.com/c/RVZ?mblid=fb08ebb15f7b" target="_blank" style="color:#60a5fa;">OpenAI releases ChatGPT</a>, kicking off the race for business leaders to say &ldquo;AI&rdquo; as many times as possible on earnings calls.</p>
+                    <p>Federal Reserve data cited by the Wall Street Journal: 49% of adults under 30 live with a parent, up 12 percentage points from 2019. Nearly one-third of adults 25 and older do too. More than one-third cite <a href="https://links.morningbrew.com/c/RXP?mblid=d42a36b5059b" target="_blank" style="color:#60a5fa;">saving for a down payment</a> as their primary motivation.</p>
+                    <p>The stigma is shifting. Samantha Stobo, 33, told the WSJ: <em>&ldquo;The conversation tends to be more like, &lsquo;That&rsquo;s awesome, and I bet you&rsquo;re saving money.&rsquo;&rdquo;</em> The trend has even <a href="https://links.morningbrew.com/c/RXQ?mblid=08305d1d07e5" target="_blank" style="color:#60a5fa;">surfaced in the Hamptons</a>.</p>
                 </div>
             </div>
 
             <div class="article">
-                <span class="category">Economic History <span class="source source-brew">Morning Brew</span></span>
-                <h3>The US economy in 1776: prosperous, fragile, and entirely dependent on the weather</h3>
-                <p class="summary">Before Silicon Valley, Wall Street, or air conditioning made the South livable &mdash; the 13 colonies ran on tobacco and whale oil, and were somehow the richest people on earth.</p>
+                <span class="category">Technology / Autos <span class="source source-onepercent">1% Better</span></span>
+                <h3><a href="https://www.wsj.com/business/autos/ev-batteries-are-defying-expectations-after-hundreds-of-thousands-of-miles-8579de13" target="_blank" style="color:#e8e8e8;">EV Batteries Are Lasting Far Longer Than the Auto Industry Predicted</a></h3>
+                <p class="summary">A five-year-old Tesla Model 3 is still making 260-mile trips after 247,000 miles. New data shows the top reason buyers avoid EVs &mdash; battery failure fear &mdash; is increasingly disconnected from reality.</p>
                 <div class="details">
-                    <p>Agriculture <em>was</em> the economy in 1776. 95% of laborers &mdash; many enslaved &mdash; worked on farms. The major exports: tobacco, flour, rice, dried fish, whale oil, and indigo. Firewood was 18% of GDP in the late 1700s.</p>
-                    <p>Yet American colonists were technically the most prosperous people on Earth at the moment of the Revolution. An average American earned ~14 pounds per year vs. 10&ndash;12 for a Brit. Colonial wealth was also more equally distributed: over 50% of white Americans were property holders, compared to a small sliver in England.</p>
-                    <blockquote>&ldquo;Affluent citizens flaunted their wealth by displaying a single pineapple at dinner &mdash; which could <a href="https://links.morningbrew.com/c/RVO?mblid=93d6aa0e4e58" target="_blank" style="color:#60a5fa;">cost around $8,000</a> in today&rsquo;s dollars.&rdquo;</blockquote>
-                    <p>The 13 colonies weren&rsquo;t even Britain&rsquo;s most valuable New World territory &mdash; that was Barbados and Jamaica, with their sugar and pineapple exports. Context for everything that followed.</p>
+                    <p>The numbers: roughly 1 in 12 EVs built 2011&ndash;2016 needed battery replacements. But just <a href="https://www.geotab.com/blog/ev-battery-health/" target="_blank" style="color:#60a5fa;">0.3% of models built since 2022</a> have. The average five-year-old EV retains up to 95% of original range. Out-of-warranty replacements still run $5,000&ndash;$16,000, keeping the fear alive despite improving reality.</p>
+                    <p>One real caveat: frequent fast charging degrades range twice as fast as slower at-home charging &mdash; the one behavioral factor buyers can control.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <span class="category">Fatherhood <span class="source source-onepercent">1% Better</span></span>
+                <h3><a href="https://drive.google.com/file/d/165o97ibeyag2TN1FT7N8sJL0yjZw2c34/view" target="_blank" style="color:#e8e8e8;">Modern Dads Are Set Up to Fail &mdash; Six Things That Actually Shape Your Kids</a></h3>
+                <p class="summary">In the 1950s the job description was simple: provide. Now dads are expected to do everything, and researchers call those standards impossible. Cut through the noise to what your kids will actually remember.</p>
+                <div class="details">
+                    <p><strong style="color:#bbb;">Show up</strong> &mdash; ten phone-free minutes beats an hour half-there. <strong style="color:#bbb;">Turn toward them</strong> &mdash; &ldquo;Watch this&rdquo; is an invitation, not an interruption. <strong style="color:#bbb;">Build rituals</strong> &mdash; one repeated thing, guarded fiercely. <strong style="color:#bbb;">Model it</strong> &mdash; they copy what you do, not what you say. <strong style="color:#bbb;">Words that land</strong> &mdash; say the love out loud. <strong style="color:#bbb;">Let them struggle</strong> &mdash; raise a capable adult, not a comfortable kid.</p>
+                    <p>The guide backs each point with research and stories &mdash; the Griffeys going back-to-back at the plate, Roosevelt making his cabinet wait to finish a pillow fight with his boys. <a href="https://drive.google.com/file/d/165o97ibeyag2TN1FT7N8sJL0yjZw2c34/view" target="_blank" style="color:#60a5fa;">Download The Father&rsquo;s Playbook, free.</a></p>
                 </div>
             </div>
 
@@ -213,114 +250,125 @@
 
         <div class="sidebar">
             <div class="sidebar-section">
-                <h4>The 5 Richest Americans in History <span class="source source-brew">Morning Brew</span></h4>
+                <h4>Quick Hits <span class="source source-brew">Morning Brew</span></h4>
 
                 <div class="sidebar-item">
-                    <span class="category">Wealth</span>
-                    <h5>1. Elon Musk &mdash; ~$1 Trillion</h5>
-                    <p>South African-born, naturalized US citizen 2002. Started with a digital city guide sold for ~$300M. Co-founded PayPal, launched SpaceX, invested in Tesla. SpaceX stake drives most of current net worth.</p>
+                    <span class="category">Climate</span>
+                    <h5>25 Dead in July 4th Heat Wave</h5>
+                    <p>At least 18 high-temp records broken over the holiday weekend. DC canceled its parade as the heat index hit 115&deg;F. <a href="https://links.morningbrew.com/c/RXL?mblid=f98b3decdc6f" target="_blank" style="color:#60a5fa;">Officials confirm at least 25 deaths</a>. Flooding now the next concern as temps ease.</p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Wealth</span>
-                    <h5>2. John D. Rockefeller &mdash; $516B</h5>
-                    <p>World&rsquo;s first billionaire. Dominated US oil through Standard Oil until the Supreme Court broke it up in 1911. His wealth peaked at 1.5% of US GDP.</p>
+                    <span class="category">Energy</span>
+                    <h5><a href="https://links.morningbrew.com/c/RXM?mblid=36d963b6a4df" target="_blank" style="color:#e8e8e8;">OPEC+ Raises Output for Third Straight Month</a></h5>
+                    <p>Alliance agreed to increase production by 188,000 barrels/day in August. Vance said refilling reserves reduces Iran&rsquo;s negotiating leverage.</p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Wealth</span>
-                    <h5>3. Andrew Carnegie &mdash; $475B</h5>
-                    <p>Scottish immigrant who built the US steel industry. Called for labor rights publicly; <a href="https://links.morningbrew.com/c/RW6?mblid=977c3c159e09" target="_blank" style="color:#60a5fa;">crushed unions</a> at his own mills. Donated most of his fortune to libraries and education before dying in 1919.</p>
+                    <span class="category">Tennis</span>
+                    <h5><a href="https://links.morningbrew.com/c/RY1?mblid=39afed9fb2a3" target="_blank" style="color:#e8e8e8;">Osaka Defeats World No. 1 Sabalenka at Wimbledon</a></h5>
+                    <p>Naomi Osaka advanced to the women&rsquo;s quarterfinals, taking down top-ranked Aryna Sabalenka.</p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Wealth</span>
-                    <h5>4. Larry Page &mdash; ~$300B</h5>
-                    <p>Google co-founder. $3.8B+ from the 2004 IPO; the rest is compounding Alphabet equity. Still on the board; receives $1 annually in salary.</p>
+                    <span class="category">Legal</span>
+                    <h5><a href="https://links.morningbrew.com/c/RX-?mblid=b94e48c53e80" target="_blank" style="color:#e8e8e8;">Paul Pelosi Suspected in Hit-and-Run</a></h5>
+                    <p>Nancy Pelosi&rsquo;s husband suspected in a hit-and-run involving a parked car in Northern California. Alcohol not a factor, per law enforcement.</p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Wealth</span>
-                    <h5>5. Cornelius Vanderbilt &mdash; $284B</h5>
-                    <p>&ldquo;The Commodore.&rdquo; Started as a steamship captain, pivoted to railroads. One major philanthropic act: $1M to build Vanderbilt University before dying in 1877.</p>
+                    <span class="category">Policy</span>
+                    <h5><a href="https://links.morningbrew.com/c/RX_?mblid=16c0e77e9eef" target="_blank" style="color:#e8e8e8;">New Jersey Bans Surveillance Pricing</a></h5>
+                    <p>NJ joins Maryland and Connecticut in outlawing dynamic pricing based on personal data.</p>
                 </div>
             </div>
 
             <div class="sidebar-section">
-                <h4>Missing Today</h4>
+                <h4>AI Roundup <span class="source source-rundown">Rundown AI</span></h4>
+
                 <div class="sidebar-item">
-                    <h5 style="color:#666;">The Rundown AI</h5>
-                    <p style="color:#555;">Did not arrive &mdash; post-holiday weekend. Check <a href="https://therundown.ai" target="_blank" style="color:#60a5fa;">therundown.ai</a> for latest AI news.</p>
+                    <span class="category">Anthropic</span>
+                    <h5>Claude Fable Coming to Subscriptions &ldquo;As Soon as Capacity Comes&rdquo;</h5>
+                    <p>Anthropic&rsquo;s Thariq Shihipar confirmed Fable is coming to subscriptions. Model moves to usage credits starting July 7.</p>
                 </div>
+
                 <div class="sidebar-item">
-                    <h5 style="color:#666;">1% Better</h5>
-                    <p style="color:#555;">Did not arrive &mdash; post-holiday weekend.</p>
+                    <span class="category">Alibaba</span>
+                    <h5>Alibaba Orders Staff to Delete Claude from Work Computers</h5>
+                    <p>Citing the China-user checks found in Claude Code. Adds tension to the US-China AI divide.</p>
                 </div>
+
                 <div class="sidebar-item">
-                    <h5 style="color:#666;">Daily Dad</h5>
-                    <p style="color:#555;">Did not arrive &mdash; post-holiday weekend.</p>
+                    <span class="category">AI + History</span>
+                    <h5>Theodore Roosevelt Presidential Library Opens with AI Avatar</h5>
+                    <p>Opened July 4 in North Dakota. Visitors can talk with a <a href="https://news.microsoft.com/signal/articles/ai-theodore-roosevelt-presidential-library/" target="_blank" style="color:#60a5fa;">Microsoft-built AI avatar</a> of the 26th president.</p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Legal / AI</span>
+                    <h5>Midjourney Demands Disney, Universal, Warner Disclose AI Use</h5>
+                    <p>Midjourney asked a judge to force the studios to reveal internal AI training practices &mdash; arguing they may be doing exactly what they&rsquo;re suing Midjourney for.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- THREE-COLUMN BOTTOM SECTION -->
     <div class="bottom-section">
 
         <div class="bottom-column">
-            <h4>The Legends <span class="source source-brew">Morning Brew</span></h4>
+            <h4>This Week <span class="source source-brew">Morning Brew</span></h4>
 
             <div class="bottom-item">
-                <h5><a href="https://links.morningbrew.com/c/RW7?mblid=90e140a4404d" target="_blank" style="color:#e8e8e8;">Iconic US companies that no longer exist</a></h5>
-                <p>You probably remember some of them. The ones that defined eras and then disappeared &mdash; Blockbuster, Pan Am, Circuit City, Sears, Toys &ldquo;R&rdquo; Us.</p>
+                <h5><a href="https://links.morningbrew.com/c/RXX?mblid=8c782175204d" target="_blank" style="color:#e8e8e8;">Sun Valley Opens Tomorrow: Bezos, Zuckerberg, Cook, Altman, Amodei</a></h5>
+                <p>Allen &amp; Co.&rsquo;s annual Idaho gathering brings together the biggest names in tech and media for dealmaking. First time Tim Cook&rsquo;s successor John Ternus attends alongside him.</p>
             </div>
 
             <div class="bottom-item">
-                <h5>McDonald&rsquo;s: the real story</h5>
-                <p>Ray Kroc opened the first location in 1955. If you believe the 2016 Michael Keaton film, he ripped the empire out from under the McDonald brothers. It now spans 36,000 locations worldwide.</p>
+                <h5>SpaceX Joins the Nasdaq 100 Tomorrow</h5>
+                <p>Less than a month after going public, Musk&rsquo;s space and AI company joins the tech-heavy index. New Nasdaq 100 rules were changed specifically to fast-track companies like SpaceX. Passive index funds will now carry its volatility.</p>
             </div>
 
             <div class="bottom-item">
-                <h5>Walmart, Disney, Nike &mdash; all American</h5>
-                <p>The most globally recognized consumer brands in the world came from Arkansas, California, and Oregon. Also: Chick-fil-A. Also: whatever brand Sam Elliott does gravely voiceovers for.</p>
-            </div>
-        </div>
-
-        <div class="bottom-column">
-            <h4>Made in USA <span class="source source-brew">Morning Brew</span></h4>
-
-            <div class="bottom-item">
-                <h5><a href="https://links.morningbrew.com/c/RVQ?mblid=185eec1ed121" target="_blank" style="color:#e8e8e8;">FTC standard: &ldquo;all or virtually all&rdquo; domestic</a></h5>
-                <p>Companies can list caveats like &ldquo;Couch assembled in USA from Italian leather and Mexican frame.&rdquo; Levi&rsquo;s, Rawlings baseballs, and Harley-Davidson motorcycles are all made abroad.</p>
-            </div>
-
-            <div class="bottom-item">
-                <h5>Tariff scorecard: 108,000 manufacturing jobs lost</h5>
-                <p>Trump&rsquo;s April 2025 Liberation Day tariffs were designed to reinvigorate domestic production. The <a href="https://links.morningbrew.com/c/RXz?mblid=9add33d24c16" target="_blank" style="color:#60a5fa;">Congressional Joint Economic Committee</a> found 108,000 manufacturing jobs lost in year one. Reshoring impact could take years to materialize.</p>
-            </div>
-
-            <div class="bottom-item">
-                <h5>11% of US export value comes from foreign inputs</h5>
-                <p>Per the Bureau of Economic Analysis. The US has 14 free trade agreements with 20 countries. True end-to-end domestic supply chains are <a href="https://links.morningbrew.com/c/RVR?mblid=b84c67464068" target="_blank" style="color:#60a5fa;">structurally expensive</a> to rebuild.</p>
+                <h5>NATO Summit in Turkey, New Little House on the Prairie on Netflix Thursday</h5>
+                <p>Trump attends the NATO leaders&rsquo; summit starting tomorrow. A new take on Little House on the Prairie premieres on Netflix Thursday.</p>
             </div>
         </div>
 
         <div class="bottom-column">
-            <h4>Companies for the Next 250 Years <span class="source source-brew">Morning Brew</span></h4>
+            <h4>Business &amp; Tech <span class="source source-onepercent">1% Better</span></h4>
 
             <div class="bottom-item">
-                <h5>AI: OpenAI, Anthropic, Amazon cloud</h5>
-                <p>It&rsquo;s hard to know where AI will end up, but OpenAI and Anthropic lead the frontier model race. Amazon&rsquo;s AWS accommodates compute demand for dozens of AI startups and shows no signs of slowing.</p>
+                <h5><a href="https://www.wsj.com/business/the-founder-who-got-fired-for-ignoring-his-own-return-to-office-rules-6b194dd7" target="_blank" style="color:#e8e8e8;">$8B Firm Co-Founder Fired for Violating His Own RTO Policy, Now Suing for $30M</a></h5>
+                <p>Bramshill Investments co-founder William Nieporte co-signed a five-day RTO mandate, then ignored it. His two partners used the violation to <a href="https://fortune.com/2026/07/05/investment-firm-cofounder-in-person-work-employees-owners-remote-work-return-to-office/" target="_blank" style="color:#60a5fa;">force out his 12% stake</a>. His nearest office was hundreds of miles from his California home.</p>
             </div>
 
             <div class="bottom-item">
-                <h5>Alphabet: the diversified long position</h5>
-                <p>~14% stake in Anthropic. 6.1% stake in SpaceX. Gemini AI. Waymo rapidly expanding into new cities. Quantum computing ambitions. Plus the search and cloud businesses that already print money. Per Morning Brew: &ldquo;especially well positioned for the future.&rdquo;</p>
+                <h5><a href="https://www.cnbctv18.com/technology/lenovo-launches-ai-student-phone-in-china-with-no-web-browsers-social-media-its-price-will-shock-you-19937392.htm" target="_blank" style="color:#e8e8e8;">Lenovo Launches $44 AI Phone for Students &mdash; No Browser, No Social Media</a></h5>
+                <p>A 299-yuan device with AI homework help, GPS parental tracking, classroom mode (clock + SOS only during school hours), and QR payments under parent-set spending caps. Screen smaller than a credit card.</p>
             </div>
 
             <div class="bottom-item">
-                <h5>Fusion energy: the 250-year bet</h5>
-                <p>Data centers and surging global electricity demand are pushing energy consumption higher. <a href="https://links.morningbrew.com/c/RW0?mblid=b04ecfe4e100" target="_blank" style="color:#60a5fa;">Atomic-fusion startups</a> &mdash; Commonwealth Fusion Systems, Helion Energy, Zap Energy &mdash; could own the next energy era.</p>
+                <h5><a href="https://www.wsj.com/us-news/montana-lakeside-battles-developer-c94714dc" target="_blank" style="color:#e8e8e8;">Montana Town Battles Luxury Developer as Home Values Double to $865K</a></h5>
+                <p>Lakeside locals are fighting a 359-home gated resort development. A microcosm of the Mountain West&rsquo;s broader tension between longtime residents and outside wealth.</p>
+            </div>
+        </div>
+
+        <div class="bottom-column">
+            <h4>Society &amp; Culture</h4>
+
+            <div class="bottom-item">
+                <h5><a href="https://futurism.com/future-society/college-students-oecd-reading-literacy-10-year-old" target="_blank" style="color:#e8e8e8;">US College Students Read Below 10-Year-Old Level at Triple Germany&rsquo;s Rate <span class="source source-onepercent">1% Better</span></a></h5>
+                <p>OECD testing data is a stark data point in the ongoing debate about American educational outcomes and what drives them.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/RXY?mblid=2321ffbe5bfd" target="_blank" style="color:#e8e8e8;">Paris Opens Seine to Swimmers for Second Summer <span class="source source-brew">Morning Brew</span></a></h5>
+                <p>After $1.14 billion and a decade of wastewater infrastructure work, three free supervised swimming sites are open on the Seine &mdash; timed to a heat wave, with another on the way.</p>
+            </div>
+
+            <div class="bottom-item">
+                <h5><a href="https://www.wsj.com/business/white-line-road-invention-america-250-8ce6bb89" target="_blank" style="color:#e8e8e8;">The White Line on America&rsquo;s Roads Traces to One Man <span class="source source-onepercent">1% Better</span></a></h5>
+                <p>An 80-year-old ex-Edison apprentice invented the center-line road marking &mdash; cutting accidents by 55%. One of the great unsung American infrastructure stories.</p>
             </div>
         </div>
 
@@ -329,13 +377,14 @@
 </div>
 
 <footer>
-    <p>The Daily Brief &mdash; Sunday, July 5, 2026</p>
-    <p>Generated from Morning Brew special edition via Claude Code CLI</p>
+    <p>The Daily Brief &mdash; Monday, July 6, 2026</p>
+    <p style="margin-top: 5px; color: #444;">Generated from newsletters received this morning</p>
     <div class="sources">
-        <span class="source source-brew">Morning Brew</span>
-        <span style="font-family:-apple-system,sans-serif;font-size:0.65rem;color:#444;">The Rundown AI &#x2717;</span>
-        <span style="font-family:-apple-system,sans-serif;font-size:0.65rem;color:#444;">1% Better &#x2717;</span>
-        <span style="font-family:-apple-system,sans-serif;font-size:0.65rem;color:#444;">Daily Dad &#x2717;</span>
+        <span style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #444;">Sources:</span>
+        <span style="font-family: -apple-system, sans-serif; font-size: 0.75rem;"><span class="source source-dailydad">Daily Dad</span> 4:45 AM ET</span>
+        <span style="font-family: -apple-system, sans-serif; font-size: 0.75rem;"><span class="source source-rundown">Rundown AI</span> 5:04 AM ET</span>
+        <span style="font-family: -apple-system, sans-serif; font-size: 0.75rem;"><span class="source source-brew">Morning Brew</span> 5:18 AM ET</span>
+        <span style="font-family: -apple-system, sans-serif; font-size: 0.75rem;"><span class="source source-onepercent">1% Better</span> 5:30 AM ET</span>
     </div>
 </footer>
 
