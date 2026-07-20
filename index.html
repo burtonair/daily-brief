@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief &mdash; July 19, 2026</title>
+    <title>The Daily Brief &mdash; July 20, 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background: #0d0d0d; color: #e8e8e8; line-height: 1.6; }
@@ -44,6 +44,19 @@
         .market-item .value { color: #e8e8e8; font-weight: 600; }
         .market-item .change-up { color: #10b981; font-size: 0.75rem; margin-left: 4px; }
         .market-item .change-down { color: #ef4444; font-size: 0.75rem; margin-left: 4px; }
+        .columnist-section { border-left: 4px solid #3b82f6; padding: 25px 30px; background: #0f1824; border-radius: 0 6px 6px 0; margin-bottom: 35px; }
+        .columnist-section .col-header { font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #3b82f6; margin-bottom: 15px; }
+        .columnist-section h3 { font-size: 1.5rem; font-weight: 400; margin-bottom: 15px; line-height: 1.3; }
+        .columnist-section p { color: #999; font-size: 0.97rem; margin-bottom: 12px; line-height: 1.7; }
+        .howto-section { border-left: 4px solid #8b5cf6; padding: 25px 30px; background: #0f0d1e; border-radius: 0 6px 6px 0; margin-bottom: 35px; }
+        .howto-section .col-header { font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #8b5cf6; margin-bottom: 15px; }
+        .howto-section h3 { font-size: 1.5rem; font-weight: 400; margin-bottom: 15px; line-height: 1.3; }
+        .howto-section p { color: #999; font-size: 0.97rem; margin-bottom: 12px; line-height: 1.7; }
+        .howto-section ol { color: #999; font-size: 0.95rem; margin: 12px 0 12px 20px; line-height: 1.7; }
+        .howto-section ol li { margin-bottom: 6px; }
+        .howto-section .workflow { border-top: 1px solid #2d1f5e; margin-top: 20px; padding-top: 18px; }
+        .howto-section .workflow-label { font-family: -apple-system, sans-serif; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #6d44c8; margin-bottom: 8px; }
+        .howto-section .workflow h4 { font-size: 1.1rem; font-weight: 400; margin-bottom: 10px; color: #e8e8e8; }
         .section-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; margin-bottom: 50px; }
         .main-column { border-right: 1px solid #333; padding-right: 50px; }
         .article { margin-bottom: 40px; padding-bottom: 35px; border-bottom: 1px solid #333; }
@@ -101,6 +114,8 @@
             .nav-categories { gap: 12px; font-size: 0.75rem; flex-wrap: wrap; justify-content: center; }
             .nav-date { font-size: 0.8rem; }
             .markets-strip { flex-direction: column; gap: 12px; align-items: flex-start; }
+            .columnist-section { padding: 18px 18px; }
+            .howto-section { padding: 18px 18px; }
         }
     </style>
 </head>
@@ -111,13 +126,13 @@
 <nav>
     <div class="nav-content">
         <div class="nav-categories">
-            <span>Design</span>
-            <span>Branding</span>
+            <span>World</span>
+            <span>Markets</span>
             <span>Tech &amp; AI</span>
             <span>Culture</span>
-            <span>History</span>
+            <span>Sports</span>
         </div>
-        <div class="nav-date">Sunday, July 19, 2026</div>
+        <div class="nav-date">Monday, July 20, 2026</div>
     </div>
 </nav>
 
@@ -125,49 +140,82 @@
     <h1>The Daily Brief</h1>
     <p class="tagline">Your integrated morning intelligence &mdash; curated from the newsletters that matter</p>
     <p style="font-family: -apple-system, sans-serif; font-size: 0.75rem; color: #555; margin-top: 10px;">
-        Sources: Morning Brew (6:02 AM ET) | <span style="color:#ef4444;">The Rundown AI &#x2717;</span> | <span style="color:#ef4444;">1% Better &#x2717;</span> | <span style="color:#ef4444;">Daily Dad &#x2717;</span>
+        Sources: Morning Brew (5:17 AM ET) | Daily Dad (6:02 AM ET) | The Rundown AI (6:05 AM ET) | <span style="color:#ef4444;">1% Better &#x2717;</span>
     </p>
 </header>
 
 <div class="main-content">
 
-    <div class="edition-banner">&#9733; Special Edition: Design Brew &mdash; From Iconic Brands to Impossible Maps</div>
-
     <!-- HERO SECTION -->
     <section class="hero-section">
         <div class="hero-main">
-            <span class="category">Tech &amp; AI</span>
-            <h2>Why All AI Company Logos Look Like&hellip; That</h2>
-            <p class="summary">Something distinctly anatomical is perennially happening with AI logos. Nearly every frontier AI lab has converged on the same circular, abstract, sphincter-adjacent aesthetic &mdash; and there&rsquo;s a real design reason why.</p>
+            <span class="category">World Cup</span>
+            <h2>Spain Wins the World Cup &mdash; and the US Won the Money</h2>
+            <p class="summary">Spain outlasted Argentina 1&ndash;0 in extra time to claim the trophy. The real scoreboard was economic: FIFA is on track for a record $15 billion in revenue, and the US economy saw an estimated $20 billion boost.</p>
             <div class="content">
-                <p>You can blame OpenAI. When the company released ChatGPT in 2022, its hexagonal, donut-like emblem <a href="https://links.morningbrew.com/c/SMQ" target="_blank" style="color:#60a5fa;">quietly set the standard</a> for what &ldquo;serious AI&rdquo; is supposed to look like. &ldquo;Circular. Abstract. Untouchable,&rdquo; Lisa Smith, global chief design officer of Uncommon Creative Studio, told Fast Company. Other tech companies <a href="https://links.morningbrew.com/c/SMS" target="_blank" style="color:#60a5fa;">followed suit</a> en masse. <span class="source source-brew">Morning Brew</span></p>
-                <p>By 2023, hexagons were 4.6 times more likely to appear in AI logos than in logos overall. The most rectally reminiscent of them all is Anthropic&rsquo;s asterisk-like logo for Claude, which <a href="https://links.morningbrew.com/c/SMT" target="_blank" style="color:#60a5fa;">bears a striking resemblance</a> to Kurt Vonnegut&rsquo;s infamous illustration of a sphincter in <em>Breakfast of Champions</em>.</p>
-                <p>From a design perspective, circular imagery evokes completeness, infinity, and approachability &mdash; all qualities AI companies want to project to consumers who may be wary of the technology. AI executives may also be too nervous to break the mold now that concentric logos are as synonymous with AI as red and yellow are with fast food. The result: a global monoculture of swirling, vaguely cosmic brand marks.</p>
+                <p>After 100+ matches, the 2026 World Cup ended Sunday with Spain defeating Argentina in front of a sold-out crowd. President Trump, returning from the final, told reporters the US had struck Iran again that same evening. The median ticket price to the final was a <a href="https://links.morningbrew.com/c/SPj" target="_blank" style="color:#60a5fa;">record $10,835</a>, and FIFA&rsquo;s dynamic pricing pushed expected revenue to <a href="https://links.morningbrew.com/c/SPj" target="_blank" style="color:#60a5fa;">$15 billion</a> &mdash; well above its $11 billion projection. <span class="source source-brew">Morning Brew</span></p>
+                <p>Bank of America&rsquo;s CEO estimated the tournament generated <a href="https://links.morningbrew.com/c/SPk" target="_blank" style="color:#60a5fa;">$20 billion in US economic activity</a>, with bars and restaurants among the biggest winners. Beer sales spiked 4% nationally during the first four weeks of the Cup and jumped 14% in host cities. Brands spent at least $857 million during match broadcasts, with Fox Sports pulling in hundreds of thousands per 30-second ad.</p>
+                <p>Not all wins: workforce platform UKG projected the tournament cost US employers <a href="https://links.morningbrew.com/c/SPq" target="_blank" style="color:#60a5fa;">$11.7 billion in lost productivity</a>. And before the final began, over $1.2 billion was traded on Kalshi prediction markets just on the winner question &mdash; the platform netted 3 million new users over the tournament.</p>
             </div>
         </div>
         <div class="hero-sidebar">
             <div class="hero-sidebar-item">
-                <span class="category">Branding</span>
-                <h3>Brand Redesigns That Actually Worked</h3>
-                <p>Most brand overhauls invite backlash. But the EPL, Dunkin&rsquo;, Rolls-Royce, Reddit, and eBay all managed glow-ups that kept customers and critics happy. <a href="https://links.morningbrew.com/c/SME" target="_blank" style="color:#60a5fa;">The full breakdown.</a> <span class="source source-brew">Morning Brew</span></p>
+                <span class="category">Iran War</span>
+                <h3>US Escalates Strikes; Iran Attacks US Allies</h3>
+                <p>The US struck Iran again after a soldier was killed by a <a href="https://links.morningbrew.com/c/SPP" target="_blank" style="color:#60a5fa;">controlled detonation of an Iranian drone</a> in Iraq &mdash; the 17th US military death since Feb. 28. Iran responded early Monday by attacking Bahrain and Kuwait. <span class="source source-brew">Morning Brew</span></p>
             </div>
             <div class="hero-sidebar-item">
-                <span class="category">Typography</span>
-                <h3>Font Disasters That Made History</h3>
-                <p>Chanel&rsquo;s &ldquo;I Love Cow&rdquo; campaign, the tote bag that read something very different, Calibri taking down a prime minister, and the <a href="https://links.morningbrew.com/c/SMO" target="_blank" style="color:#60a5fa;">SNL sketch</a> that forced Avatar to change its font. <span class="source source-brew">Morning Brew</span></p>
+                <span class="category">Box Office</span>
+                <h3>Nolan&rsquo;s <em>The Odyssey</em> Earns Back Its Budget in Two Days</h3>
+                <p>Christopher Nolan&rsquo;s <em>The Odyssey</em> earned <a href="https://links.morningbrew.com/c/SPv" target="_blank" style="color:#60a5fa;">$264.1 million worldwide</a> in its opening weekend against a $250M production budget &mdash; his largest debut ever. Universal gave him near-total autonomy. <span class="source source-brew">Morning Brew</span></p>
             </div>
             <div class="hero-sidebar-item">
-                <span class="category">Culture</span>
-                <h3>Did Quiet Luxury Quietly Quit?</h3>
-                <p>Stealth wealth dominated post-pandemic design. Now &ldquo;opulence-maxxing&rdquo; may be making a comeback &mdash; or maybe it isn&rsquo;t. Morning Brew writers <a href="https://links.morningbrew.com/c/SMY" target="_blank" style="color:#60a5fa;">debate both sides.</a> <span class="source source-brew">Morning Brew</span></p>
+                <span class="category">Housing</span>
+                <h3>Boomers Are Upsizing &mdash; Not Downsizing</h3>
+                <p>7% of homebuyers aged 61&ndash;70 bought for <em>more</em> space, up from 4% in 2016. Boomers hold $110T in wealth, own 28% of US 3-bedroom homes, and account for 42% of buyers. Median home price hit an <a href="https://links.morningbrew.com/c/SPw" target="_blank" style="color:#60a5fa;">all-time high of $440,600</a>. <span class="source source-brew">Morning Brew</span></p>
             </div>
         </div>
     </section>
 
-    <!-- NOTE STRIP (no market data in design edition) -->
+    <!-- MARKETS STRIP -->
     <div class="markets-strip">
-        <span class="markets-label">Note</span>
-        <span style="font-family: -apple-system, sans-serif; font-size: 0.82rem; color: #666; font-style: italic;">Today&rsquo;s Morning Brew is a special <strong style="color:#f59e0b;">Design Edition</strong> &mdash; no market data included. The Rundown AI, 1% Better, and Daily Dad were not delivered today.</span>
+        <span class="markets-label">Markets YTD</span>
+        <div class="market-item"><span class="ticker">NASDAQ</span><span class="value">25,520</span><span class="change-up">+9.80%</span></div>
+        <div class="market-item"><span class="ticker">S&amp;P 500</span><span class="value">7,457</span><span class="change-up">+8.94%</span></div>
+        <div class="market-item"><span class="ticker">DOW</span><span class="value">52,146</span><span class="change-up">+8.50%</span></div>
+        <div class="market-item"><span class="ticker">10-YR</span><span class="value">4.541%</span><span class="change-up">+37.8 bps</span></div>
+        <div class="market-item"><span class="ticker">BTC</span><span class="value">$64,819</span><span class="change-down">&#8722;25.93%</span></div>
+        <div class="market-item"><span class="ticker">AMC</span><span class="value">$1.94</span><span class="change-up">+24.36%</span></div>
+        <span style="font-family:-apple-system,sans-serif;font-size:0.72rem;color:#444;margin-left:auto;">As of market close &bull; <span class="source source-brew">Morning Brew</span></span>
+    </div>
+
+    <!-- DAILY DAD COLUMNIST SECTION -->
+    <div class="columnist-section">
+        <div class="col-header">Columnist &nbsp;|&nbsp; Daily Dad</div>
+        <h3>Getting There Is Part Of The Trip</h3>
+        <p>Of course, getting there is important. You paid for the hotel room. The theme park tickets. You have to make the flight in order to get to the beach.</p>
+        <p>But do you have to make the flight miserable? It&rsquo;s strange &mdash; most of us look back on our own childhoods as needlessly stressful, see that our parents were awfully hard on us, yet the second we start traveling, we seem to turn into them.</p>
+        <p>The trip, we need to understand, is part of the trip. Getting there is not separate from the vacation. If the point is for our family to be together, to have fun, to relax together &mdash; we need to start much earlier. Planning the trip should not be a nightmare. Packing up should not be a nightmare. Being on the road should not be a nightmare.</p>
+        <p>The worst part about all this is the unfair expectations it puts on the trip itself. Now it has to be <em>worth</em> all the headache and tension. Instead of just being what it can be: fun. Time together. Getting from one place to another. Relax &mdash; that&rsquo;s the whole point of the vacation, isn&rsquo;t it?</p>
+    </div>
+
+    <!-- HOW TO / AI TRAINING SECTION -->
+    <div class="howto-section">
+        <div class="col-header">How To &nbsp;|&nbsp; The Rundown AI</div>
+        <h3>Deploy a Mini-SaaS in 10 Minutes with ChatGPT Sites</h3>
+        <p>Turn one public API into a small hosted web app using ChatGPT Sites &mdash; from idea to live product, no separate deployment required.</p>
+        <ol>
+            <li>Browse the <a href="https://github.com/public-apis/public-apis" target="_blank" style="color:#60a5fa;">Public APIs list</a> and pick one. (Example: weather data &#8594; WeatherLedger, a tool showing contractors optimal jobsite work hours.)</li>
+            <li>Tell ChatGPT to turn your API and idea into a PRD. Then go to Codex and have it build the MVP using Git and the Sites plugin.</li>
+            <li>Tell Codex to deploy with Sites &mdash; privately for your team or publicly for anyone to visit.</li>
+            <li>In the Sites sidebar, track web analytics, manage deployments, and add custom domains.</li>
+        </ol>
+        <p><a href="https://app.therundown.ai/guides/deploy-a-mini-saas-in-10-minutes-with-chatgpt-sites" target="_blank" style="color:#60a5fa;">Full step-by-step guide and video &#8594;</a></p>
+        <div class="workflow">
+            <div class="workflow-label">Community Workflow &nbsp;|&nbsp; Darcy, Wellington NZ</div>
+            <h4>Ask Ella: A Custom GPT Built for an 80-Year-Old</h4>
+            <p style="color:#999;font-size:0.95rem;line-height:1.7;">"I created a custom GPT called Ask Ella to help my 80-year-old mum use AI more easily. I designed it to respond patiently, use plain language, explain things step by step, and cover what she most likely needs: everyday gardening questions, basic tech problems, and checking whether an email might be a scam. I also made Ask Ella publicly available so her friends &mdash; and other people who are older or new to AI &mdash; can use it too." <a href="https://www.videoask.com/ffohxg3vc" target="_blank" style="color:#8b5cf6;">Share your own workflow &#8594;</a></p>
+        </div>
     </div>
 
     <!-- MAIN TWO-COLUMN SECTION -->
@@ -175,37 +223,43 @@
         <div class="main-column">
 
             <article class="article">
-                <span class="category">Branding</span><span class="source source-brew">Morning Brew</span>
-                <h3>Five Brand Redesigns That Didn&rsquo;t Blow Up</h3>
-                <p class="summary">Most rebrand announcements are greeted with online fury. These five companies found a way to update their visual identity without triggering mass unsubscribes, boycotts, or designer shaming.</p>
+                <span class="category">World</span><span class="source source-brew">Morning Brew</span>
+                <h3>Ukraine Sees Rare Protests Over Zelensky&rsquo;s Military Shake-Up</h3>
+                <p class="summary">For the first time since Russia&rsquo;s 2022 invasion, Ukrainians took to the streets &mdash; to protest the dismissal of popular Defense Minister Mykhailo Fedorov.</p>
                 <div class="details">
-                    <p><strong>English Premier League</strong> zoomed in on its lion mascot&rsquo;s head for the 2016&ndash;2017 season, stripping the full-body logo down to a streamlined symbol that stayed instantly recognizable. Designers <a href="https://links.morningbrew.com/c/SMF" target="_blank" style="color:#60a5fa;">cheered the change.</a></p>
-                    <p><strong>Dunkin&rsquo;</strong> dropped &ldquo;Donuts&rdquo; in 2018, reflecting that coffee had quietly taken over from sugary pastries as its core product. A YouGov survey found positive buzz <a href="https://links.morningbrew.com/c/SMG" target="_blank" style="color:#60a5fa;">grew in the days after the rebrand.</a></p>
-                    <p><strong>Rolls-Royce</strong> swapped its double-R logo for a sleeker version of the Spirit of Ecstasy hood ornament in 2020 &mdash; praised for successfully carrying &ldquo;the company&rsquo;s sense of luxury into the digital age.&rdquo;</p>
-                    <p><strong>Reddit</strong> hired Pentagram before its 2024 IPO to unify years of scattered DIY aesthetics. The result: a sleeker 3D Snoo alien and a custom font &mdash; and redditors <a href="https://links.morningbrew.com/c/SMH" target="_blank" style="color:#60a5fa;">didn&rsquo;t downvote it.</a></p>
-                    <p><strong>eBay</strong> stripped sidebar text and added white space in 2024, earning Fast Company praise for following best layout practices &ldquo;without appearing too cold to middle America.&rdquo;</p>
+                    <p>Fedorov, 35, was fired after clashing with top army commander Oleksandr Syrskyi, 60. Fedorov had driven Ukraine&rsquo;s successful <a href="https://links.morningbrew.com/c/SPu" target="_blank" style="color:#60a5fa;">drone warfare campaign</a>. Some Kyiv protesters accused Syrskyi of being &ldquo;busy with politics instead of the front.&rdquo;</p>
+                    <p>Zelensky held a second day of calls with senior military leadership Sunday as he worked to resolve the crisis. The protests mark an unusual moment of internal pressure on Ukrainian leadership during active wartime.</p>
                 </div>
             </article>
 
             <article class="article">
-                <span class="category">Typography</span><span class="source source-brew">Morning Brew</span>
-                <h3>Choose Your Font Carefully &mdash; These People Didn&rsquo;t</h3>
-                <p class="summary">Fonts aren&rsquo;t interchangeable. Calligraphy that works on a fine-dining menu is catastrophic on a road sign &mdash; and some people had to learn that the hard way.</p>
+                <span class="category">Tech &amp; AI</span><span class="source source-rundown">The Rundown AI</span>
+                <h3>Anthropic Ends Fable 5 Access Drama &mdash; With a Compromise</h3>
+                <p class="summary">After postponing the removal of Fable 5 from subscriptions three times in five weeks, Anthropic has landed on a permanent answer: the model stays &mdash; at half the usage caps.</p>
                 <div class="details">
-                    <p>Chanel&rsquo;s 2016 &ldquo;I Love Coco&rdquo; campaign ran into trouble when the <a href="https://links.morningbrew.com/c/SML" target="_blank" style="color:#60a5fa;">typeface</a> made it read as &ldquo;I Love Cow.&rdquo; Online retailer Belle Chic printed &ldquo;My favorite color is glitter&rdquo; on a tote in 2017, but the <a href="https://links.morningbrew.com/c/SMM" target="_blank" style="color:#60a5fa;">font choice</a> produced a deeply offensive misreading.</p>
-                    <p>Most consequentially: Calibri helped <a href="https://links.morningbrew.com/c/SMN" target="_blank" style="color:#60a5fa;">bring down Pakistan&rsquo;s prime minister</a> in 2017. Investigators alleged documents in a corruption case were forged &mdash; the tell being that they were typed in Calibri, which wasn&rsquo;t publicly available in the year they were supposedly written. PM Nawaz Sharif later stepped down.</p>
-                    <p>The <em>Avatar</em> franchise quietly changed its typeface after <a href="https://links.morningbrew.com/c/SMO" target="_blank" style="color:#60a5fa;">an SNL sketch</a> starring Ryan Gosling savaged the film&rsquo;s use of Papyrus. And in 2024, the Philadelphia 76ers social media team provided a perfect reminder of why font vigilance matters.</p>
+                    <p>Fable 5 will remain inside Max and Team Premium plans at 50% of each plan&rsquo;s limits. Lower-tier plans get a one-time $100 credit before moving to pay-per-use. Anthropic admitted demand was <a href="https://x.com/claudeai/status/2078302415804379218" target="_blank" style="color:#60a5fa;">&ldquo;challenging to predict&rdquo;</a> and the usage situation &ldquo;frustrating,&rdquo; pledging investment in more compute.</p>
+                    <p>The resolution arrives after weeks of competitive pressure: OAI CEO Sam Altman publicly mocked Anthropic&rsquo;s access situation on X (&ldquo;clarity is nice,&rdquo; &ldquo;stay because we don&rsquo;t treat you with contempt&rdquo;), Moonshot&rsquo;s Kimi K3 launched as a near-frontier open-source rival &mdash; with such intense demand Moonshot immediately <a href="https://x.com/Kimi_Moonshot/status/2078855608565207130" target="_blank" style="color:#60a5fa;">halted new subscriptions</a> &mdash; and OAI continued expanding 5.6 Sol&rsquo;s usage limits. With model releases moving faster than compute, this access dance may follow Anthropic launch to launch.</p>
                 </div>
             </article>
 
             <article class="article">
-                <span class="category">History</span><span class="source source-brew">Morning Brew</span>
-                <h3>Less Accurate Subway Maps Are More Useful &mdash; Here&rsquo;s Why</h3>
-                <p class="summary">A century-old design choice explains why a glance at a subway map tells you it&rsquo;ll take three trains to reach a bar two miles away. The trick is deliberate, principled inaccuracy.</p>
+                <span class="category">Markets</span><span class="source source-brew">Morning Brew</span>
+                <h3>The Week Ahead: Alphabet, Tesla, and a Friday Tariff Deadline</h3>
+                <p class="summary">Earnings season heats up this week with two Mag Seven members reporting Wednesday, while a 150-day tariff clock expires Friday.</p>
                 <div class="details">
-                    <p>Harry Beck was a drafter for the London Underground in the 1930s who noticed something obvious: existing tube maps showed too much of London&rsquo;s geography. The tangle of streets and curves made actual rail connections hard to read. His <a href="https://links.morningbrew.com/c/SN0" target="_blank" style="color:#60a5fa;">revolutionary solution</a> was to ditch geographic accuracy entirely.</p>
-                    <p>Beck&rsquo;s redesigned map used only vertical, horizontal, and 45-degree lines in bold contrasting colors. Street names vanished. The central city was zoomed in relative to the outer boroughs. The result looked like an electrical circuit diagram &mdash; and it was far easier to navigate than any geographically accurate version. It was initially rejected by the Underground as &ldquo;too revolutionary&rdquo; before a trial run proved enormously popular.</p>
-                    <p>Every major city metro map today draws from his design philosophy. New York&rsquo;s recently revamped subway map follows the same playbook: boldly colored, angular train lines on a simplified depiction of the five boroughs, emphasizing connections over cartographic truth.</p>
+                    <p><strong>Wednesday earnings:</strong> <a href="https://links.morningbrew.com/c/SPB" target="_blank" style="color:#60a5fa;">Alphabet and Tesla</a>, along with IBM and Texas Instruments. Intel reports Thursday. Capital One, American Express, AT&amp;T, Verizon, and T-Mobile also report this week. AMC reports today after a strong Nolan opening weekend.</p>
+                    <p><strong>Friday deadline:</strong> The 10% global tariff enacted under Section 122 of the Trade Act of 1974 <a href="https://links.morningbrew.com/c/SPC" target="_blank" style="color:#60a5fa;">hits its 150-day statutory limit</a>. Congress extending it is unlikely; the administration will likely need a new legal justification. Markets are watching.</p>
+                    <p><strong>Also:</strong> European Commission provisional deadline on Paramount Skydance&rsquo;s acquisition of Warner Bros. Discovery is Wednesday. House Republicans are moving a budget reconciliation bill and a stock-trading restriction for Congress members before August recess.</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <span class="category">Tech &amp; AI</span><span class="source source-rundown">The Rundown AI</span>
+                <h3>OpenAI CFO Proposes &ldquo;Useful Intelligence Per Dollar&rdquo; as the New AI Budget Metric</h3>
+                <p class="summary">As companies hunt for cheaper AI options, OpenAI CFO Sarah Friar published a framework for grading AI spend that &mdash; conveniently &mdash; favors pricier frontier models.</p>
+                <div class="details">
+                    <p>Friar&rsquo;s <a href="https://openai.com/index/a-scorecard-for-the-ai-age/" target="_blank" style="color:#60a5fa;">scorecard</a> tracks reliability first, then useful output, scale, and total expense &mdash; replacing raw per-token pricing as the standard. Using the DeepSWE coding benchmark, she showed Sol scored 2.8 points above Fable 5 with a 36.2% lower estimated API bill.</p>
+                    <p>Her bottom-line question: &ldquo;whether the value of the work AI completes grows faster than the cost of producing it.&rdquo; The industry has quickly shifted from token-volume mania to reining in AI budgets &mdash; but critics note this is a scoreboard built by the companies selling the expensive models.</p>
                 </div>
             </article>
 
@@ -218,43 +272,64 @@
                 <h4>Quick Hits</h4>
 
                 <div class="sidebar-item">
+                    <span class="category">World</span>
+                    <h5>Usha Vance Gives Birth to Son Alec</h5>
+                    <p><a href="https://links.morningbrew.com/c/SPF" target="_blank" style="color:#60a5fa;">Usha Vance</a> gave birth to Alec Neel Vance on Sunday morning. JD Vance becomes the first sitting vice president in modern history to welcome a child while in office. <span class="source source-brew">Morning Brew</span></p>
+                </div>
+
+                <div class="sidebar-item">
                     <span class="category">Culture</span>
-                    <h5>Coffee Shops All Look the Same &mdash; Blame Your Algorithm</h5>
-                    <p>Whether it&rsquo;s a PE-backed chain or a local spot, cafes worldwide have converged on the same exposed brick, felt-letter menu, big-wooden-table aesthetic. Columnist Kyle Chayka argues the culprit is social media rewarding sameness. Starbucks just reversed course by <a href="https://links.morningbrew.com/c/SMX" target="_blank" style="color:#60a5fa;">adding plush chairs and warm lighting</a> after years of stripping them out for mobile orders.</p>
+                    <h5>Jensen Huang&rsquo;s Leather Jacket Fetches $960,000 at Sotheby&rsquo;s</h5>
+                    <p>A Tom Ford jacket worn by Nvidia CEO Jensen Huang at a 2023 Foxconn event sold for <a href="https://links.morningbrew.com/c/SPg" target="_blank" style="color:#60a5fa;">$960,000</a> &mdash; about 9,900% above retail price. CNBC: collectors are &ldquo;bidding on artifacts from the AI boom.&rdquo; <span class="source source-brew">Morning Brew</span></p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Fashion</span>
-                    <h5>Quiet Luxury vs. Opulence-Maxxing</h5>
-                    <p>One side: bold colors and visible logos are back, Gen Z is embracing luxury designers, and &ldquo;vice signaling&rdquo; is the new status move. The other side: good taste is timeless and there&rsquo;s no need to dress like <a href="https://links.morningbrew.com/c/SMZ" target="_blank" style="color:#60a5fa;">Smaug&rsquo;s lair</a> on a random Tuesday. Read <a href="https://links.morningbrew.com/c/SMY" target="_blank" style="color:#60a5fa;">both arguments.</a></p>
+                    <span class="category">Crime</span>
+                    <h5>Tate Brothers Arrested in Miami</h5>
+                    <p>Andrew and Tristan Tate were <a href="https://links.morningbrew.com/c/SPH" target="_blank" style="color:#60a5fa;">arrested in Miami Saturday</a> on behalf of the UK, which brought new rape and sex trafficking charges against the social media influencer brothers. <span class="source source-brew">Morning Brew</span></p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Design</span>
-                    <h5>The OpenAI Ripple Effect</h5>
-                    <p>ChatGPT&rsquo;s 2022 launch didn&rsquo;t just shift AI &mdash; its logo set an aesthetic template nearly every AI startup copied within months. By 2023, hexagons were 4.6&times; more common in AI logos than in logos broadly. Circular abstractions now signal &ldquo;AI&rdquo; the way golden arches signal &ldquo;fast food.&rdquo;</p>
+                    <span class="category">Cyber</span>
+                    <h5>Fairlife Milk Halted After Ransomware Attack</h5>
+                    <p><a href="https://links.morningbrew.com/c/SPI" target="_blank" style="color:#60a5fa;">Fairlife milk production</a> has been halted across the US following a ransomware attack. <span class="source source-brew">Morning Brew</span></p>
                 </div>
 
                 <div class="sidebar-item">
-                    <span class="category">Branding</span>
-                    <h5>The Rebrand Graveyard</h5>
-                    <p>For every Reddit success story, there&rsquo;s a Tropicana (whose stripped-down carton tanked sales so badly they reversed it in weeks), a Jaguar (mocked globally), or a Cracker Barrel (customer revolt). Brands that survive rebrand intact tend to preserve one familiar visual anchor for long-time fans.</p>
+                    <span class="category">Weather</span>
+                    <h5>Tropical Storm Fausto Targets Hurricane Status</h5>
+                    <p><a href="https://links.morningbrew.com/c/SPG" target="_blank" style="color:#60a5fa;">Tropical Storm Fausto</a> formed Sunday off Mexico&rsquo;s Pacific coast and is expected to reach hurricane strength tonight, per the National Hurricane Center. <span class="source source-brew">Morning Brew</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Sports</span>
+                    <h5>Ryan Fox Wins the British Open</h5>
+                    <p><a href="https://links.morningbrew.com/c/SPJ" target="_blank" style="color:#60a5fa;">Ryan Fox of New Zealand</a> claimed his first major championship at the British Open this weekend. <span class="source source-brew">Morning Brew</span></p>
+                </div>
+
+                <div class="sidebar-item">
+                    <span class="category">Science</span>
+                    <h5>New African Monkey Species: Meet the Likweli</h5>
+                    <p>Colobus congoensis &mdash; the Likweli &mdash; is only the fifth new African monkey discovered in 75 years. First spotted in a Congolese rainforest in 2008, <a href="https://links.morningbrew.com/c/SPE" target="_blank" style="color:#60a5fa;">confirmed last week in PLOS One</a>. <span class="source source-brew">Morning Brew</span></p>
                 </div>
             </div>
 
             <div class="sidebar-section">
-                <h4>Brew&rsquo;s Best: Weekend Reads</h4>
+                <h4>New AI Tools</h4>
                 <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/SN5" target="_blank" style="color:#60a5fa;">America&rsquo;s 10 Best Towns to Visit</a></h5>
-                    <p>Plan an epic road trip with this roundup of the country&rsquo;s most underrated destinations.</p>
+                    <span class="category">Open Source</span>
+                    <h5><a href="https://www.rundown.ai/tools/kimi-k3" target="_blank" style="color:#60a5fa;">Kimi K3</a></h5>
+                    <p>Moonshot AI&rsquo;s open-source near-frontier model. Demand hit compute limits so fast they halted new subscriptions immediately after launch. <span class="source source-rundown">Rundown AI</span></p>
                 </div>
                 <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/SN6" target="_blank" style="color:#60a5fa;">Subtle Signs Your Account Has Been Hacked</a></h5>
-                    <p>The signals you&rsquo;re probably missing &mdash; before the damage is done.</p>
+                    <span class="category">No-Code</span>
+                    <h5><a href="https://www.rundown.ai/tools/canva-code" target="_blank" style="color:#60a5fa;">Canva Code</a></h5>
+                    <p>Canva&rsquo;s vibe-coding tool with drag-and-drop editing for non-technical builders. <span class="source source-rundown">Rundown AI</span></p>
                 </div>
                 <div class="sidebar-item">
-                    <h5><a href="https://links.morningbrew.com/c/SN7" target="_blank" style="color:#60a5fa;">Iconic Companies That Are No More</a></h5>
-                    <p>A eulogy for the brands that shaped culture and then quietly disappeared.</p>
+                    <span class="category">Voice AI</span>
+                    <h5><a href="https://www.rundown.ai/tools/gpt-live" target="_blank" style="color:#60a5fa;">GPT-Live</a></h5>
+                    <p>OpenAI&rsquo;s new voice model with more natural conversation abilities. <span class="source source-rundown">Rundown AI</span></p>
                 </div>
             </div>
 
@@ -264,38 +339,50 @@
     <!-- BOTTOM THREE-COLUMN SECTION -->
     <div class="bottom-section">
         <div class="bottom-column">
-            <h4>Design Deep Cut</h4>
+            <h4>AI Landscape</h4>
             <div class="bottom-item">
-                <h5>Rolls-Royce Takes the Spirit of Ecstasy Digital</h5>
-                <p>Rolls-Royce ditched its classic double-R monogram in 2020 for a sleeker version of its iconic hood ornament. The gamble: modernizing a 120-year-old luxury brand for digital screens without alienating its ultra-wealthy clientele. Critics called it a rare success for a brand of that age and prestige.</p>
+                <h5>Alibaba Qwen3.8: &ldquo;Second Only to Fable 5&rdquo;</h5>
+                <p>Alibaba&rsquo;s Qwen team says its upcoming open-weight <a href="https://x.com/qwen_cloud/status/2078758151390953489" target="_blank" style="color:#60a5fa;">Qwen3.8 model</a> is &ldquo;compatible to leading frontier AI models, second only to Fable 5.&rdquo; The open-weight frontier gap is compressing at speed. <span class="source source-rundown">Rundown AI</span></p>
             </div>
             <div class="bottom-item">
-                <h5>Beck&rsquo;s Tube Map Turns 90 &mdash; and Still Runs Every Subway on Earth</h5>
-                <p>Harry Beck&rsquo;s 1933 London Underground diagram was initially rejected as &ldquo;too revolutionary.&rdquo; A small trial proved so popular it became standard. Today virtually every mass transit system on earth uses some variant of his diagrammatic approach.</p>
-            </div>
-        </div>
-
-        <div class="bottom-column">
-            <h4>Font Hall of Fame &amp; Shame</h4>
-            <div class="bottom-item">
-                <h5>Papyrus: A Font So Bad It Changed a Franchise</h5>
-                <p>James Cameron&rsquo;s <em>Avatar</em> &mdash; the highest-grossing film ever &mdash; used Papyrus for its title card. The choice was mercilessly lampooned in an SNL sketch starring Ryan Gosling. The franchise quietly changed its typeface before subsequent releases.</p>
+                <h5>SpaceX in Talks for Multibillion Pentagon Compute Deal</h5>
+                <p>SpaceX is <a href="https://www.wsj.com/tech/ai/spacex-in-talks-to-provide-computing-power-for-pentagons-ai-push-15e752e4" target="_blank" style="color:#60a5fa;">negotiating a multibillion-dollar compute agreement</a> with the US DoD, joining Google, Anthropic, and Reflection AI as Pentagon AI providers. <span class="source source-rundown">Rundown AI</span></p>
             </div>
             <div class="bottom-item">
-                <h5>Calibri: An Unlikely Tool of Political Justice</h5>
-                <p>The humble Microsoft default font became a forensic weapon in 2017 when investigators noticed that documents allegedly from 2006 were typed in Calibri &mdash; which wasn&rsquo;t publicly released until 2007. The discrepancy helped accelerate the fall of Pakistan&rsquo;s prime minister.</p>
+                <h5>MLB Bans AI from Dugout iPads</h5>
+                <p>The MLB is <a href="https://apnews.com/article/mlb-ai-ipads-ac940e2490557438f440514977832a74" target="_blank" style="color:#60a5fa;">ending teams&rsquo; ability to load custom programs</a> onto dugout iPads to crack down on AI-assisted in-game strategy. <span class="source source-rundown">Rundown AI</span></p>
             </div>
         </div>
 
         <div class="bottom-column">
-            <h4>Aesthetic Culture</h4>
+            <h4>Week Ahead</h4>
             <div class="bottom-item">
-                <h5>The Algorithm-ification of the Third Place</h5>
-                <p>Social media didn&rsquo;t just homogenize coffee shop aesthetics &mdash; it created a global feedback loop where every owner can see what&rsquo;s going viral in Seoul, Melbourne, or Brooklyn and replicate it before the trend cools. Platforms like Yelp and Google Maps then reward the similarity by surfacing familiar-looking spots to visitors.</p>
+                <h5>Earnings Wave: Mag Seven, Telecoms, Banks</h5>
+                <p>Alphabet, Tesla (Wed), Intel (Thu), Capital One, AmEx, AT&amp;T, Verizon, T-Mobile all reporting. AMC reports today after <em>The Odyssey</em>&rsquo;s massive opening weekend. Box office grosses expected to top $10B this year for the first time since pre-pandemic. <span class="source source-brew">Morning Brew</span></p>
             </div>
             <div class="bottom-item">
-                <h5>Vice Signaling: Conspicuous Consumption Comes Back</h5>
-                <p>Post-pandemic quiet luxury was a reaction to excess. Now the pendulum may be swinging: fall/winter 2026 trends show bold expression, visible logos, and &ldquo;opulence-maxxing.&rdquo; Even Gen Z &mdash; supposedly cash-strapped &mdash; is increasingly drawn to luxury labels.</p>
+                <h5>Tour de France Concludes Sunday</h5>
+                <p>Cycling&rsquo;s biggest race wraps this weekend. <span class="source source-brew">Morning Brew</span></p>
+            </div>
+            <div class="bottom-item">
+                <h5>No-Code Product Building Workshop &mdash; July 22</h5>
+                <p>The Rundown AI is hosting a <a href="https://app.therundown.ai/live/no-code-product-building-from-idea-to-product-market-fit-with-ai" target="_blank" style="color:#60a5fa;">live workshop on no-code product building</a> with AI on Tuesday. <span class="source source-rundown">Rundown AI</span></p>
+            </div>
+        </div>
+
+        <div class="bottom-column">
+            <h4>For Your Commute</h4>
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/SPK" target="_blank" style="color:#60a5fa;">How Long Can You Actually Go Without Sleep?</a></h5>
+                <p>The science is more surprising than you think. <span class="source source-brew">Morning Brew</span></p>
+            </div>
+            <div class="bottom-item">
+                <h5>Real AI Use Cases from the Rundown Team</h5>
+                <p>The Rundown&rsquo;s EIC used ChatGPT &mdash; with backyard photos and a budget &mdash; to plan a 40-person birthday party for a 2-year-old: grocery list, activity stations, rain contingency, run-of-show. A dev on staff built a Telegram bot via Claude Code to track every book link he sends it. <span class="source source-rundown">Rundown AI</span></p>
+            </div>
+            <div class="bottom-item">
+                <h5><a href="https://links.morningbrew.com/c/SPM" target="_blank" style="color:#60a5fa;">How to Exercise When You&rsquo;re Drained</a></h5>
+                <p>Practical strategies for the days when the couch wins every argument. <span class="source source-brew">Morning Brew</span></p>
             </div>
         </div>
     </div>
@@ -303,15 +390,14 @@
 </div>
 
 <footer>
-    <p>The Daily Brief &mdash; Sunday, July 19, 2026</p>
-    <p style="margin-top: 5px; color: #444;">Special Design Edition</p>
+    <p>The Daily Brief &mdash; Monday, July 20, 2026</p>
+    <p>Generated from: Morning Brew (5:17 AM ET) &middot; Daily Dad (6:02 AM ET) &middot; The Rundown AI (6:05 AM ET)</p>
     <div class="sources">
         <span class="source source-brew">Morning Brew</span>
-        <span style="color:#ef4444; font-family: -apple-system, sans-serif; font-size: 0.75rem;">The Rundown AI &#x2717;</span>
-        <span style="color:#ef4444; font-family: -apple-system, sans-serif; font-size: 0.75rem;">1% Better &#x2717;</span>
-        <span style="color:#ef4444; font-family: -apple-system, sans-serif; font-size: 0.75rem;">Daily Dad &#x2717;</span>
+        <span class="source source-rundown">The Rundown AI</span>
+        <span class="source source-dailydad">Daily Dad</span>
+        <span style="font-family:-apple-system,sans-serif;font-size:0.7rem;color:#444;">1% Better &mdash; not delivered</span>
     </div>
-    <p style="margin-top: 15px; color: #333; font-size: 0.8rem;">Generated by Claude &mdash; The Daily Brief automation</p>
 </footer>
 
 </body>
